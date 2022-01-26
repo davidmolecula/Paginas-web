@@ -1,0 +1,240 @@
+/* Esta parte le da el estilo al borde del titulo H1 */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	box-sizing: inherit;
+}
+html {
+	font-size: 16px;
+}
+
+
+h1 {
+				/* Esto esta bueno para aprender a darle color a los bordes*/
+				/*Esto se refiere a la caja del H1 */
+	border: none;
+	box-shadow: 0 0.2em 0.2em 0.1em gray;
+	border-radius: 0.2em;  
+	margin: 1em auto; /* El AUTO es para centrarlo de manera horizontal*/
+	padding: 1rem;
+	background-image: url(25101.jpg);
+	background-attachment: fixed;
+	background-size: 20em;
+	width: 80%;
+	/*Y esto se refiere a la letra del H1*/
+	color: black;
+	line-height: 1;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 100;
+	overflow: auto;
+	transition: color 1s;
+	}
+
+
+	body {
+		
+		background-attachment: fixed;
+		background-size: no-repeat;
+		background-size: 100%;
+	/*	background: -webkit-linear-gradient(to right, rgb(26,110,175,0.3)),url(25101.jpg);
+		background: linear-gradient(to left, rgba(26,110,175,0.3) 15%, rgba(36,120,171,0.3) 31%, rgba(35,87,195,0.3) 47%, rgba(104,52,162,0.3) 70%),url(25101.jpg);
+		*/
+		background: rgba(168, 192, 255, 0.5);  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, rgba(63, 43, 150, 0.5), rgba(168, 192, 255, 0.5)),url(25101.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, rgba(63, 43, 150, 0.1), rgba(168, 192, 255, 0.3)),url(25101.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background-size: cover;
+		}
+
+
+	nav {
+		display: inline-flex;
+		border: 1px solid black;
+		margin: 1em;
+		border-radius: 0.5em;
+		}
+
+	nav a {
+		padding: 0.3em;
+		margin: 0.1em;
+		background-color: #1a4279;
+		color: #fff;
+		display: inline-block;
+		border-radius: 0.3em;
+	}
+	nav a:hover {
+		background-color: #2357c3;
+	}
+
+
+	li {
+		list-style-type: none;
+		padding-right: 25px;
+		display: inline-block;
+		font-size: 150%;
+		}
+					
+	.contenedora_total 
+	{ 
+		display: inline-flex;
+		background-image: url(25101.jpg);
+		/*background-attachment: fixed;*/
+		background-size: 90em;		
+		border-radius: 0.5em;
+			
+	}
+					
+	.caja_izquierda_contenedora
+	{
+		
+		display: inline-flex;
+		margin-left: 1%;
+		width: 50%;
+		border-radius: 0.5em;
+		}
+
+
+
+
+	.caja_izquierda_contenedora div 
+	{ 							
+		width: 33%;
+		display: inline-flex;
+		background-color: whitesmoke;
+		border: 1px solid lightgrey;
+		margin: 0.5em;
+		padding: 0.5em;
+		border-radius: 0.5em;
+	}
+
+	.caja_derecha
+	{
+		display: inline-flex;
+		color: black;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		width: 45%;
+		margin-left: 0.5%;
+		margin: 1%;
+	}
+	.caja_derecha div 
+	{
+		background-color: whitesmoke;
+		border: 1px solid lightgrey;
+		border-radius: 0.5em;
+		margin: 0.1%;
+		margin-top: 1%;
+		padding: 1%;
+		overflow: auto;
+	}
+
+	.caja_derecha div:first-letter 
+	{
+		color: blueviolet;
+		font-family: gotic;
+		font-size: 5em;
+	}
+
+	.caja_derecha div::selection {
+		color: white;
+		background-color: black;
+	}
+						 
+
+						 /* Float nos ayuda a acomodar una caja dentro de otra, en este caso nos acomoda la imagen y el texto la envuelve*/
+	.caja_derecha img 
+		{
+		border-radius: 1em;
+		float: left;
+		padding-right: 0.5em;
+		width: 5em;
+		height: 7em;
+		transition: width 3s, height 3s;
+		}
+	
+
+	.caja_izquierda_contenedora div:hover 
+		{	
+			box-shadow: 0 0.2rem 0.2rem 0.2rem lightgrey;
+		}
+	.caja_derecha div:hover 
+		{
+			box-shadow: 0 0.2rem 0.2rem 0.2rem lightgrey;
+		}
+
+	@media (max-width: 800px)
+		{
+			.contenedora_total 
+				{
+				display: block;
+				width: 100%;
+				}
+			.caja_izquierda_contenedora
+			{
+				display: block;
+				width: 100%;
+			}
+			.caja_izquierda_contenedora div 
+			{
+				display: block;
+				
+				width: 90%;
+				
+			}
+			.caja_derecha 
+			{
+				width: 95%;
+			}
+			h1 {
+				background-size: contain;
+			}
+			body {
+				background-size: contain;
+				background-repeat: repeat-y;
+			}
+		}
+
+	article {
+			 font-size: 1em;
+				 color: black;
+				 background-color: none;
+				 border-radius: 0.5em;
+				 margin: 2rem;
+			}
+
+
+
+	footer {
+			background-color: #1a4279;
+			font-size: 1.5rem;
+			height: 2em;
+			color: whitesmoke;
+			padding: 0;
+			margin: 0;
+		   }
+footer div {
+	text-align: right;
+	margin-top: 0.5em;
+	padding-top: 0.3em;
+}
+.imagen {
+	height: 1em;
+	width: 1em;
+	float: right;
+	padding-right: 0.5em;
+}
+#imagen2 {
+	height: .85em;
+	width: .85em;
+	padding-left: 0.1em;
+	padding-right: 0.3em;
+}
+/* Esto es para que las letras del titulo tengan como fondo una imagen
+h1 {
+		font-family: impact, sans-serif;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+*/
