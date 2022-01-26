@@ -7,6 +7,7 @@
 }
 html {
 	font-size: 16px;
+
 }
 
 
@@ -14,19 +15,19 @@ h1 {
 				/* Esto esta bueno para aprender a darle color a los bordes*/
 				/*Esto se refiere a la caja del H1 */
 	border: none;
-	box-shadow: 0 0.2em 0.2em 0.1em gray;
-	border-radius: 0.2em;  
-	margin: 1em auto; /* El AUTO es para centrarlo de manera horizontal*/
+	margin: 0.5em auto; /* El AUTO es para centrarlo de manera horizontal*/
 	padding: 1rem;
-	background-image: url(25101.jpg);
-	background-attachment: fixed;
-	background-size: 20em;
-	width: 80%;
+	background-image: url(nosotros.jpg);
+	background-size: contain;
+	-webkit-text-stroke: 2px black;
+ 	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 	/*Y esto se refiere a la letra del H1*/
-	color: black;
+	color: transparent; 
 	line-height: 1;
 	text-align: center;
-	font-size: 3em;
+	font-family: impact, sans-serif;
+	font-size: 5em;
 	font-weight: 100;
 	overflow: auto;
 	transition: color 1s;
@@ -34,23 +35,19 @@ h1 {
 
 
 	body {
-		
+		background-color: #1d1f21;
 		background-attachment: fixed;
 		background-size: no-repeat;
 		background-size: 100%;
 	/*	background: -webkit-linear-gradient(to right, rgb(26,110,175,0.3)),url(25101.jpg);
 		background: linear-gradient(to left, rgba(26,110,175,0.3) 15%, rgba(36,120,171,0.3) 31%, rgba(35,87,195,0.3) 47%, rgba(104,52,162,0.3) 70%),url(25101.jpg);
 		*/
-		background: rgba(168, 192, 255, 0.5);  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, rgba(63, 43, 150, 0.5), rgba(168, 192, 255, 0.5)),url(25101.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, rgba(63, 43, 150, 0.1), rgba(168, 192, 255, 0.3)),url(25101.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-		background-size: cover;
+		
 		}
 
 
 	nav {
 		display: inline-flex;
-		border: 1px solid black;
 		margin: 1em;
 		border-radius: 0.5em;
 		}
@@ -58,7 +55,6 @@ h1 {
 	nav a {
 		padding: 0.3em;
 		margin: 0.1em;
-		background-color: #1a4279;
 		color: #fff;
 		display: inline-block;
 		border-radius: 0.3em;
@@ -76,57 +72,80 @@ h1 {
 		}
 					
 	.contenedora_total 
-	{ 
+	{ 	background-color: ##1d1f21;
 		display: inline-flex;
-		background-image: url(25101.jpg);
-		/*background-attachment: fixed;*/
 		background-size: 90em;		
-		border-radius: 0.5em;
-			
+		border-radius: 0.5em;			
 	}
 					
 	.caja_izquierda_contenedora
-	{
-		
+		{
+		background-color: #1d1f21;
 		display: inline-flex;
 		margin-left: 1%;
-		width: 50%;
+		width: 70%;
 		border-radius: 0.5em;
 		}
 
-
-
-
 	.caja_izquierda_contenedora div 
-	{ 							
-		width: 33%;
-		display: inline-flex;
-		background-color: whitesmoke;
-		border: 1px solid lightgrey;
-		margin: 0.5em;
-		padding: 0.5em;
+	{ 	background-color: ##1d1f21;					
+		width: 25%;
+		display: initial;
+		color: whitesmoke;
+		margin-left: 5%;
+		padding: 0.5rem;
 		border-radius: 0.5em;
+		
 	}
+	#first-child-izquierda-contenedora
+	{ 	
+	color: whitesmoke;
+	text-align: center;
+	padding: 0%;
+	padding-bottom: 1%;
+	font-family: Noto Sans SC,sans-serif;
+	font-weight: 700;
+	}
+
+	#texto_especial
+	{
+		display: initial;
+		border: none;
+		padding-top: 1em;
+		margin-top: 1em;
+	}
+
+	.caja_izquierda_contenedora div img 
+	{
+		border-radius: 0.5em;
+		float: left;
+		width: 100%;
+		height: 40%;
+		min-height: 1em;
+		min-height: 15rem;
+		padding-bottom: 10%;
+	}
+
 
 	.caja_derecha
-	{
+	{	
 		display: inline-flex;
 		color: black;
-		padding: 0.5em;
 		border-radius: 0.5em;
-		width: 45%;
-		margin-left: 0.5%;
-		margin: 1%;
+		width: 30%
 	}
+
 	.caja_derecha div 
-	{
-		background-color: whitesmoke;
-		border: 1px solid lightgrey;
+	{	background-color: #1d1f21;
+		color: whitesmoke;
 		border-radius: 0.5em;
 		margin: 0.1%;
 		margin-top: 1%;
 		padding: 1%;
 		overflow: auto;
+		height: 100%;
+		width: 100%;
+
 	}
 
 	.caja_derecha div:first-letter 
@@ -143,15 +162,6 @@ h1 {
 						 
 
 						 /* Float nos ayuda a acomodar una caja dentro de otra, en este caso nos acomoda la imagen y el texto la envuelve*/
-	.caja_derecha img 
-		{
-		border-radius: 1em;
-		float: left;
-		padding-right: 0.5em;
-		width: 5em;
-		height: 7em;
-		transition: width 3s, height 3s;
-		}
 	
 
 	.caja_izquierda_contenedora div:hover 
@@ -162,6 +172,12 @@ h1 {
 		{
 			box-shadow: 0 0.2rem 0.2rem 0.2rem lightgrey;
 		}
+
+	
+	#texto_especial:hover {
+		border: none;
+		box-shadow: none;
+	}
 
 	@media (max-width: 800px)
 		{
@@ -196,8 +212,8 @@ h1 {
 		}
 
 	article {
-			 font-size: 1em;
-				 color: black;
+				 font-size: 1em;
+				 color: whitesmoke;
 				 background-color: none;
 				 border-radius: 0.5em;
 				 margin: 2rem;
@@ -230,11 +246,5 @@ footer div {
 	padding-left: 0.1em;
 	padding-right: 0.3em;
 }
-/* Esto es para que las letras del titulo tengan como fondo una imagen
-h1 {
-		font-family: impact, sans-serif;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-}
-*/
+ 
+
