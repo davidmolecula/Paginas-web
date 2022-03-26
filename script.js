@@ -1,7 +1,8 @@
 const select = document.querySelector('select');
 const html = document.querySelector('html');
-const contenedora= document.querySelector('.contenedora_total')
-document.body.style.padding = '10px';
+const contenedora= document.querySelector('.contenedora_total');
+const buttons=document.querySelectorAll('[data-carrousel-button]');
+
 
 function update(bgColor, textColor) {
   html.style.backgroundColor = bgColor;
@@ -12,3 +13,30 @@ function update(bgColor, textColor) {
 }
 
 select.addEventListener('change', () => ( select.value === 'black' ) ? update('black','white') : update('white','black'));
+
+
+
+
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    const offset= button.dataset.carrouselButton === "sig" ? 1 : -1;
+
+    const slide=button.closest('[data-carrousel]').querySelector('[data-slide]');
+
+    const activeSlide=slide.querySelector('[data-active]');
+
+    let newIndex=[...slide.children].indexOf(activeSlide)+ offset;
+
+
+    if(newIndex<0) newIndex= slide.children.length -1;
+
+    if(newIndex >= slide.children.length) newIndex=0;
+
+    slide.children[newIndex].dataset.active=true;
+
+    delete activeSlide.dataset.active;
+
+  })
+});
