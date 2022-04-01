@@ -1,0 +1,52 @@
+
+
+h1{
+	background-image: url("Foto-grupal-ceit.jpg");
+	background-size:cover;
+	font-family: unset;
+	font-size: 10rem;
+	max-height: 3em;
+	color:black;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+	border:1px solid yellow;
+	font-size:4rem;
+	color: white;
+	
+}
+.texto-nosotros{
+	margin-left: 1em;
+	border:1px solid white;
+}
+
+.li-nosotros {
+	border-radius:5em;
+	display: inline-flex;
+
+	background: none;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	border: 1px solid white;
+}
+#carla {
+	border-radius: 5em;
+	width: 10rem;
+	height: 10rem;
+}
+
+#jonas{
+	border-radius: 5em;
+	width: 10rem;
+	height: 10rem;
+	
+}
+
+p {
+	font-weight: 20;
+}
+
