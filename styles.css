@@ -14,13 +14,14 @@ html {
 body {
 		background-color: #0f1111;
 
-	}
 
+	}
+/*00bb2d*/
 h1 {
 	background-image: url(h1.jpg);
 	background-size: cover;
 	height: 5em;
-	color: #00bb2d;
+	color: #317bbb;
 	text-shadow: 5px 5px  black;
 	text-align: center;
 	font-family: 'Lobster', cursive;
@@ -33,44 +34,39 @@ h1 {
 	
 
 	nav {
-		display: inline-flex;
+		display: flex;
 		height: 2rem;
-		background-color: black;
 		width: 100%;
 		margin-bottom: 3em;
 		padding-top: .5em;
 		justify-content: center;
+		background: hsl(0 0% 100% / 0.1);
+		backdrop-filter: blur(.5em);
 		}
 
-		nav div {
-				display: flex;
-				}
+		nav ul {
+		display: flex;
+		height: 2rem;
+		width: 100%;
+		margin-bottom: 3em;
+		justify-content: center;
 
- 	nav div div {
- 				display: inline-flex;
- 				}
+		}
 
-#imagen_logo {
-	position: absolute;
-	left: 4.9em;
-	top: 1.3em;
-	height: 1.3em;
-	width: 2.3em;
-	padding: 0;
-	margin-right: .5em;
-	margin-bottom: .5em;
-	}
+	
 
 	nav a {
 		font-weight: 400;
 		padding: 0.5em;
-		color: black;
-		display: inline-flex;
+		color: white;
 		border-radius: 0.3em;
-		}
 
+		}
+.algo {
+	color: red;
+}
 	nav a:hover {
-		background-color: #35845d;
+		background-color: #317bbb;
 	}
 
 
@@ -79,9 +75,9 @@ h1 {
 		font-weight: 800;
 		display: inline-flex;
 		font-size: 0.7em;
-		background-color: white;
+
 		border-radius: 0.5em;
-		padding-top: 0;
+		margin-left: .5em;
 		}
 
 	label {
@@ -90,34 +86,28 @@ h1 {
 	}
 					
 	.contenedora_total 
-	{ 	
+	{ 
 		background-color: #0f1111;
 		display: flex;
 		width: 100%;
 		border-radius: 0.5em;	
 		justify-content: center;	
-
-
 	}
 					
 	
 	.contenedora_total div
-	{ 	
-	font-family: 'Lobster', cursive;
-	font-size: 1.5em;
-	text-indent: 10px;	
-	text-anchor: 10px;		
+	{ 		
+	color: #f2fcf0;
 	width: 16rem;
 	height: 21rem;
 	margin: 1rem;
 	text-align: center;
-	color: whitesmoke;
 	border-radius: 0.5em;	
 	transition:  1s;
-	box-shadow: 0 0.2rem 0.2rem 0.2rem #303030;
+ 	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
 	
 	}
-
 	
 
 	.contenedora_total div img 
@@ -132,12 +122,16 @@ h1 {
 	}
 
 
-	.contenedora_total div:hover 
+	.contenedora_total div:hover
 		{	
 			opacity: 0.9;
-			box-shadow: 0 0.2rem 0.2rem 0.2rem lightgrey;
+			box-shadow: 0 0.2rem 0.2rem 0.2rem #317bbb;
 		}
-
+.contenedora_total div:focus
+		{	
+			opacity: 0.9;
+			box-shadow: 0 0.2rem 0.2rem 0.2rem #317bbb;
+		}
 	
 
 	article {
@@ -221,7 +215,7 @@ h1 {
 
 
 	footer {
-			background-color: #35845d;
+			background-color: #317bbb;
 			font-size: 1.5rem;
 			height: 2em;
 			color: whitesmoke;
@@ -249,7 +243,7 @@ ya lo borre una vez sin querer*/
 
 
 #Informacion_footer {
-	background-color: #000000;
+	background-color: black;
 	display: flex;
 	margin: 0 -10px;
 }
@@ -289,4 +283,30 @@ ya lo borre una vez sin querer*/
 				background-size: contain;
 				background-repeat: repeat-y;
 			}
+
+			
+		}
+
+
+@media (max-width: 500px)
+		{
+			nav{	
+				position: fixed;
+				inset: 0 0 0 30%;
+				flex-direction: column;
+				height: 100vh;
+				padding: min(20vh,10rem) 2em;
+				z-index: 50;
+				margin-bottom: 2em;
+
+				}
+			nav ul {
+				flex-direction: column;
+
+			}
+			nav ul li {
+				margin-bottom: 1em;
+				font-size: 1em;
+			}
+			
 		}
