@@ -2,6 +2,8 @@ const select = document.querySelector('select');
 const html = document.querySelector('html');
 const contenedora= document.querySelector('.contenedora_total');
 const buttons=document.querySelectorAll('[data-carrousel-button]');
+const navPrimaria=document.querySelector('.navegacion-primaria');
+const navPalanca=document.querySelector('.nav-mobil-palanca');
 
 
 function update(bgColor, textColor) {
@@ -39,4 +41,20 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active;
 
   })
+});
+
+
+
+navPalanca.addEventListener('click', () => {
+
+  const visibilidad= navPrimaria.getAttribute('data-visible');
+
+
+  if(visibilidad==='false')
+  {
+    navPrimaria.setAttribute('data-visible', true);
+  }else if(visibilidad==='true')
+  {
+    navPrimaria.setAttribute('data-visible', false);
+  }
 });

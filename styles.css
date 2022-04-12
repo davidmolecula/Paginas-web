@@ -18,7 +18,7 @@ body {
 	}
 /*00bb2d*/
 h1 {
-	background-image: url(h1.jpg);
+	background-image: url(frente-facu2.jpg);
 	background-size: cover;
 	height: 5em;
 	color: #317bbb;
@@ -31,11 +31,25 @@ h1 {
 	transition: color 1s;
 	}
 
+.nav-mobil-palanca {
+	position: absolute;
+	z-index: 9999;
+	background: url(menu-hamburguesa.png);
+	background-size: cover;
+	border: none;
+	aspect-ratio: 1;
+	width: 2rem;
+	height: 2rem;
+	top: 2rem;
+	right: 2rem;		
+	display: none;	
+
+}
 	
 
-	nav {
+	.navegacion-primaria {
 		display: flex;
-		height: 2rem;
+		transition: 1s;
 		width: 100%;
 		margin-bottom: 3em;
 		padding-top: .5em;
@@ -44,14 +58,14 @@ h1 {
 		backdrop-filter: blur(.5em);
 		}
 
-		nav ul {
+		#navegacion-primaria {
 		display: flex;
-		height: 2rem;
 		width: 100%;
 		margin-bottom: 3em;
 		justify-content: center;
 
 		}
+
 
 	
 
@@ -75,7 +89,6 @@ h1 {
 		font-weight: 800;
 		display: inline-flex;
 		font-size: 0.7em;
-
 		border-radius: 0.5em;
 		margin-left: .5em;
 		}
@@ -106,7 +119,6 @@ h1 {
 	transition:  1s;
  	font-family: 'Lobster', cursive;
 	font-size: 1.5em;
-	
 	}
 	
 
@@ -180,7 +192,7 @@ h1 {
 		height: 70vh;
 		object-fit: fill;
 		align-content: center;
-		border-radius: 2em;
+	
 	}
 
 	.carrousel-button  {
@@ -282,15 +294,8 @@ ya lo borre una vez sin querer*/
 			body {
 				background-size: contain;
 				background-repeat: repeat-y;
-			}
-
-			
-		}
-
-
-@media (max-width: 500px)
-		{
-			nav{	
+			}	
+				.navegacion-primaria{	
 				position: fixed;
 				inset: 0 0 0 30%;
 				flex-direction: column;
@@ -298,15 +303,46 @@ ya lo borre una vez sin querer*/
 				padding: min(20vh,10rem) 2em;
 				z-index: 50;
 				margin-bottom: 2em;
-
-				}
-			nav ul {
-				flex-direction: column;
-
-			}
-			nav ul li {
+				transform: translateX(100%);
+				}	
+				nav ul li {
 				margin-bottom: 1em;
 				font-size: 1em;
 			}
+			.nav-mobil-palanca {
+				display: block;
+			}
+			.navegacion-primaria[data-visible="true"]
+		{
+			transform: translateX(0%);
+		}
+		}
+
+
+@media (max-width: 500px)
+		{
+			.navegacion-primaria{	
+				position: fixed;
+				inset: 0 0 0 30%;
+				flex-direction: column;
+				height: 100vh;
+				padding: min(20vh,10rem) 2em;
+				z-index: 50;
+				margin-bottom: 2em;
+				transform: translateX(100%);
+				}
 			
+			
+			.nav-mobil-palanca {
+				display: block;
+				position: fixed;
+			}
+		
+			#navegacion-primaria {
+				flex-direction: column;
+			}
+			.navegacion-primaria[data-visible="true"]
+		{
+			transform: translateX(0%);
+		}
 		}
