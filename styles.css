@@ -305,6 +305,9 @@ ya lo borre una vez sin querer*/
 				margin-bottom: 5em;
 				transform: translateX(100%);
 				}	
+				nav ul li:first-child{
+					margin-top: -150px;
+				}
 				nav ul li {
 				margin-bottom: 2em;
 				font-size: 1em;
@@ -323,12 +326,12 @@ ya lo borre una vez sin querer*/
 		{
 			.navegacion-primaria{	
 				position: fixed;
-				inset: 0 90% 0 30%;
+				inset: 0 0 0 30%;
 				flex-direction: column;
 				height: 100vh;
 				padding: min(10vh,4rem) 2em;
 				z-index: 50;
-				margin-bottom: 2em;
+				margin-bottom: 1em;
 				transform: translateX(100%);
 				}
 			
@@ -345,4 +348,7 @@ ya lo borre una vez sin querer*/
 		{
 			transform: translateX(0%);
 		}
+		nav ul li:first-child{
+					margin-top: -150px;
+				}
 		}
