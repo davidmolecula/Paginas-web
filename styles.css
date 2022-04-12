@@ -300,13 +300,13 @@ ya lo borre una vez sin querer*/
 				inset: 0 0 0 30%;
 				flex-direction: column;
 				height: 100vh;
-				padding: min(20vh,10rem) 2em;
+				padding: min(10vh,4rem) 2em;
 				z-index: 50;
-				margin-bottom: 2em;
+				margin-bottom: 5em;
 				transform: translateX(100%);
 				}	
 				nav ul li {
-				margin-bottom: 1em;
+				margin-bottom: 2em;
 				font-size: 1em;
 			}
 			.nav-mobil-palanca {
@@ -323,10 +323,10 @@ ya lo borre una vez sin querer*/
 		{
 			.navegacion-primaria{	
 				position: fixed;
-				inset: 0 0 0 30%;
+				inset: 0 90% 0 30%;
 				flex-direction: column;
 				height: 100vh;
-				padding: min(20vh,10rem) 2em;
+				padding: min(10vh,4rem) 2em;
 				z-index: 50;
 				margin-bottom: 2em;
 				transform: translateX(100%);
