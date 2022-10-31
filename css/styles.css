@@ -15,7 +15,7 @@ body {
 	}
 
 h1 {
-	background-image: url(frente-facu2.jpg);
+	background-image: url(../img/frente-facu2.jpg);
 	background-size: cover;
 	height: 75vh;
 	width: 100vw;
@@ -40,7 +40,7 @@ h1 {
 .nav-mobil-palanca {
 	position: absolute;
 	z-index: 9999;
-	background: url(menu-hamburguesa1.png);
+	background: url(../icons/menu-hamburguesa1.png);
 	background-size: cover;
 	border: none;
 	width: 2rem;
@@ -208,7 +208,7 @@ h1 {
 	}
 
 	.tarjetas .tarjeta .cara.cara2 .contenido p {
-		font-size: 12px;
+		font-size: 15px;
 	}
 	.tarjetas .tarjeta .cara.cara2 .contenido a {
 		position: relative;
@@ -384,12 +384,19 @@ h1 {
 	
 
 	footer {
-			background: rgb(37, 39, 38);
-			font-size: 1.5rem;
-			height: 2em;
+			background: rgb(33, 153, 113);
+			font-size:2rem;
+			height: 4em;
 			color: whitesmoke;
 			width: 100vw;
+			display: flex;
+			justify-content:center;
+			align-items: center;
 			} 
+			
+	footer a {
+		text-decoration: none;
+	}
 
 footer div {
 	text-align: center;
@@ -415,6 +422,7 @@ ya lo borre una vez sin querer*/
 	background-color: black;
 	display: flex;
 	width: 100vw;
+	height: 30vh;
 }
 
 #Informacion_footer div {
