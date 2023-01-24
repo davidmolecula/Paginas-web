@@ -62,10 +62,10 @@ body {
 }
 
 .logobl {
-	background-image: url(C:/Users/David/OneDrive/Escritorio/Pagina/Img/logobl.png);
+	background-image: url(../Img/frente-facu3.jpg);
 	background-attachment: fixed;
-	height: 50%;
-	width: 50vw;
+	height: 70%;
+	width: 100vw;
 	color: #fff;
 	justify-content: center;
 	text-align: center;
