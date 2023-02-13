@@ -19,55 +19,83 @@ body {
 }
 
 /* HEADER */
-.header {
-	display: flex;
-	position: fixed;
-	height: 70px;
-	width: 100%;
-	background-color: transparent;
-	background-color: #007B8B;
-	justify-content: space-between;
-	align-items: center;
-}
 .logo {
-	width: 65px;
-	height: 57px;
-	border: 1px solid black;
-	position: relative;
+
+	width:100px;
+	border-radius: 5px;
+}
+nav {
+	display: flex;
+	height: 10vh;
+	background: blueviolet;
+	justify-content: space-between;
+	text-align: center;
 }
 
-.logo>img {
-	
-	height: 57px;
-	padding: 0;
-	margin: 0;
-	position:absolute;
-	top: 0;
-	margin: 0;
+.nav-links
+{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	height: 100%;
+	justify-content: space-between;
+	padding: 5px;
 }
-.header-right{
-	border: 1px solid black;
+.nav-links>li {
+	align-self: center;
 }
-.header a {
+
+.nav-links li a {
 	color: white;
-	font-weight:bold;
-	text-align: center;
-	padding: 13px 15px;
 	text-decoration: none;
-	font-size: 13px;
-	line-height: 25px;
-	border-radius: 45px;
 }
-.header-right a:hover {
-	background-color: #193E53;
+
+
+@media (max-width:768px) {
+
+	nav {
+		position: relative;
+	}
+	.hamburguesa {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top:50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	.nav-links {
+		position: fixed;
+		background-color: blueviolet;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		
+		-webkit-clip-path:circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+	}
+
+	.nav-links.open {
+		
+		-webkit-clip-path:circle(1200px at 90% -20%);
+	}
+	
+}
+
+
+:root {
+    --lightgreen: rgba(4, 99, 241, 0.658);
+    --green: rgba(14, 104, 240, 0.596);
+    --darkgreen:#0076fc41;
 }
 /* Barra de navegacion principal*/
-
-	label 
-		{
-		color: white ;
-		margin-left: 1em;
-		}
 
 	/*Aca termina la barra de navegacion principal*/
 	
@@ -78,7 +106,7 @@ body {
 		left: 0;
 		right: 0;
 		z-index: -1;
-	
+	height: 400vh;
 
 	}
 	/*LA SECCION PRINCIPAL SON LOS CUATRO FLYERS CENTRALES*/
@@ -86,7 +114,7 @@ body {
 	.presentacion_tarjetas {
 	color: #fff;
 	font-size: 2.5em;
-	padding-top: 2em;
+	padding-top: 10px;
 	text-align: center;
 	
 }
@@ -98,20 +126,15 @@ body {
 	font-size:1.4em;
 	height: 200px;
 }
-
-	
 	.tarjetas {
 		display: flex;
 		height: 100vh;
-		max-width: 100vw;
+		width: 100vw;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		justify-content: space-evenly;
 		margin:0;		
 	}
-
-	
-
 	.tarjetas .tarjeta .cara {
 		width: 300px;
 		height: 250px;
@@ -119,7 +142,6 @@ body {
 		margin: 0;
 		opacity: 0.2;
 	}
-
 	.tarjetas .tarjeta .cara.cara1 {
 		position: relative;
 		display: flex;
@@ -130,7 +152,6 @@ body {
 		transform: translateY(100px);
 		border-radius:5px;
 		margin: 0;
-	
 	}
 	.tarjetas .tarjeta:hover .cara.cara1 {
 		transform: translateY(0);	 
@@ -138,18 +159,13 @@ body {
 	}
 	.tarjetas .tarjeta:hover  {
 		transform: translateY(0);	 
-	
 	}
-
 	.tarjetas .tarjeta .cara.cara1 .contenido {
 	
 		transition: .5s;
 		color: white;	
 		margin: 0;
 	}
-
-
-	
 	.tarjetas .tarjeta .cara.cara1 .contenido img {
 
 		display: flex;
@@ -166,8 +182,6 @@ body {
 		transition: 1s;
 		border-radius:0;
 	}
-	
-
 	.tarjetas .tarjeta .cara.cara2 {
 		position: relative;
 		background: whitesmoke;
@@ -180,12 +194,10 @@ body {
 		margin: 0;
 		box-sizing: border-box;
 	}
-
 	.tarjetas .tarjeta:hover .cara.cara2 {
 		transform: translateY(0);
 		opacity: 1;
 	}
-
 	.tarjetas .tarjeta .cara.cara2 .contenido p {
 		font-size: 15px;
 	}
@@ -198,7 +210,6 @@ body {
 		background-color: #333;
 		color: white;
 	}
-	
 	footer {
 			background: #2CCC2C;
 			font-size:1rem;
@@ -213,71 +224,67 @@ body {
 	footer a {
 		text-decoration: none;
 	}
-
 footer div {
 	text-align: center;
 	padding-top: 0.3em;
 }
-
 /*Imagen uno y dos lo que hacen es achicar los tamaños de los logos de facebook e instagram, lo comento porque 
 ya lo borre una vez sin querer*/
-
 #Informacion_footer {
 	background-color: black;
 	display: flex;
 	width: 100vw;
 	height: 30vh;
 }
-
 #Informacion_footer div {
 	color: ghostwhite;
 	display: inline-flex;
 	margin: 10px auto;
 }
-
 #whatsapp {
 	position: fixed;
 	bottom: 20px;
 	right:20px;
- }
- svg {
+}
+svg {
 	width: 80px;
 	filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
 	color: white;
- }
-
-
-
-@media (max-width: 800px)
-		{
-			
-	
-			}
-
-
-
+}
 @media (max-width: 500px)
 	{
-
-		.navegacion-primaria{	
-			position: fixed;
-			inset: 0 0 0 30%;
-			flex-direction: column;
-			height: 100vh;
-			z-index: 50;
-			margin-bottom: 5em;
-			transform: translateX(100%);
-			}	
-			nav ul li:first-child{
-				margin-top: -150px;
-			}
-			nav ul li {
-			margin-bottom: 2em;
-			font-size: 1em;
+	
+		.presentacion_tarjetas {
+			margin-bottom:50px;
 		}
-		h1{
-			width:100vw;
-					}
+		body{
+		height: 400vh;
+		background-position: center 35vh;
+		background-size: 50%;
+	}
+	.tarjetas {
+		height: 500vh;
+		margin-top:300px;
+		background: transparent;
+	}
+	.tarjetas .tarjeta .cara {
+		width: 380px;
+		height: 300px;
+		transition: .4s;
+		margin: 0;
+		opacity: 0.2;
+	}
+	.tarjetas .tarjeta .cara.cara1 .contenido img {
+
+		display: flex;
+		position: relative;
+		width: 380px;
+		height: 300px;
+		transition: .4s;
+		border-radius:5px;
+		z-index: 6;
+		margin: 0;
+	}
 	}
 
 	.section-new {
