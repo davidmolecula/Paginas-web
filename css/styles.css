@@ -38,7 +38,6 @@ nav {
 		text-align: center;
 		transition: all .5s ease;
 		z-index:5;
-		border: 1px solid black;
 }
 .nav-links
 {
@@ -75,12 +74,11 @@ a{
 .clase-js-nav {
 	background-color: var(--white);
 	transition: all 1s ease;
-}
-.clase-js-nav2 {
-	background-color: black;
+	border: 1px solid black;
 }
 .clase-js-nav3 {
 	background-color:var(--lightblue);
+	border:none;
 }
 .clase-js-a{
 	color:black;
