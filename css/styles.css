@@ -103,6 +103,7 @@ a{
 
 	nav {
 		position: relative;
+		background-color: var(--darkblue);
 		z-index:50;
 	}
 	.hamburguesa {
@@ -144,7 +145,7 @@ a{
 		height: 50px;
 		width: 100vw;
 		border: 1px solid var(--black);
-		color:var(--white);
+		color:var(--black);
 		padding: 5px;
 		border-radius: 10px;
 		margin-bottom:30px
