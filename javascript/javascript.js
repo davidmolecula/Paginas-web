@@ -20,7 +20,7 @@ particlesJS("particles", {
           "nb_sides": 16
         },
         "image": {
-          "src": "../img/logobl.png",
+          "src": "img/logobl.png",
           "width": 100,
           "height": 100
         }
@@ -112,7 +112,7 @@ particlesJS("particles", {
   
   /* ---- stats.js config ---- */
   
-  var count_particles, stats, update;
+ /* var count_particles, stats, update;
   stats = new Stats;
   stats.setMode(0);
   stats.domElement.style.position = 'absolute';
@@ -130,5 +130,5 @@ particlesJS("particles", {
   };
   requestAnimationFrame(update);
 
-
+*/
 
