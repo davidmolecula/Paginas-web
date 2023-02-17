@@ -1,7 +1,7 @@
 particlesJS("particles", {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 50,
         "density": {
           "enable": true,
           "value_area": 800
@@ -11,16 +11,16 @@ particlesJS("particles", {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
-          "width": 0,
+          "width": 1,
           "color": "#000000"
         },
         "polygon": {
           "nb_sides": 16
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "/img/logobl.png",
           "width": 100,
           "height": 100
         }
@@ -36,7 +36,7 @@ particlesJS("particles", {
         }
       },
       "size": {
-        "value": 3,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,

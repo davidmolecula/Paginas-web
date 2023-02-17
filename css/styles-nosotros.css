@@ -1,61 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 
+.clase-js-nav {
+	background-color: white;
+	transition: all 1s ease;
+}
+.clase-js-nav a {
+	color: blueviolet;
+}
+.clase-js-nav2 {
+	background-color: black;
+}
+.clase-js-nav3 {
+	background-color: yellow;
+}
 nav {
-	margin-bottom: 0;
-	margin-top: 0;
-	padding-top: 0;
-	height: 3em;
-}
-h1{
-	background-image: url("Foto-grupal-ceit.jpg");
-	background-size:cover;
-	font-family: unset;
-	font-size: 10rem;
-	max-height: 3em;
-	color:black;
+	display: flex;
+	height: 8vh;
+	width: 100%;
+	background: blueviolet;
+	justify-content: space-between;
+	text-align: center;
+	position: fixed;
+	transition: all 1s ease;
 }
 
-h2 {
+
+.nav-links
+{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	height: 100%;
+	justify-content: space-around;
+	padding: 5px;
+	margin-right: 5%;
+}
+.nav-links>li {
+	align-self: center;
+}
+
+.link{
+	color: white;
+	text-decoration: none;
+	z-index: 50;
+}
+
+.link:hover {
+	background-color: white;
+	color: blueviolet;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all .3s ease-in-out;
+}
+
+section{
 	display: flex;
 	justify-content: center;
-	margin-top: 3rem;
-	font-size:5rem;
-	color: white;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(255, 245, 245);
 	
 }
-.texto-nosotros{
-	margin-left: 1em;
+.contenedor{
+	display: flex;
+	width: 80vw;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	box-shadow: 0 5px 10px rgba(65, 59, 59, 0.61);
+}
+section div {
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
 }
 
-.li-nosotros {
-	border-radius:5em;
-	display: inline-flex;
-	background: none;
-	font-size: 1.5em;
-	font-family: 'Open Sans', sans-serif;
-	color:white;
-	margin: 1em;
-	margin-left: 20%;
-	padding: .5em;
-	background-color: rgba(0, 0, 0, .7);
+.div-uno{
+	background-image: url(/img/cursos-ceit.jpg);
+	background-size: cover;
+	height: 450px;
+	align-self: center;
 }
 
-.li-nosotros:first-child {
-	margin-top: 3em;
-}
-#carla {
-	border-radius: 5em;
-	width: 10rem;
-	height: 10rem;
-}
-
-#jonas{
-	border-radius: 5em;
-	width: 10rem;
-	height: 10rem;
-	
+.div-dos
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.589);
+	height: 450px;
+	font-family: 'Noto Serif', serif;
+	background-color: rgb(255, 245, 245);
 }
 
-p {
-	font-weight: 20;
+h1 {
+	font-size: 40px;
 }
-
