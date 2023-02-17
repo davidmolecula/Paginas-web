@@ -53,8 +53,9 @@ nav {
 a{
 	color: var(--black);
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 18px;
 	margin-left:3px;
+	font-weight: 50;
 	font-family: 'Lobster', cursive;
 }
 .link {
@@ -92,12 +93,6 @@ a{
 	background-repeat:no-repeat;
 	height: 200vh;
 }
-
-
-
-
-
-
 
 @media (max-width:768px) {
 
