@@ -28,18 +28,18 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
     if(!entry.isIntersecting)
     {
       nav.classList.add("clase-js-nav");
-      link1.classList.remove("link");
-      link2.classList.remove("link");
-      link3.classList.remove("link");
-      link4.classList.remove("link");
-      link5.classList.remove("link");
-    }else {
-      nav.classList.remove("clase-js-nav");
       link1.classList.add("link");
       link2.classList.add("link");
       link3.classList.add("link");
       link4.classList.add("link");
       link5.classList.add("link");
+    }else {
+      nav.classList.remove("clase-js-nav");
+      link1.classList.remove("link");
+      link2.classList.remove("link");
+      link3.classList.remove("link");
+      link4.classList.remove("link");
+      link5.classList.remove("link");
     }
   });
 }, section1Options);
@@ -52,19 +52,9 @@ const intersectionObserver=new IntersectionObserver(function(entries, section2Ob
     if(!entry.isIntersecting)
     {
       nav.classList.remove("clase-js-nav3");
-      link1.classList.remove("link");
-      link2.classList.remove("link");
-      link3.classList.remove("link");
-      link4.classList.remove("link");
-      link5.classList.remove("link");
- 
     }else {
     nav.classList.add("clase-js-nav3");
-      link1.classList.add("link");
-      link2.classList.add("link");
-      link3.classList.add("link");
-      link4.classList.add("link");
-      link5.classList.add("link");
+    
     }
   });
 }, intersectionOptions);

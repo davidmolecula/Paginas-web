@@ -18,11 +18,10 @@ body{
     --lightblue:#1C5787;
 	--darkgreen:#155E16;
 	--lightgreen:#22D827;
-	--white:#dee0eb;
+	--white:#ffffff;
 }
 #particles {
-
-	height: 200vh;
+	height: 120vh;
 }
 
 /* HEADER */
@@ -51,6 +50,20 @@ nav {
 	align-self: center;
 }
 a{
+	color: var(--white);
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+	padding: 8px;
+}
+a:hover {
+	color:var(--black);
+	background-color: var(--white);
+	
+	border-radius:3px;
+	transition: all .5s ease;
+}
+.link {
+	
 	color: var(--black);
 	text-decoration: none;
 	font-size: 18px;
@@ -58,12 +71,9 @@ a{
 	font-weight: 50;
 	font-family: 'Lobster', cursive;
 }
-.link {
-	color: var(--white);
-}
 .link:hover {
 	background-color: white;
-	color: blueviolet;
+	color: var(--lightblue);
 	padding: 10px;
 	border-radius: 10px;
 	transition: all .3s ease-in-out;
@@ -75,7 +85,7 @@ a{
 .clase-js-nav {
 	background-color: var(--white);
 	transition: all 1s ease;
-	border: 1px solid black;
+	border: 2px solid var(--lightblue);
 }
 .clase-js-nav3 {
 	background-color:var(--lightblue);
@@ -91,7 +101,7 @@ a{
 	background-position: center 25vh;
 	background-size: 30%;
 	background-repeat:no-repeat;
-	height: 200vh;
+	height: 120vh;
 }
 
 @media (max-width:768px) {
@@ -159,26 +169,34 @@ a{
 
 	/*LA SECCION PRINCIPAL SON LOS CUATRO FLYERS CENTRALES*/
 
-	.presentacion_tarjetas {
+	h1 {
 	color: #fff;
-	font-size: 2.5em;
-	padding-top:100px;
-	padding:100px 0px 0px 0px;
-	text-align: center;
-	
+	font-size: 3em;
+	padding:150px 0px 0px 0px;
+	text-align: center;	
 }
 
 
-.presentacion_tarjetas span {
-	color: var(--lightgreen);
+h1 span {
+	color: var(--lightblue);
 	font-family: 'Lobster', cursive;
 	font-size:1.4em;
 	height: 500px;
 }
+.presentacion_tarjetas {
+	color: #fff;
+	font-size:1.6em;
+	padding:40px 100px 40px 100px;
+	text-align: center;	
+}
+
+
+
 	.tarjetas {
 		display: flex;
-		height: 100vh;
-		width: 100vw;
+		align-self: center;
+		height: 150vh;
+		width: 80%;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		justify-content: space-evenly;
@@ -186,7 +204,7 @@ a{
 	}
 	.tarjetas .tarjeta .cara {
 		width: 300px;
-		height: 250px;
+		height: 200px;
 		transition: .4s ease;
 		margin: 0;
 	}
@@ -198,7 +216,7 @@ a{
 		align-items: center;
 		z-index: 1;
 		transform: translateY(100px);
-		border-radius:5px;
+		border-radius:10px;
 		margin: 0;
 	}
 	.tarjetas .tarjeta:hover .cara.cara1 {
@@ -220,7 +238,7 @@ a{
 		width: 300px;
 		height: 250px;
 		transition: .4s;
-		border-radius:5px;
+		border-radius:10px;
 		z-index: 6;
 		margin: 0;
 	}
@@ -242,20 +260,16 @@ a{
 		box-sizing: border-box;
 	}
 	.tarjetas .tarjeta:hover .cara.cara2 {
-		transform: translateY(0);
+		transform: translateY(25px);
 		opacity: 1;
 	}
 	.tarjetas .tarjeta .cara.cara2 .contenido p {
 		font-size: 15px;
 	}
-	.tarjetas .tarjeta .cara.cara2 .contenido a {
-		position: relative;
-		font-size: 12px;
-		bottom:-20px;
-		border-radius: 1px;
-		padding: 5px;
-		background-color: #333;
-		color: white;
+	.tarjeta-link-container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: end;
 	}
 	footer {
 			background: #000000;
@@ -313,7 +327,6 @@ ya lo borre una vez sin querer*/
 		opacity: 0.2;
 	}
 	.tarjetas .tarjeta .cara.cara1 .contenido img {
-
 		display: flex;
 		position: relative;
 		width: 380px;
@@ -327,16 +340,107 @@ ya lo borre una vez sin querer*/
 
 	.section-2 {
 		height:200vh;
-		background: rgb(1, 33, 43);
-	}
-	.section-3 {
-		height:200vh;
-		background: var(--darkblue);
+		background: linear-gradient(to bottom, black, var(--lightblue));
 		display: flex;
-		align-items: flex-end;
+		flex-direction: column;
 	}
-	.intersection {
-		width:100px;
-		height: 600px;
-		border:1px solid var(--white);
+
+	.section-3{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(to top, black, var(--lightblue));
+		
+	}
+	.contenedor{
+		display: flex;
+		min-width: 80%;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+		box-shadow: 0 5px 10px rgba(65, 59, 59, 0.61);
+
+	}
+	.section-3 div {
+		width: 500px;
+		height: 500px;
+		border-radius: 10px;
+	}
+	
+	.div-uno{
+		background-image: url(../img/beca_belgrano.jpg);
+		background-size: cover;
+		height: 450px;
+		align-self: center;
+	}
+	
+	.intersection
+	{
+		display: flex;
+		gap:20px;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		box-shadow: 5px 0px 20px 1px rgba(0, 0, 0, 0.589);
+		height: 450px;
+		font-family: 'Noto Serif', serif;
+		background-color: white;
+	}
+
+	h2{
+		font-size: 2.5em;
+	}
+
+	#section-3-buttons {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap:20px;
+	}
+	.tarjeta-link-1, .tarjeta-link-2 {
+		border: none;
+		border-radius: 10px;
+		height:50px;
+		font-size: 20px;
+		font-family: 'Lobster', cursive;
+		font-weight: 500;
+		padding:10px 10px 2px 10px;
+	}
+	.tarjeta-link-1{
+		
+		color: var(--white);
+		background-color: var(--lightblue);
+	}
+	.tarjeta-link-2
+	{
+		color: var(--lightblue);
+		background-color: var(--white);
+		border: 1px solid var(--lightblue);
+		
+	}
+
+	.tarjeta-link-2:hover {
+		color: var(--white);
+		background-color: var(--lightblue);
+		border-radius: 10px;
+		
+	}
+
+	.tarjeta-link-1:hover {
+		color: var(--lightblue);
+		background-color: var(--white);
+		border: 1px solid var(--lightblue);
+		transition: all .5s ease;
+	} 
+
+	.texto {
+		margin: 0px 5px 0px 5px;
+		text-align: start;
+	}
+
+	.resaltar {
+		color: red;
 	}

@@ -1,7 +1,7 @@
 particlesJS("particles", {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 80,
         "density": {
           "enable": true,
           "value_area": 800
@@ -11,7 +11,7 @@ particlesJS("particles", {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "image",
+        "type": "circle",
         "stroke": {
           "width": 1,
           "color": "#000000"
@@ -36,7 +36,7 @@ particlesJS("particles", {
         }
       },
       "size": {
-        "value": 20,
+        "value": 3,
         "random": true,
         "anim": {
           "enable": false,
