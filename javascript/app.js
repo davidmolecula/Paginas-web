@@ -46,7 +46,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
 
 section1Observer.observe(section1);
 
-const intersectionObserver=new IntersectionObserver(function(entries, section2Observer) 
+const intersectionObserver=new IntersectionObserver(function(entries, intersectionObserver) 
 {
   entries.forEach(entry =>{
     if(!entry.isIntersecting)

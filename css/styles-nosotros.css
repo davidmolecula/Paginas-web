@@ -102,3 +102,16 @@ nav {
 h1 {
 	font-size: 40px;
 }
+
+#empty {
+	height: 100vh;
+	background: linear-gradient(45deg, red,orange);
+}
+#empty2 {
+	height: 100vh;
+	background: linear-gradient(45deg, rgb(255, 0, 242),rgb(132, 0, 255));
+}
+#empty3 {
+	height: 100vh;
+	background: linear-gradient(45deg, rgb(177, 174, 174),rgb(255, 255, 255));
+}
