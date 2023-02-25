@@ -17,6 +17,7 @@ const link2=document.getElementById("link-2");
 const link3=document.getElementById("link-3");
 const link4=document.getElementById("link-4");
 const link5=document.getElementById("link-5");
+const svg=document.getElementsByTagName('svg');
 
 const section1Options={};
 const section2Options={};
@@ -33,6 +34,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
       link3.classList.add("link");
       link4.classList.add("link");
       link5.classList.add("link");
+      svg[0].setAttribute('fill','black');
     }else {
       nav.classList.remove("clase-js-nav");
       link1.classList.remove("link");
@@ -40,6 +42,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
       link3.classList.remove("link");
       link4.classList.remove("link");
       link5.classList.remove("link");
+      svg[0].setAttribute('fill','white');
     }
   });
 }, section1Options);
@@ -60,3 +63,8 @@ const intersectionObserver=new IntersectionObserver(function(entries, intersecti
 }, intersectionOptions);
 
 intersectionObserver.observe((intersection));
+
+
+
+
+
