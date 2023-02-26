@@ -49,20 +49,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
 
 section1Observer.observe(section1);
 
-const intersectionObserver=new IntersectionObserver(function(entries, intersectionObserver) 
-{
-  entries.forEach(entry =>{
-    if(!entry.isIntersecting)
-    {
-      nav.classList.remove("clase-js-nav3");
-    }else {
-    nav.classList.add("clase-js-nav3");
-    
-    }
-  });
-}, intersectionOptions);
 
-intersectionObserver.observe((intersection));
 
 
 

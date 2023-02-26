@@ -360,39 +360,31 @@ ya lo borre una vez sin querer*/
 		height: 100vh;
 		width: 100%;
 		background: black;
-		
+
 	}
 	.contenedor{
 		display: flex;
+		flex-wrap: wrap;
 		min-width: 80%;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: space-around;
+		align-items: flex-start;
 		gap: 20px;
 		box-shadow: 0 5px 10px rgba(65, 59, 59, 0.61);
+	}
 
-	}
-	.section-3 div {
-		width: 500px;
-		height: 500px;
-		border-radius: 10px;
-	}
-	
-	.div-uno{
-		background-image: url(../Img/beca_belgrano.jpg);
-		background-size: cover;
-		height: 450px;
-		align-self: center;
-	}
 	
 	.intersection
 	{
+		width: 500px;
+		max-height: 73vh;
+		border-radius: 10px;
 		display: flex;
 		gap:20px;
 		justify-content: center;
+		justify-self: flex-end;
 		text-align: center;
 		flex-direction: column;
 		box-shadow: 5px 0px 20px 1px rgba(0, 0, 0, 0.589);
-		height: 450px;
 		font-family: 'Noto Serif', serif;
 		background-color: white;
 	}
@@ -506,7 +498,6 @@ ya lo borre una vez sin querer*/
 			background-color: var(--white);
 			height: 50px;
 			width: 100vw;
-			border: 1px solid var(--black);
 			color:var(--black);
 			padding: 5px;
 			border-radius: 10px;
@@ -540,8 +531,6 @@ ya lo borre una vez sin querer*/
 		}
 	
 		.tarjetas .tarjeta .cara.cara1 .contenido img {
-	
-	
 			width: 500px;
 			height: 450px;
 		}
@@ -570,4 +559,56 @@ ya lo borre una vez sin querer*/
 	}
 	#section-5{
 		background: black;
+	}
+
+	.section-3-carrousel{
+		width: 500px;
+		height: 600px;
+		position: relative;
+		max-width: 120em;
+		box-shadow: 0px 8px 32px 0px black;
+		border-radius:15px;
+
+		overflow-x: hidden;
+	}
+
+	.section-3-carrousel .grande {
+		width: 400%;
+		border-radius:15px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		transition: all .5s ease;
+		transform: translateX(0%);
+	}
+
+	.section-3-carrousel .img{
+		width: calc(100% / 4);
+		min-height: 10vh;
+		max-height: 73vh;
+		border-radius:15px;
+	}
+
+	.section-3-carrousel .puntos {
+		width: 100%;
+		padding: .2em;
+		display: flex;
+		flex-flow:row nowrap;
+		justify-content: center;
+	
+	}
+
+	.section-3-carrousel .punto {
+		width: 1em;
+		height: 1em;
+		margin: .5em;
+		background:linear-gradient(45deg,white,grey);
+		box-shadow: 0px 8px 32px 0px rgb(7, 7, 7);
+		border-radius:15px;
+		list-style: none;
+	}
+
+	.section-3-carrousel .punto.activo {
+		background: var(--lightblue);
 	}
