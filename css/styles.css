@@ -359,7 +359,7 @@ ya lo borre una vez sin querer*/
 		align-items: center;
 		height: 150vh;
 		width: 100%;
-		background: linear-gradient(to bottom, var(--lightblue), black);
+		background:linear-gradient(45deg, white,darkgrey);
 	}
 	.section-3-container{
 		display: flex;
@@ -376,19 +376,22 @@ ya lo borre una vez sin querer*/
 		position: relative;
 		width: 500px;
 		height: 73vh;
+		padding: 30px;
 		border-radius: 10px;
 		display: flex;
 		gap:20px;
 		text-align: center;
 		flex-direction: column;
 		box-shadow: 0px 1px 3px 0px black;
+		background:linear-gradient(45deg, white,darkgrey);
 		color: white;
 	}
+.intersection-h2 {
+	font-size: 3em;
+}
+	.intersection-h2, .intersection-h3{
+		color: var(--lightblue);
 
-	.intersection-h2{
-		font-size: 3em;
-		color: white;
-		text-shadow: 1px 1px 3px black;
 	}
 
 	#section-3-links {
@@ -403,7 +406,7 @@ ya lo borre una vez sin querer*/
 	.tarjeta-link-1, .tarjeta-link-2 {
 		border: none;
 		border-radius: 10px;
-		padding: 10px;
+		padding: 13px;
 		width: fit-content;
 		height:50px;
 		font-size: 15px;
@@ -416,15 +419,15 @@ ya lo borre una vez sin querer*/
 	}
 	.tarjeta-link-2
 	{
-		color: white;
-		border: 1px solid white;
+		color: var(--lightblue);
+		border: 1px solid var(--darkblue);
 		
 		
 	}
 
 	.tarjeta-link-2:hover {
 		color: white;
-		background-color: var(--darkblue);
+		background-color: var(--lightblue);
 		border-radius: 10px;
 		
 	}
@@ -435,13 +438,12 @@ ya lo borre una vez sin querer*/
 		border: 1px solid var(--lightblue);
 		transition: all .5s ease;
 	} 
-	.intersection-h3{
-		text-shadow: 1px 1px 3px black;
-	}
+	
 	.intersection-text {
 		margin: 0px 20px 0px 20px;
 		text-align: start;
-		text-shadow: 1px 1px 3px black;
+		color: black;
+		font-weight: bold;
 	}
 
 	.resaltar {
