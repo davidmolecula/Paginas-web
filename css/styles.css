@@ -87,10 +87,9 @@ nav {
 a{
 	color: var(--white);
 	text-decoration: none;
-	font-family: 'Lobster', cursive;
 	width: 100%;
-	font-size: 18px;
-	font-weight: 50;
+	font-size: 15px;
+	font-weight: bold;
 	padding: 2px 5px 2px 5px;
 	border-radius: 10px;
 	border:1px solid rgba(0, 0, 0, 0);	
@@ -102,9 +101,9 @@ a:hover {
 .link {
 	color: var(--black);
 	text-decoration: none;
-	font-size: 18px;
-	font-weight: 50;
-	font-family: 'Lobster', cursive;
+	font-size: 15px;
+	font-weight: bold;
+
 }
 .link:hover {
 	transition: all .5s ease-in-out;
@@ -183,7 +182,7 @@ a:hover {
 
 	h1 {
 	color: white;
-	text-decoration: underline;
+	text-shadow: 3px 3px 6px black;
 	font-size: 3em;
 	padding:150px 0px 0px 0px;
 	text-align: center;	
@@ -195,6 +194,7 @@ a:hover {
 	color: #fff;
 	font-size:1.6em;
 	padding:40px 100px 40px 100px;
+	text-shadow: 1px 1px 2px black;
 	text-align: center;	
 }
 
@@ -211,14 +211,15 @@ a:hover {
 		margin:0;		
 	}
 	.tarjetas .tarjeta .cara {
-		width: 300px;
-		height: 200px;
+		width: 25vw;
+		height: 45vh;
 		transition: .4s ease;
 		margin: 0;
 	}
 	.tarjetas .tarjeta .cara.cara1 {
 		position: relative;
 		display: flex;
+
 		align-content: center;
 		justify-content: center;
 		align-items: center;
@@ -233,18 +234,13 @@ a:hover {
 	.tarjetas .tarjeta:hover  {
 		transform: translateY(0);	 
 	}
-	.tarjetas .tarjeta .cara.cara1 .contenido {
-	
-		transition: .5s;
-		color: white;	
-		margin: 0;
-	}
+
 	.tarjetas .tarjeta .cara.cara1 .contenido img {
 
 		display: flex;
 		position: relative;
-		width: 300px;
-		height: 250px;
+		width: 25vw;
+		height: 50vh;
 		transition: .4s;
 		border-radius:10px;
 		z-index: 6;
@@ -258,26 +254,30 @@ a:hover {
 	.tarjetas .tarjeta .cara.cara2 {
 		position: relative;
 		display: flex;
+		width: 25vw;
+		height: 30vh;
 		padding: 20px;
-		background-color:var(--white);
-		box-shadow: 0px 8px 32px 0px rgba(31,38,135,0.3);
+		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
 		color: var(--darkblue);
 		font-weight: bold;
 		transform: translateY(-100px);
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius:10px;
 		opacity: 0;
 	}
 	.tarjetas .tarjeta:hover .cara.cara2 {
-		transform: translateY(25px);
+		transform: translateY(15px);
 		opacity: 1;
 	}
 	.tarjetas .tarjeta .cara.cara2 .contenido p {
+		color: white;
 		font-size: 15px;
+		text-shadow: 1px 1px 2px black;
 	}
 	.tarjeta-link-container {
 		position: absolute;
 		bottom:0;
 		height: 50px;
-		border: 1px solid black;
 	}
 	footer {
 			background: #000000;
@@ -321,7 +321,7 @@ ya lo borre una vez sin querer*/
 		height: 400vh;
 		background-position: center 35vh;
 		background-size: 50%;
-	}
+		}
 	.tarjetas {
 		height: 500vh;
 		margin-top:300px;
@@ -348,7 +348,7 @@ ya lo borre una vez sin querer*/
 
 	.section-2 {
 
-		background: linear-gradient(to top, black, var(--lightblue));
+		background:var(--lightblue);
 		display: flex;
 		flex-direction: column;
 	}
@@ -357,73 +357,74 @@ ya lo borre una vez sin querer*/
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 150vh;
 		width: 100%;
-		background: black;
-
+		background: linear-gradient(to bottom, var(--lightblue), black);
 	}
-	.contenedor{
+	.section-3-container{
 		display: flex;
 		flex-wrap: wrap;
 		min-width: 80%;
 		justify-content: space-around;
-		align-items: flex-start;
 		gap: 20px;
-		box-shadow: 0 5px 10px rgba(65, 59, 59, 0.61);
+		border-radius: 10px;
 	}
 
 	
 	.intersection
 	{
+		position: relative;
 		width: 500px;
-		max-height: 73vh;
+		height: 73vh;
 		border-radius: 10px;
 		display: flex;
 		gap:20px;
-		justify-content: center;
-		justify-self: flex-end;
 		text-align: center;
 		flex-direction: column;
-		box-shadow: 5px 0px 20px 1px rgba(0, 0, 0, 0.589);
-		font-family: 'Noto Serif', serif;
-		background-color: white;
+		box-shadow: 0px 1px 3px 0px black;
+		color: white;
 	}
 
-	h2{
-		font-size: 2.5em;
+	.intersection-h2{
+		font-size: 3em;
+		color: white;
+		text-shadow: 1px 1px 3px black;
 	}
 
-	#section-3-buttons {
-		height: 100px;
+	#section-3-links {
+		height: 60px;
 		display: flex;
-		align-items: center;
 		justify-content: center;
+		position: absolute;
+		left: 30%;
+		bottom: 0%;
 		gap:20px;
 	}
 	.tarjeta-link-1, .tarjeta-link-2 {
 		border: none;
 		border-radius: 10px;
+		padding: 10px;
+		width: fit-content;
 		height:50px;
-		font-size: 20px;
-		font-family: 'Lobster', cursive;
-		font-weight: 500;
+		font-size: 15px;
+		font-weight: bold;
 	}
 	.tarjeta-link-1{
 		
-		color: var(--white);
+		color: white;
 		background-color: var(--lightblue);
 	}
 	.tarjeta-link-2
 	{
-		color: var(--lightblue);
-		background-color: var(--white);
-		border: 1px solid var(--lightblue);
+		color: white;
+		border: 1px solid white;
+		
 		
 	}
 
 	.tarjeta-link-2:hover {
-		color: var(--white);
-		background-color: var(--lightblue);
+		color: white;
+		background-color: var(--darkblue);
 		border-radius: 10px;
 		
 	}
@@ -434,14 +435,19 @@ ya lo borre una vez sin querer*/
 		border: 1px solid var(--lightblue);
 		transition: all .5s ease;
 	} 
-
-	.texto {
+	.intersection-h3{
+		text-shadow: 1px 1px 3px black;
+	}
+	.intersection-text {
 		margin: 0px 20px 0px 20px;
 		text-align: start;
+		text-shadow: 1px 1px 3px black;
 	}
 
 	.resaltar {
 		color: red;
+		text-shadow: none;
+		font-weight: bold;
 	}
 
 	.section-4 div {
@@ -555,7 +561,7 @@ ya lo borre una vez sin querer*/
 
 	#section-4
 	{
-		background:black;
+		background:darkgrey;
 	}
 	#section-5{
 		background: black;
@@ -566,9 +572,8 @@ ya lo borre una vez sin querer*/
 		height: 600px;
 		position: relative;
 		max-width: 120em;
-		box-shadow: 0px 8px 32px 0px black;
+		
 		border-radius:15px;
-
 		overflow-x: hidden;
 	}
 
@@ -588,6 +593,7 @@ ya lo borre una vez sin querer*/
 		min-height: 10vh;
 		max-height: 73vh;
 		border-radius:15px;
+		box-shadow: 1px 1px 4px 0px black;
 	}
 
 	.section-3-carrousel .puntos {
@@ -604,7 +610,7 @@ ya lo borre una vez sin querer*/
 		height: 1em;
 		margin: .5em;
 		background:linear-gradient(45deg,white,grey);
-		box-shadow: 0px 8px 32px 0px rgb(7, 7, 7);
+		box-shadow: 0px 4px 8px 0px black;
 		border-radius:15px;
 		list-style: none;
 	}
