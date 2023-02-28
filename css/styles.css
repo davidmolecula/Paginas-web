@@ -355,11 +355,19 @@ ya lo borre una vez sin querer*/
 
 	.section-3{
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: space-around;
 		align-items: center;
 		height: 150vh;
 		width: 100%;
 		background:linear-gradient(45deg, white,darkgrey);
+	}
+
+	.section-3-h2
+	{
+		font-size: 4em;
+		color: var(--black);
+		padding: 20px;
 	}
 	.section-3-container{
 		display: flex;
@@ -368,6 +376,7 @@ ya lo borre una vez sin querer*/
 		justify-content: space-around;
 		gap: 20px;
 		border-radius: 10px;
+		background: #16161a;
 	}
 
 	
@@ -390,7 +399,7 @@ ya lo borre una vez sin querer*/
 	font-size: 3em;
 }
 	.intersection-h2, .intersection-h3{
-		color: var(--lightblue);
+		color: var(--black);
 
 	}
 
@@ -417,15 +426,22 @@ ya lo borre una vez sin querer*/
 		color: white;
 		background-color: var(--lightblue);
 	}
-	.tarjeta-link-2
+	.tarjeta-link-2{
+		color: white;
+		border:1px solid white;
+	}
+
+	.tarjeta-link-2:hover{
+		color: var(--lightblue);
+		background:rgb(240, 238, 238);
+	}
+	#tarjeta-link-2
 	{
 		color: var(--lightblue);
 		border: 1px solid var(--darkblue);
-		
-		
 	}
 
-	.tarjeta-link-2:hover {
+	#tarjeta-link-2:hover {
 		color: white;
 		background-color: var(--lightblue);
 		border-radius: 10px;
@@ -447,7 +463,7 @@ ya lo borre una vez sin querer*/
 	}
 
 	.resaltar {
-		color: red;
+		color: rgb(167, 12, 12);
 		text-shadow: none;
 		font-weight: bold;
 	}
@@ -611,8 +627,8 @@ ya lo borre una vez sin querer*/
 		width: 1em;
 		height: 1em;
 		margin: .5em;
-		background:linear-gradient(45deg,white,grey);
-		box-shadow: 0px 4px 8px 0px black;
+		background: rgb(240, 240, 240);;
+		box-shadow: 0px 2px 4px 0px black;
 		border-radius:15px;
 		list-style: none;
 	}
