@@ -373,6 +373,7 @@ ya lo borre una vez sin querer*/
 		display: flex;
 		flex-wrap: wrap;
 		min-width: 80%;
+		padding: 30px;
 		justify-content: space-around;
 		gap: 20px;
 		border-radius: 10px;
@@ -482,7 +483,7 @@ ya lo borre una vez sin querer*/
 		nav {
 			position: relative;
 			background-color: var(--darkblue);
-			z-index:50;
+		
 		}
 		.hamburguesa {
 			position: absolute;
@@ -491,6 +492,9 @@ ya lo borre una vez sin querer*/
 			top:50%;
 			transform: translate(-5%,-50%);
 			z-index: 2;
+		}
+		#home {
+			display: none;
 		}
 	
 		.line {
@@ -511,7 +515,7 @@ ya lo borre una vez sin querer*/
 		}
 	
 		.nav-links.open {
-			-webkit-clip-path:circle(1200px at 90% -20%);
+			-webkit-clip-path:circle(1500px at 90% -20%);
 			
 		}
 	
