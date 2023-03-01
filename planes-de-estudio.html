@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CEIT</title>
+
+	<link rel="shortcut icon" type="image/jpg" href="Img/logobl.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/styles-planes.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Merriweather&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a id="home" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill=black width="30px"
+                style="margin-left:1%;" viewBox="0 0 576 512">
+                <path
+                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg></a>
+        <div class="hamburguesa">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="link" id="link-1" href="index.html#section-2">Actividades</a></li>
+            <li><a class="link" id="link-2" href="index.html#section-3">Becas</a></li>
+            <li><a class="link" id="link-3" href="index.html#section-4">Informacion general</a></li>
+            <li><a class="link" id="link-4" href="index.html#section-5">Nosotros</a></li>
+            <!--deportes carrusel, ajedrez, basquet,
+            radio-->
+            <li><a class="link" id="link-5" href="#">Planes de estudios 🔽</a>
+                <ul class="dropdown-planes">
+                    <li><a href="#">Ing. Electronica</a></li>
+                    <li><a href="#">Ing. Mecanica</a></li>
+                    <li><a href="#">Ing. Industrial</a></li>
+                    <li><a href="#">Ing. Quimica</a></li>
+                    <li><a href="#">Ing. Electrica</a></li>
+                    <li><a href="#">Ing. Civil</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="electronica" id="electronica">
+        <h1 class="titulo-planes">Planes de estudio y sus principales cambios</h1>
+
+			<div class="electronica-container">
+				<div class="electronica-carrousel">
+					<div class="grande">
+						<img src="Img/beca_belgrano.jpg" alt="Imagen 1" class="img">
+						<img src="Img/beca_bienestar.jpg" alt="Imagen 2" class="img">
+						<img src="Img/caja-4.jpg" alt="Imagen 2" class="img">
+						<img src="Img/cursos-ceit.jpg" alt="Imagen 2" class="img">
+					</div>
+
+					<ul class="puntos">
+						<li class="punto activo"></li>
+						<li class="punto"></li>
+						<li class="punto"></li>
+						<li class="punto"></li>
+					</ul>
+				</div>
+				<div class="intersection">
+					<h2 class="intersection-h2">Becas Estratégicas Manuel Belgrano</h2>
+					<h3 class="intersection-h3">Convocatoria 2023</h3>
+					<p class="intersection-text">
+						Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+						estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+						país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+							hasta el 22 de febrero</span>.
+						Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+							marzo</span>.
+
+					</p>
+					<div id="electronica-links">
+						<a class="tarjeta-link-1" id="tarjeta-link-1" target="_blank"
+							href="https://becasmanuelbelgrano.educacion.gob.ar/ingreso_postulantes.php">Anotate acá</a>
+						<a class="tarjeta-link-2" id="tarjeta-link-2" target="_blank"
+							href="https://www.argentina.gob.ar/educacion/becas/becas-manuel-belgrano">Más info</a>
+					</div>
+
+				</div>
+			</div>
+		
+    </section>
+
+    <script src="javascript/carrousel-electronica.js"></script>
+</body>
+</html>
