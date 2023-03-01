@@ -616,7 +616,7 @@ ya lo borre una vez sin querer*/
 	#section-4
 	{
 		height: 220vh;
-	background:linear-gradient(to bottom, var(--lightblue), black);
+		background: #0a2133;
 		background-size: cover;
 	}
 
@@ -626,8 +626,9 @@ ya lo borre una vez sin querer*/
 		padding: 30px;
 		height: 3em;
 		border: 1px solid black;
-		background: black;
+		background: var(--lightblue);
 		color: rgb(240, 240, 240);
+		text-shadow: 2px 2px 4px black;
 	}
 
 	.section-4-container{
@@ -645,11 +646,13 @@ ya lo borre una vez sin querer*/
 	}
 	.section-4-div {
 		position: relative;
-		height: 300px;
+		height: 250px;
 		max-width: 300px;
 		min-width: 300px;
 		border-radius:10px;
-		border: 1px solid rgba(255, 255, 255, 0.3);;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
+		padding:5px;
 	}
 
 	.section-4-div::before, .section-4-div::after{
@@ -666,7 +669,7 @@ ya lo borre una vez sin querer*/
 	.section-4-div::before{
 		background: radial-gradient(
 			650px circle at var(--mouse-x) var(--mouse-y),
-			rgba(255,255,255,0.1),
+			rgba(255,255,255,0.05),
 			transparent 40%
 		);
 		z-index: 3;
@@ -679,19 +682,30 @@ ya lo borre una vez sin querer*/
 	.section-4-div::after{
 		background: radial-gradient(
 			400px circle at var(--mouse-x) var(--mouse-y),
-			rgba(255,255,255,0.1),
+			rgba(255,255,255,0.05),
 			transparent 40%
 		);
 		z-index: 1;
 	}
 
 	.section-4-h3 {
+		font-size:23px;
 		padding: 20px;
 		text-align: center;
+		background: var(--lightblue);
+
+		text-shadow: none;
+		/*color: black;*/
+		color: white;
+		text-shadow: 1px 1px 2px black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 	}
 	.section-4-p{
 		padding: 20px;
 		color: rgb(240, 240, 240);
+		font-weight: bold;
+		border-radius:inherit;
 	}
 	.section-4-a{
 		
