@@ -172,7 +172,7 @@ h1 {
 	margin-top:100px;
 }
 
-.electronica{
+.electronica, .mecanica, .industrial, .civil, .quimica, .electrica{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -188,7 +188,8 @@ h1 {
 	color: var(--black);
 	padding: 20px;
 }
-.electronica-container{
+.electronica-container,.mecanica-container,.industrial-container,.quimica-container,.civil-container,.electrica-container
+{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -196,15 +197,16 @@ h1 {
 	justify-content: space-between;
 	gap: 20px;
 	border-radius: 10px;
-	background: #16161a;
+	background:linear-gradient(to bottom, black,var(--darkblue));
+
 }
 
 
-.intersection
+.electronica-info,.mecanica-info,.industrial-info,.quimica-info,.civil-info,.electrica-info
 {
 	position: relative;
-	width: 500px;
-	height: 73vh;
+	width: 55%;
+	height: 100%;
 	padding: 30px;
 	border-radius: 10px;
 	display: flex;
@@ -215,67 +217,17 @@ h1 {
 	background:linear-gradient(45deg, white,darkgrey);
 	color: white;
 }
-.intersection-h2 {
+.electronica-info-h2,.mecanica-info-h2,.industrial-info-h2,.quimica-info-h2,.civil-info-h2,.electrica-info-h2{
 font-size: 3em;
 }
-.intersection-h2, .intersection-h3{
+.electronica-info-h3,.mecanica-info-h3,.industrial-info-h3,.quimica-info-h3,.civil-info-h3,.electrica-info-h3,.electronica-info-h2,.mecanica-info-h2,.industrial-info-h2,.quimica-info-h2,.civil-info-h2,.electrica-info-h2{
 	color: var(--black);
 
 }
 
-#electronica-links {
-	height: 60px;
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	left: 30%;
-	bottom: 0%;
-	gap:20px;
-}
-.tarjeta-link-1, .tarjeta-link-2 {
-	border: none;
-	border-radius: 10px;
-	padding: 13px;
-	width: fit-content;
-	height:50px;
-	font-size: 15px;
-	font-weight: bold;
-}
-.tarjeta-link-1{
-	
-	color: white;
-	background-color: var(--lightblue);
-}
-.tarjeta-link-2{
-	color: white;
-	border:1px solid white;
-}
 
-.tarjeta-link-2:hover{
-	color: var(--lightblue);
-	background:rgb(240, 238, 238);
-}
-#tarjeta-link-2
-{
-	color: var(--lightblue);
-	border: 1px solid var(--darkblue);
-}
 
-#tarjeta-link-2:hover {
-	color: white;
-	background-color: var(--lightblue);
-	border-radius: 10px;
-	
-}
-
-.tarjeta-link-1:hover {
-	color: var(--lightblue);
-	background-color: var(--white);
-	border: 1px solid var(--lightblue);
-	transition: all .5s ease;
-} 
-
-.intersection-text {
+.electronica-info-text,.mecanica-info-text,.industrial-info-text,.quimica-info-text,.civil-info-text,.electrica-info-text {
 	margin: 0px 20px 0px 20px;
 	text-align: start;
 	color: black;
@@ -288,18 +240,18 @@ font-size: 3em;
 	font-weight: bold;
 }
 
-.electronica-carrousel{
+.electronica-carrousel,.mecanica-carrousel,.industrial-carrousel,.civil-carrousel,.quimica-carrousel,.electrica-carrousel
+{
 	width: 500px;
 	height: 600px;
 	position: relative;
 	max-width: 120em;
-	
 	border-radius:15px;
 	overflow-x: hidden;
 }
 
-.electronica-carrousel .grande {
-	width: 400%;
+.electronica-carrousel .electronica-grande, .mecanica-carrousel .mecanica-grande,.industrial-carrousel .industrial-grande,.electrica-carrousel .electrica-grande {
+	width: 500%;
 	border-radius:15px;
 	display: flex;
 	flex-flow: row nowrap;
@@ -309,15 +261,35 @@ font-size: 3em;
 	transform: translateX(0%);
 }
 
-.electronica-carrousel .img{
-	width: calc(100% / 4);
-	min-height: 10vh;
-	max-height: 73vh;
+.civil-carrousel .civil-grande,.quimica-carrousel .quimica-grande
+{
+	width: 600%;
+	border-radius:15px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	transition: all .5s ease;
+	transform: translateX(0%);
+}
+
+.electronica-carrousel .img, .mecanica-carrousel .img,.industrial-carrousel .img,.electrica-carrousel .img{
+	width: calc(100% / 5);
+	min-height: 100%;
+	max-height: 70%;
 	border-radius:15px;
 	box-shadow: 1px 1px 4px 0px black;
 }
 
-.electronica-carrousel .puntos {
+.civil-carrousel .img,.quimica-carrousel .img{
+	width: calc(100% / 6);
+	min-height: 100%;
+	max-height: 70%;
+	border-radius:15px;
+	box-shadow: 1px 1px 4px 0px black;
+}
+
+.electronica-carrousel .electronica-puntos,.mecanica-carrousel .mecanica-puntos,.industrial-carrousel .industrial-puntos,.civil-carrousel .civil-puntos,.quimica-carrousel .quimica-puntos,.electrica-carrousel .electrica-puntos {
 	width: 100%;
 	padding: .2em;
 	display: flex;
@@ -326,7 +298,7 @@ font-size: 3em;
 
 }
 
-.electronica-carrousel .punto {
+.electronica-carrousel .electronica-punto, .mecanica-carrousel .mecanica-punto,.industrial-carrousel .industrial-punto,.civil-carrousel .civil-punto,.quimica-carrousel .quimica-punto,.electrica-carrousel .electrica-punto {
 	width: 1em;
 	height: 1em;
 	margin: .5em;
@@ -336,6 +308,6 @@ font-size: 3em;
 	list-style: none;
 }
 
-.electronica-carrousel .punto.activo {
+.electronica-carrousel .electronica-punto.activo, .mecanica-carrousel .mecanica-punto.activo ,.industrial-carrousel .industrial-punto.activo ,.civil-carrousel .civil-punto.activo ,.quimica-carrousel .quimica-punto.activo ,.electrica-carrousel .electrica-punto.activo {
 	background: var(--lightblue);
 }

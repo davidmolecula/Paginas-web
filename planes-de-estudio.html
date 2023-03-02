@@ -15,82 +15,288 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Lobster&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav>
-        <a id="home" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill=black width="30px"
-                style="margin-left:1%;" viewBox="0 0 576 512">
-                <path
-                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
-            </svg></a>
-        <div class="hamburguesa">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a class="link" id="link-1" href="index.html#section-2">Actividades</a></li>
-            <li><a class="link" id="link-2" href="index.html#section-3">Becas</a></li>
-            <li><a class="link" id="link-3" href="index.html#section-4">Informacion general</a></li>
-            <li><a class="link" id="link-4" href="index.html#section-5">Nosotros</a></li>
-            <!--deportes carrusel, ajedrez, basquet,
+	<nav>
+		<a id="home" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill=black width="30px"
+				style="margin-left:1%;" viewBox="0 0 576 512">
+				<path
+					d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+			</svg></a>
+		<div class="hamburguesa">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li><a class="link" id="link-1" href="index.html#section-2">Actividades</a></li>
+			<li><a class="link" id="link-2" href="index.html#section-3">Becas</a></li>
+			<li><a class="link" id="link-3" href="index.html#section-4">Informacion general</a></li>
+			<li><a class="link" id="link-4" href="index.html#section-5">Nosotros</a></li>
+			<!--deportes carrusel, ajedrez, basquet,
             radio-->
-            <li><a class="link" id="link-5" href="#">Planes de estudios 🔽</a>
-                <ul class="dropdown-planes">
-                    <li><a href="#">Ing. Electronica</a></li>
-                    <li><a href="#">Ing. Mecanica</a></li>
-                    <li><a href="#">Ing. Industrial</a></li>
-                    <li><a href="#">Ing. Quimica</a></li>
-                    <li><a href="#">Ing. Electrica</a></li>
-                    <li><a href="#">Ing. Civil</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+			<li><a class="link" id="link-5" href="planes-de-estudio.html">Planes de estudios 🔽</a>
+				<ul class="dropdown-planes">
+					<li><a href="planes-de-estudio.html#electronica">Ing. Electronica</a></li>
+					<li><a href="planes-de-estudio.html#mecanica">Ing. Mecanica</a></li>
+					<li><a href="planes-de-estudio.html#industrial">Ing. Industrial</a></li>
+					<li><a href="planes-de-estudio.html#quimica">Ing. Quimica</a></li>
+					<li><a href="planes-de-estudio.html#electrica">Ing. Electrica</a></li>
+					<li><a href="planes-de-estudio.html#civil">Ing. Civil</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
 
-    <section class="electronica" id="electronica">
-        <h1 class="titulo-planes">Planes de estudio y sus principales cambios</h1>
+	<section class="electronica" id="electronica">
+		<h1 class="titulo-planes">Planes de estudio y sus principales cambios</h1>
 
-			<div class="electronica-container">
-				<div class="electronica-carrousel">
-					<div class="grande">
-						<img src="Img/beca_belgrano.jpg" alt="Imagen 1" class="img">
-						<img src="Img/beca_bienestar.jpg" alt="Imagen 2" class="img">
-						<img src="Img/caja-4.jpg" alt="Imagen 2" class="img">
-						<img src="Img/cursos-ceit.jpg" alt="Imagen 2" class="img">
-					</div>
-
-					<ul class="puntos">
-						<li class="punto activo"></li>
-						<li class="punto"></li>
-						<li class="punto"></li>
-						<li class="punto"></li>
-					</ul>
+		<div class="electronica-container">
+			<div class="electronica-carrousel">
+				<div class="electronica-grande">
+					<img src="img/ING. ELECTRONICA/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. ELECTRONICA/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRONICA/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRONICA/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRONICA/5.jpg" alt="Imagen 2" class="img">
 				</div>
-				<div class="intersection">
-					<h2 class="intersection-h2">Becas Estratégicas Manuel Belgrano</h2>
-					<h3 class="intersection-h3">Convocatoria 2023</h3>
-					<p class="intersection-text">
-						Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
-						estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
-						país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
-							hasta el 22 de febrero</span>.
-						Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
-							marzo</span>.
 
-					</p>
-					<div id="electronica-links">
-						<a class="tarjeta-link-1" id="tarjeta-link-1" target="_blank"
-							href="https://becasmanuelbelgrano.educacion.gob.ar/ingreso_postulantes.php">Anotate acá</a>
-						<a class="tarjeta-link-2" id="tarjeta-link-2" target="_blank"
-							href="https://www.argentina.gob.ar/educacion/becas/becas-manuel-belgrano">Más info</a>
-					</div>
-
-				</div>
+				<ul class="electronica-puntos">
+					<li class="electronica-punto activo"></li>
+					<li class="electronica-punto"></li>
+					<li class="electronica-punto"></li>
+					<li class="electronica-punto"></li>
+					<li class="electronica-punto"></li>
+				</ul>
 			</div>
-		
-    </section>
+			<div class="electronica-info">
+				<h2 class="electronica-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="electronica-info-h3">Convocatoria 2023</h3>
+				<p class="electronica-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
 
-    <script src="javascript/carrousel-electronica.js"></script>
+				</p>
+			
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="mecanica" id="mecanica">
+
+
+		<div class="mecanica-container">
+			<div class="mecanica-carrousel">
+				<div class="mecanica-grande">
+					<img src="img/ING. MECANICA/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. MECANICA/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. MECANICA/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. MECANICA/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. MECANICA/5.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="mecanica-puntos">
+					<li class="mecanica-punto activo"></li>
+					<li class="mecanica-punto"></li>
+					<li class="mecanica-punto"></li>
+					<li class="mecanica-punto"></li>
+					<li class="mecanica-punto"></li>
+				</ul>
+			</div>
+			<div class="mecanica-info">
+				<h2 class="mecanica-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="mecanica-info-h3">Convocatoria 2023</h3>
+				<p class="mecanica-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
+
+				</p>
+			
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="industrial" id="industrial">
+
+
+		<div class="industrial-container">
+			<div class="industrial-carrousel">
+				<div class="industrial-grande">
+					<img src="img/ING. INDUSTRIAL/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. INDUSTRIAL/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. INDUSTRIAL/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. INDUSTRIAL/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. INDUSTRIAL/5.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="industrial-puntos">
+					<li class="industrial-punto activo"></li>
+					<li class="industrial-punto"></li>
+					<li class="industrial-punto"></li>
+					<li class="industrial-punto"></li>
+					<li class="industrial-punto"></li>
+				</ul>
+			</div>
+			<div class="industrial-info">
+				<h2 class="industrial-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="industrial-info-h3">Convocatoria 2023</h3>
+				<p class="industrial-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
+
+				</p>
+				
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="quimica" id="quimica">
+
+
+		<div class="quimica-container">
+			<div class="quimica-carrousel">
+				<div class="quimica-grande">
+					<img src="img/ING. QUIMICA/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. QUIMICA/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. QUIMICA/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. QUIMICA/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. QUIMICA/5.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. QUIMICA/6.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="quimica-puntos">
+					<li class="quimica-punto activo"></li>
+					<li class="quimica-punto"></li>
+					<li class="quimica-punto"></li>
+					<li class="quimica-punto"></li>
+					<li class="quimica-punto"></li>
+					<li class="quimica-punto"></li>
+				</ul>
+			</div>
+			<div class="quimica-info">
+				<h2 class="quimica-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="quimica-info-h3">Convocatoria 2023</h3>
+				<p class="quimica-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
+
+				</p>
+				
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="electrica" id="electrica">
+
+
+		<div class="electrica-container">
+			<div class="electrica-carrousel">
+				<div class="electrica-grande">
+					<img src="img/ING. ELECTRICA/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. ELECTRICA/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRICA/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRICA/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. ELECTRICA/5.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="electrica-puntos">
+					<li class="electrica-punto activo"></li>
+					<li class="electrica-punto"></li>
+					<li class="electrica-punto"></li>
+					<li class="electrica-punto"></li>
+					<li class="electrica-punto"></li>
+				</ul>
+			</div>
+			<div class="electrica-info">
+				<h2 class="electrica-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="electrica-info-h3">Convocatoria 2023</h3>
+				<p class="electrica-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
+
+				</p>
+				
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="civil" id="civil">
+		<div class="civil-container">
+			<div class="civil-carrousel">
+				<div class="civil-grande">
+					<img src="img/ING. CIVIL/1.jpg" alt="Imagen 1" class="img">
+					<img src="img/ING. CIVIL/2.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. CIVIL/3.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. CIVIL/4.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. CIVIL/5.jpg" alt="Imagen 2" class="img">
+					<img src="img/ING. CIVIL/6.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="civil-puntos">
+					<li class="civil-punto activo"></li>
+					<li class="civil-punto"></li>
+					<li class="civil-punto"></li>
+					<li class="civil-punto"></li>
+					<li class="civil-punto"></li>
+					<li class="civil-punto"></li>
+				</ul>
+			</div>
+			<div class="civil-info">
+				<h2 class="civil-info-h2">Becas Estratégicas Manuel Belgrano</h2>
+				<h3 class="civil-info-h3">Convocatoria 2023</h3>
+				<p class="civil-info-text">
+					Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de
+					estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro
+					país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero
+						hasta el 22 de febrero</span>.
+					Inscripción por primera vez: Desde el<span class="resaltar"> 22 de febrero hasta el 31 de
+						marzo</span>.
+
+				</p>
+				
+
+			</div>
+		</div>
+
+
+	</section>
+
+
+	<script src="javascript/carrousel-electronica.js"></script>
 </body>
+
 </html>
