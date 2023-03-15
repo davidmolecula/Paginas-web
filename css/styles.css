@@ -385,7 +385,7 @@ a:hover {
 	{
 		position: relative;
 		width: 30em;
-		height: fit-content;
+		height: 30em;
 		padding: 30px;
 		border-radius: 10px;
 		display: flex;
@@ -521,23 +521,7 @@ a:hover {
 		background: var(--lightblue);
 	}
 
-	#section-4
-	{
-		height: 220vh;
-		background: #0a2133;
-		background-size: cover;
-	}
-
-	.section-4-title, .servicios-h2 {
-		font-size: 3em;
-		text-align: center;
-		padding: 30px;
-		height: 3em;
-		width: 100%;
-		background: var(--darkblue);
-		color: rgb(240, 240, 240);
-		text-shadow: 2px 2px 4px black;
-	}
+	
 
 	.section-3-carrousel .grande {
 		width: 400%;
@@ -581,7 +565,23 @@ a:hover {
 		background: var(--lightblue);
 	}
 
+#section-4
+	{
+		height: 220vh;
+		background: #0a2133;
+		background-size: cover;
+	}
 
+	.section-4-title, .servicios-h2 {
+		font-size: 3em;
+		text-align: center;
+		padding: 30px;
+		height: 3em;
+		width: 100%;
+		background: var(--darkblue);
+		color: rgb(240, 240, 240);
+		text-shadow: 2px 2px 4px black;
+	}
 
 	.section-4-container{
 		display: flex;
@@ -596,10 +596,13 @@ a:hover {
 	#section-4-container:hover> .section-4-div::after{
 		opacity:1;
 	}
+	
 	.section-4-div {
+		display: flex;
+		flex-direction: column;
 		position: relative;
 		height: 250px;
-		width: 15em;
+		width: 18em;
 		border-radius:10px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
@@ -653,7 +656,8 @@ a:hover {
 		border-top-right-radius: 10px;
 	}
 	.section-4-p{
-		padding: 10px 20px 10px 20px;
+		height: 3em;
+		padding: 1em 1em 1em 1em;
 		color: rgb(240, 240, 240,0.9);
 		font-weight: bold;
 		font-size: 15px;
@@ -662,7 +666,8 @@ a:hover {
 	.section-4-a{
 		position: relative;
 		z-index: 6;
-		padding: 10px;
+		top:25%;
+		padding: 1em 1em 1em 1em;
 		font-size: 16px;
 		margin: 0;
 		color: white;		
@@ -924,6 +929,11 @@ display: flex;
 	.section-3 {
 		height: fit-content;
 	}
+	.section-3-container {
+		width: 100%;
+		padding:0;
+		gap:0;
+	}
 	.section-3-carrousel{
 		height: fit-content;
 	}
@@ -931,9 +941,25 @@ display: flex;
 		font-size: 2.5em;
 	}
 
+
+	/*SECTION 4*/
 	#section-4
 	{
 		height: fit-content;
 	}
+	.section-4-container{
+		gap: 30px;
+	}
+	.section-4-div {
+		width: 100%;
+		height:25em;
+	}
+	.section-4-h3{
+		font-size: 2.5em;
+	}
+	.section-4-p, .section-4-a{
+		font-size: 1.5em;
+	}
+
 
 }

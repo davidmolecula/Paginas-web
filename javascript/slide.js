@@ -18,7 +18,6 @@ function touchend() {
         if ( endingX > startingX ){
             touchDirection = "ArrowRight";
 
-            console.log(touchDirection);
         if(operacion<0) 
     {
         operacion+=25;
@@ -30,7 +29,17 @@ function touchend() {
         tarjetaLink1.setAttribute('href',tarjetaLinks1[i]);
         tarjetaLink2.setAttribute('href', tarjetaLinks2[i]);
             console.log(touchDirection);
+            punto.forEach((cadaPunto, j)=> {
+            punto.forEach((cadaPunto,j)=>{
+                punto[j].classList.remove('activo');
+            })
+            j=i;
+            console.log(j);
+            punto[j].classList.add('activo');
         }
+    )
+}
+
             }
         else {
             touchDirection = "ArrowLeft";
@@ -45,6 +54,15 @@ function touchend() {
         tarjetaLink1.setAttribute('href',tarjetaLinks1[i]);
         tarjetaLink2.setAttribute('href', tarjetaLinks2[i]);
             console.log(touchDirection);
+            punto.forEach((cadaPunto, j)=> {
+                punto.forEach((cadaPunto,j)=>{
+                    punto[j].classList.remove('activo');
+                })
+                j=i;
+                console.log(j);
+                punto[j].classList.add('activo');
+            }
+        )  
         }
         }
 
