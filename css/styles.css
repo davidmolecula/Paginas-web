@@ -10,8 +10,10 @@
 body{
 	overflow-x: hidden;
 	width: 100%;
-	background: linear-gradient(to bottom, black, #0d2941,var(--lightblue));
+	background: linear-gradient(to bottom, black,var(--lightblue));
 	height: 120vh;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 :root {
@@ -24,7 +26,7 @@ body{
 	--white:#ffffff;
 }
 #particles {
-	height: 150vh;
+	height: 120vh;
 }
 
 /* HEADER */
@@ -36,7 +38,6 @@ header{
 	background-position: center 25vh;
 	background-size: 30%;
 	background-repeat:no-repeat;
-	height: 120vh;
 }
 nav {
 		display: flex;
@@ -171,20 +172,81 @@ a:hover {
 	color:white;
 }
 
+.servicios {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--lightblue);
+	height: 150vh;
+	align-items: center;
 
+}
+.servicios-carrousel{
+	width: 100%;
+	position: relative;
+	max-width: 120em;
+	border-radius:15px;
+	overflow-x: hidden;
+}
 
+.servicios-carrousel .grande {
+	width: 400%;
+	border-radius:15px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	transition: all .5s ease;
+	transform: translateX(0%);
+}
+
+.servicios-carrousel .img{
+	width: calc(100% / 4);
+	min-height: 10vh;
+	max-height: 90vh;
+	border-radius:15px;
+	box-shadow: 1px 1px 4px 0px black;
+}
+
+.servicios-carrousel .puntos {
+	width: 100%;
+	padding: .2em;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: center;
+
+}
+
+.servicios-carrousel .punto {
+	width: 1em;
+	height: 1em;
+	margin: .5em;
+	background: rgb(240, 240, 240);;
+	box-shadow: 0px 2px 4px 0px black;
+	border-radius:15px;
+	list-style: none;
+}
+
+.servicios-carrousel .punto.activo {
+	background: var(--lightblue);
+}
 /* Barra de navegacion principal*/
 
 	/*Aca termina la barra de navegacion principal*/
 	
 
 	/*LA SECCION PRINCIPAL SON LOS CUATRO FLYERS CENTRALES*/
+	
+	.section-2 {
+		background:var(--lightblue);
+		display: flex;
+		flex-direction: column;
+	}
 
 	h1 {
 	color: white;
 	text-shadow: 3px 3px 6px black;
 	font-size: 3em;
-	padding:150px 0px 0px 0px;
+	padding:50px 0px 0px 0px;
 	text-align: center;	
 }
 
@@ -193,38 +255,45 @@ a:hover {
 .presentacion_tarjetas {
 	color: #fff;
 	font-size:1.6em;
-	padding:40px 100px 40px 100px;
+	padding: 1em 2.5em 1em 2.5em;
 	text-shadow: 1px 1px 2px black;
-	text-align: center;	
+	text-align: start;	
 }
 
 
 
 	.tarjetas {
 		display: flex;
-		align-self: center;
 		height: 150vh;
 		width: 100%;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		justify-content: space-evenly;
+		justify-content: space-around;
+		align-items: flex-start;
 		margin:0;		
 	}
+	.tarjeta{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		width: 25em;
+	}
 	.tarjetas .tarjeta .cara {
-		width: 25vw;
-		height: 45vh;
-		transition: .4s ease;
+		width: 20em;
+		height: 15em;
+		transition: .8s ease;
 		margin: 0;
+		
 	}
 	.tarjetas .tarjeta .cara.cara1 {
 		position: relative;
 		display: flex;
-
 		align-content: center;
 		justify-content: center;
 		align-items: center;
 		z-index: 1;
-		transform: translateY(100px);
+		transform: translateY(5em);
 		border-radius:10px;
 		margin: 0;
 	}
@@ -234,13 +303,15 @@ a:hover {
 	.tarjetas .tarjeta:hover  {
 		transform: translateY(0);	 
 	}
-
+	.tarjeta .contenido {
+		width: 100%;
+		
+	}
 	.tarjetas .tarjeta .cara.cara1 .contenido img {
-
 		display: flex;
 		position: relative;
-		width: 25vw;
-		height: 50vh;
+		width: 20em;
+		height: 20em;
 		transition: .4s;
 		border-radius:10px;
 		z-index: 6;
@@ -254,19 +325,17 @@ a:hover {
 	.tarjetas .tarjeta .cara.cara2 {
 		position: relative;
 		display: flex;
-		width: 25vw;
-		height: 30vh;
 		padding: 20px;
 		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
 		color: var(--darkblue);
 		font-weight: bold;
-		transform: translateY(-100px);
+		transform: translateY(-10em);
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius:10px;
 		opacity: 0;
 	}
 	.tarjetas .tarjeta:hover .cara.cara2 {
-		transform: translateY(15px);
+		transform: translateY(2em);
 		opacity: 1;
 	}
 	.tarjetas .tarjeta .cara.cara2 .contenido p {
@@ -279,79 +348,10 @@ a:hover {
 		bottom:0;
 		height: 50px;
 	}
-	footer {
-			background: #000000;
-			font-size:1rem;
-			height: 8em;
-			color: whitesmoke;
-			
-			display: flex;
-			justify-content:center;
-			align-items: center;
-			} 
-			
-	footer a {
-		text-decoration: none;
-	}
-footer div {
-	text-align: center;
-	padding-top: 0.3em;
-}
-/*Imagen uno y dos lo que hacen es achicar los tamaños de los logos de facebook e instagram, lo comento porque 
-ya lo borre una vez sin querer*/
-#Informacion_footer {
-	background-color: black;
-	display: flex;
 
-	height: 30vh;
-}
-#Informacion_footer div {
-	color: ghostwhite;
-	display: inline-flex;
-	margin: 10px auto;
-}
 
-@media (max-width: 500px)
-	{
+
 	
-		.presentacion_tarjetas {
-			margin-bottom:50px;
-		}
-		body{
-		height: 400vh;
-		background-position: center 35vh;
-		background-size: 50%;
-		}
-	.tarjetas {
-		height: 500vh;
-		margin-top:300px;
-		background: transparent;
-	}
-	.tarjetas .tarjeta .cara {
-		width: 380px;
-		height: 300px;
-		transition: .4s;
-		margin: 0;
-		opacity: 0.2;
-	}
-	.tarjetas .tarjeta .cara.cara1 .contenido img {
-		display: flex;
-		position: relative;
-		width: 380px;
-		height: 300px;
-		transition: .4s;
-		border-radius:5px;
-		z-index: 6;
-		margin: 0;
-	}
-	}
-
-	.section-2 {
-
-		background:var(--lightblue);
-		display: flex;
-		flex-direction: column;
-	}
 
 	.section-3{
 		display: flex;
@@ -385,7 +385,7 @@ ya lo borre una vez sin querer*/
 	{
 		position: relative;
 		width: 500px;
-		height: 73vh;
+		height: 500px;
 		padding: 30px;
 		border-radius: 10px;
 		display: flex;
@@ -478,96 +478,7 @@ ya lo borre una vez sin querer*/
 					mask: var(--mask);
 	}
 
-	@media (max-width:768px) {
 
-		nav {
-			position: relative;
-			background-color: var(--darkblue);
-		
-		}
-		.hamburguesa {
-			position: absolute;
-			cursor: pointer;
-			right: 5%;
-			top:50%;
-			transform: translate(-5%,-50%);
-			z-index: 2;
-		}
-		#home {
-			display: none;
-		}
-	
-		.line {
-			width: 30px;
-			height: 3px;
-			background: white;
-			margin: 5px;
-		}
-		.nav-links {
-	
-			background-color: var(--lightblue);
-			height: 100vh;
-			width: 100%;
-			flex-direction: column;
-			-webkit-clip-path:circle(100px at 90% -20%);
-			transition: all 1s ease-out;
-			justify-content: flex-start;
-		}
-	
-		.nav-links.open {
-			-webkit-clip-path:circle(1500px at 90% -20%);
-			
-		}
-	
-		.link{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: var(--white);
-			height: 50px;
-			width: 100vw;
-			color:var(--black);
-			padding: 5px;
-			border-radius: 10px;
-			margin-bottom:30px
-		}
-		.active{
-			margin-top:100px;
-		}
-	.section-2{
-		height: 400vh;
-	}
-	
-		.tarjetas {
-			display: flex;
-			align-self: center;
-			height: 150vh;
-			width: 100%;
-			flex-wrap: wrap;
-			box-sizing: border-box;
-			justify-content: space-evenly;
-			margin:0;		
-		}
-		.tarjetas .tarjeta .cara {
-			width: 500px;
-			height: 400px;
-			transition: .4s ease;
-			margin: 0;
-		}
-		.tarjetas .tarjeta .cara.cara1 {
-		width: 500px;
-		}
-	
-		.tarjetas .tarjeta .cara.cara1 .contenido img {
-			width: 500px;
-			height: 450px;
-		}
-	
-	
-	#particles {
-		display:none;
-	}
-	}
 
 	::-webkit-scrollbar {
 		background: linear-gradient(to top, var(--lightblue), black)
@@ -640,16 +551,70 @@ ya lo borre una vez sin querer*/
 		background-size: cover;
 	}
 
-	.section-4-title {
+	.section-4-title, .servicios-h2 {
 		font-size: 3em;
 		text-align: center;
 		padding: 30px;
 		height: 3em;
-		border: 1px solid black;
-		background: var(--lightblue);
+		width: 100%;
+		background: var(--darkblue);
 		color: rgb(240, 240, 240);
 		text-shadow: 2px 2px 4px black;
 	}
+
+.section-3-carrousel{
+		width: 500px;
+		height: 600px;
+		position: relative;
+		max-width: 120em;
+		
+		border-radius:15px;
+		overflow-x: hidden;
+	}
+
+	.section-3-carrousel .grande {
+		width: 400%;
+		border-radius:15px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		transition: all .5s ease;
+		transform: translateX(0%);
+	}
+
+	.section-3-carrousel .img{
+		width: calc(100% / 4);
+		min-height: 10vh;
+		max-height: 73vh;
+		border-radius:15px;
+		box-shadow: 1px 1px 4px 0px black;
+	}
+
+	.section-3-carrousel .puntos {
+		width: 100%;
+		padding: .2em;
+		display: flex;
+		flex-flow:row nowrap;
+		justify-content: center;
+	
+	}
+
+	.section-3-carrousel .punto {
+		width: 1em;
+		height: 1em;
+		margin: .5em;
+		background: rgb(240, 240, 240);;
+		box-shadow: 0px 2px 4px 0px black;
+		border-radius:15px;
+		list-style: none;
+	}
+
+	.section-3-carrousel .punto.activo {
+		background: var(--lightblue);
+	}
+
+
 
 	.section-4-container{
 		display: flex;
@@ -722,18 +687,20 @@ ya lo borre una vez sin querer*/
 		border-top-right-radius: 10px;
 	}
 	.section-4-p{
-		padding: 20px;
-		color: rgb(240, 240, 240);
+		padding: 10px 20px 10px 20px;
+		color: rgb(240, 240, 240,0.9);
 		font-weight: bold;
+		font-size: 15px;
 		border-radius:inherit;
 	}
 	.section-4-a{
-		
-		z-index: 6;
 		position: relative;
+		z-index: 6;
 		padding: 20px;
+		font-size: 16px;
 		margin: 0;
-		color: rgb(240, 240, 240);
+		color: white;		
+		text-decoration: underline;
 	}
 	.section-4-a:hover {
 			color: red;
@@ -746,3 +713,232 @@ ya lo borre una vez sin querer*/
 	#section-5{
 		background: black;
 	}
+
+	footer {
+		height: 50vh;
+		width: 100%;
+		flex-direction: column;
+		} 
+		
+
+/*Imagen uno y dos lo que hacen es achicar los tamaños de los logos de facebook e instagram, lo comento porque 
+ya lo borre una vez sin querer*/
+#Informacion_footer {
+display: flex;
+justify-content: space-between;
+height: 80%;
+width: 100%;
+background: linear-gradient(45deg, var(--black), var(--lightblue));
+}
+.footer-div {
+	display: flex;
+	font-size: 15px;
+	padding: 10px;
+	gap: 10px;
+	flex-direction: column;
+	color: ghostwhite;
+	width:calc(100%/4);
+	border-right:1px solid rgba(255, 255, 255, 0.3);
+}
+.footer-div:last-child
+{
+	border-right:none;
+}
+
+.footer-div>h4 {
+	text-shadow: 1px 1px 2px black;
+}
+
+.footer-div.mapa {
+flex-direction: column;
+gap: 10px;
+font-size: 15px;
+padding: 10px;
+}
+
+.footer-div.mapa p {
+	font-size: 12px;
+}
+.footer-div.redes{
+display: flex;
+font-size: 15px;
+padding: 10px;
+gap: 10px;
+flex-direction: column;
+}
+.footer-div.redes ul {
+display: flex;
+flex-direction:row;
+gap: 20px;
+}
+.footer-div.redes li {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid rgba(255, 255, 255, 0.3);
+list-style: none;
+backdrop-filter: blur(10px);
+border-radius: 5px;
+margin: 0;
+width: 40px;
+height: 40px;
+overflow: hidden;
+
+}
+
+.footer-div.redes a {
+text-align: center;
+font-size: 25px;
+border: none;
+}
+
+.footer-div.redes li::before{
+
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	transform: skewX(45deg) translateX(80px);
+	transition: all .5s ease;
+	}
+	
+	
+	.footer-div.redes li:hover::before{
+	transform: skewX(45deg) translateX(-80px);
+	}
+
+.footer-div.enlaces {
+display: flex;
+flex-direction: column;
+gap: 20px;
+font-size: 15px;
+padding: 10px;
+}
+
+.footer-div.enlaces li{
+list-style: none;
+display: flex;
+}
+
+.footer-div.enlaces a {
+	font-weight: 50;
+}
+
+.footer-div.enlaces a:hover {
+	border:1px solid transparent;
+	color: red;
+}
+
+.copyright {
+	background-color: black;
+	height: 70px;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width:768px) {
+	body {
+		height: 120vh;
+	}
+	.section-1 {
+		height: 100vh;
+	}
+	#particles
+	{
+		height: 100vh;
+	}
+	nav {
+		position: relative;
+		background-color: var(--darkblue);
+	}
+	.hamburguesa {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top:50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+	#home {
+		display: none;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	.nav-links {
+
+		background-color: var(--lightblue);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path:circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		justify-content: flex-start;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -20%);
+		-webkit-clip-path:circle(1500px at 90% -20%);
+		
+	}
+
+	.link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--white);
+		height: 50px;
+		width: 100vw;
+		color:var(--black);
+		padding: 5px;
+		border-radius: 10px;
+		margin-bottom:30px
+	}
+	.active{
+		margin-top:100px;
+	}
+	.section-2{
+		height:400vh;
+	}
+	.section-3{
+		height: 200vh;
+	}
+	.tarjeta{
+		width: 100%;
+	}
+
+	
+	.tarjetas .tarjeta .cara {
+		width: 80%;
+		height: 500px;
+	}
+
+	.tarjetas .tarjeta .cara.cara1 .contenido img {
+		width: 100%;
+		height: 35em;
+	}
+	.tarjetas .tarjeta:hover .cara.cara2 {
+		transform: translateY(2em);
+		
+	}
+	
+	.tarjeta .cara.cara2 .contenido {
+		align-self: center;
+	}
+	
+
+
+	#section-4{
+		display: none;
+	}
+
+}

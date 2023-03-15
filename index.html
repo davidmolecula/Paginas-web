@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Merriweather&display=swap"
@@ -35,9 +36,9 @@
 				<div class="line"></div>
 			</div>
 			<ul class="nav-links">
-				<li><a class="link" id="link-1" href="#section-2">Actividades</a></li>
-				<li><a class="link" id="link-2" href="#section-3">Becas</a></li>
+				<li><a class="link" id="link-1" href="#servicios">Servicios</a></li>
 				<li><a class="link" id="link-3" href="#section-4">Informacion general</a></li>
+				<li><a class="link" id="link-2" href="#section-3">Becas</a></li>
 				<li><a class="link" id="link-4" href="#section-5">Nosotros</a></li>
 				<!--deportes carrusel, ajedrez, basquet,
 				radio-->
@@ -61,7 +62,7 @@
 			<div id="particles"></div>
 		</section>
 
-
+<!--Por ahora la seccion-2 queda deshabilitada, por no tener una funcion especifica
 		<section class="section-2">
 			<h1 id="section-2">Actividades del ceit</h1>
 			<p class="presentacion_tarjetas">Ademas de cuidar los derechos de los estudiantes, el centro de estudiantes
@@ -69,8 +70,8 @@
 				tanto deportivas, como academicas, que van desde los torneos de futbol hasta las clases de consulta y
 				los cursos intensivos.
 			</p>
-			<div class="tarjetas">
 
+			<div class="tarjetas">
 				<div class="tarjeta">
 					<div class="cara cara1">
 						<div class="contenido">
@@ -124,8 +125,119 @@
 				</div>
 
 			</div>
+-->
+		<section class="servicios" id="servicios">
+			<div class="fotocopiadora"></div>
+			<div class="gabinete"></div>
+			<h2 class="servicios-h2">Servicios del ceit</h2>
+			<div class="servicios-carrousel">
+				<div class="grande">
+					<img src="Img/servicios-1.jpg" alt="Imagen 1" class="img">
+					<img src="Img/Servicios-2.jpg" alt="Imagen 2" class="img">
+					<img src="Img/Servicios-3.jpg" alt="Imagen 2" class="img">
+					<img src="Img/beca_progresar.jpg" alt="Imagen 2" class="img">
+				</div>
+
+				<ul class="puntos">
+					<li class="punto activo"></li>
+					<li class="punto"></li>
+					<li class="punto"></li>
+					<li class="punto"></li>
+				</ul>
+			</div>
 		</section>
-		<section class="section-3" id="section-3">
+			<!--! Guia de inscripciones para ingresantes-->
+			<!--!-->
+		</section>
+
+		<section id="section-4">
+			<h2 class="section-4-title">Informacion general</h2>
+			<div class="section-4-container" id="section-4-container">
+				<div class="section-4-div" id="section-4-div">
+					<h3 class="section-4-h3">Horarios de materias</h3>
+					<p class="section-4-p">Los horarios de todas las materias, divididos por carreras, para que puedas
+						armar tus horarios
+						del 2023
+
+					</p>
+					<a href="files/horarios_en_base_de_datos_2022_Departamentos.xls" class="section-4-a">Descarga
+						acá
+						<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="20px" viewBox="0 0 512 512">
+							<path
+								d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+						</svg></a>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Fechas de final</h3>
+						<p class="section-4-p">Todas las fechas de los llamados del 2023 y las mesas especiales</p>
+						<a href="https://fra.utn.edu.ar/index.php/alumnos/fechas-de-final" class=" section-4-a"
+							target="_blank">Fechas
+							de final</a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Tramites</h3>
+						<p class="section-4-p">Para realizar tramites como cambios de especialidad, pedir constancias,
+							etc. Les dejamos los requisitos y los links</p>
+						<a href="https://sites.google.com/view/tramites-dptoestudiantes" class=" section-4-a">Tramitá
+							acá</a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Fechas importantes</h3>
+						<p class="section-4-p">Mas informacion sobre esta caracteristica en el link siguiente</p>
+						<a href="" class=" section-4-a"></a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Autogestion</h3>
+						<p class="section-4-p">Para acceder al sistema acádemico (SYSACAD)</p>
+						<a href="https://www.fra.utn.edu.ar/Sysacad/loginAlumno.asp" class="section-4-a">Sysacad</a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Campus Virtual</h3>
+						<p class="section-4-p">Para entrar al campus virtual y acceder a la info de tus cursadas
+						</p>
+						<a href="https://www.utnfravirtual.org.ar/" class="section-4-a">www.utnfravirtual.org.ar</a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Radio</h3>
+						<p class="section-4-p">Toda la info sobre LaTecno 88.3 y nuestro programa de radio se la dejamos
+							acá: </p>
+
+						<a href="http://www.latecno.com.ar/" class="section-4-a">www.latecno.com.ar</a>
+					</div>
+				</div>
+				<div class="section-4-div" id="section-4-div">
+					<div class="section-4-div-content">
+						<h3 class="section-4-h3">Biblioteca</h3>
+						<p class="section-4-p">Biblioteca central de la utn fra</p>
+
+						<p class="section-4-p">
+							Instagram <a href="https://www.instagram.com/biblio.utn.fra/"
+								class="section-4-a">biblio.utn.fra</a>
+							Twitter: <a href="https://twitter.com/biblioutnfra" class="section-4-a">@biblioutnfra</a>
+							Face: <a
+								href="https://www.facebook.com/people/Biblioteca-Utn-Fra/pfbid02jA7DkUDAvb5mWSPraFFLGCkKFd6qWEjjhicEY8sgeJSvtSXfDxdpqSocjtwGabzcl/"
+								class="section-4-a"> Biblioteca Utn Fra</a>
+							Whatsapp: 1166177588 (NUEVO!)
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-3" id="section-3" ontouchstart="touchstart(event)" ontouchmove="touchmove(event)"
+			ontouchend="touchend()">
 			<h2 class="section-3-h2">Informacion sobre becas</h2>
 			<div class="section-3-container">
 				<div class="section-3-carrousel">
@@ -133,7 +245,7 @@
 						<img src="Img/beca_belgrano.jpg" alt="Imagen 1" class="img">
 						<img src="Img/beca_bienestar.jpg" alt="Imagen 2" class="img">
 						<img src="Img/caja-4.jpg" alt="Imagen 2" class="img">
-						<img src="Img/cursos-ceit.jpg" alt="Imagen 2" class="img">
+						<img src="Img/beca_progresar.jpg" alt="Imagen 2" class="img">
 					</div>
 
 					<ul class="puntos">
@@ -166,103 +278,50 @@
 			</div>
 		</section>
 
-		<section id="section-4">
-			<h2 class="section-4-title">Informacion general</h2>
-			<div class="section-4-container" id="section-4-container">
-				<div class="section-4-div" id="section-4-div">
-					<h3 class="section-4-h3">Horarios de materias</h3>
-					<p class="section-4-p">Los horarios de todas las materias, divididos por carreras, para que puedas
-						armar tus horarios
-						del 2023
-
-					</p>
-					<a href="files/horarios_en_base_de_datos_2022_Departamentos.xls" class="section-4-a">Descarga
-						acá
-						<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="20px" viewBox="0 0 512 512">
-							<path
-								d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
-						</svg></a>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Fechas de final</h3>
-						<p class="section-4-p">Todas las fechas de los llamados del 2023 y las mesas especiales</p>
-						<a href="#" class=" section-4-a">Fechas de final</a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Tramites</h3>
-						<p class="section-4-p">Para realizar tramites como cambios de especialidad, pedir constancias,
-							etc. Les dejamos los requisitos y los links</p>
-						<a href="https://sites.google.com/view/tramites-dptoestudiantes" class=" section-4-a">Tramitá
-							acá</a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Fechas importantes</h3>
-						<p class="section-4-p">Mas informacion sobre esta caracteristica en el link siguiente</p>
-						<a href="" class=" section-4-a"></a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Autogestion</h3>
-						<p class="section-4-p">Para acceder al sistema acádemico (SYSACAD) hace</p>
-						<a href="https://www.fra.utn.edu.ar/Sysacad/loginAlumno.asp" class="section-4-a">click acá</a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Campus Virtual</h3>
-						<p class="section-4-p">Para entrar al campus virtual y acceder a la info de tus cursadas hace
-						</p>
-						<a href="https://www.utnfravirtual.org.ar/" class="section-4-a">click acá</a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Radio</h3>
-						<p class="section-4-p">Toda la info sobre LaTecno 88.3 y nuestro programa de radio se la dejamos
-							acá: </p>
-
-						<a href="http://www.latecno.com.ar/" class="section-4-a">pagina de la radio</a>
-					</div>
-				</div>
-				<div class="section-4-div" id="section-4-div">
-					<div class="section-4-div-content">
-						<h3 class="section-4-h3">Noticias</h3>
-						<p class="section-4-p">Mas informacion sobre esta caracteristica en el link siguiente</p>
-						<a href="" class="section-4-a"></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
 
 
 
 
 	</main>
-
-	<div id="Informacion_footer">
-		<div>
-			<!--	<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104977.72169575866!2d-58.38646795419506!3d-34.69120921394328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332f63ef0e5fb%3A0x357547a6a31ca7e8!2sUTN%20FRA%20-%20Ingenier%C3%ADa%20Tecnol%C3%B3gica!5e0!3m2!1ses!2sar!4v1676494247042!5m2!1ses!2sar"
-				width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-
-
-			<p>Direccion<br><br>Av. Ramon Franco 5050 <br>CP 1837</p>
-		</div>
-		<div>Place holder</div>
-		<div>Contacto<br></div>
-	</div>
-
-
 	<footer>
-		<div>
+		<div id="Informacion_footer">
+			<div class="footer-div mapa">
+				<h4>Direccion:</h4>
+				<p>Avenida Ramon Franco 5050, Villa dominico</p>
+				<div class="footer-mapa"><iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104977.72169575866!2d-58.38646795419506!3d-34.69120921394328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332f63ef0e5fb%3A0x357547a6a31ca7e8!2sUTN%20FRA%20-%20Ingenier%C3%ADa%20Tecnol%C3%B3gica!5e0!3m2!1ses!2sar!4v1676494247042!5m2!1ses!2sar"
+						width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe></div>
+			</div>
+			<div class="footer-div redes">
+				<h4>Redes sociales</h4>
+				<ul class="footer-div-redes">
+					<li><a href="https://www.instagram.com/ceitutn/" target="_blank"><i
+								class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/UtnCeitFra/" target="_blank"><i
+								class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-whatsapp" target="_blank"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-div">
+				<h4>Contacto</h4>
+			</div>
+			<div class="footer-div enlaces">
+				<h4>Enlaces externos</h4>
+				<ul>
+					<li><a href="">UTN</a></li>
+					<li><a href="">UTN FRA</a></li>
+					<li><a href="">Campus Virtual</a></li>
+					<li><a href="">Sysacad</a></li>
+					<li><a href="">UTN BA</a></li>
+				</ul>
+			</div>
+
+
+
+
+
 		</div>
 		<p class="copyright"> HOME |
 			© Copyright
@@ -272,11 +331,13 @@
 			</script> por team unnamed | All rights reserved
 		</p>
 	</footer>
+
 	<script src="javascript/lintern.js"></script>
 	<script src="javascript/carrousel.js"></script>
 	<script src="javascript/particles.min.js"></script>
 	<script src="javascript/javascript.js"></script>
 	<script src="javascript/app.js"></script>
+	<script src="javascript/slide.js"></script>
 </body>
 
 </html>
