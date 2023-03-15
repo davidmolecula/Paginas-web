@@ -365,9 +365,9 @@ a:hover {
 
 	.section-3-h2
 	{
-		font-size: 3em;
+		font-size: 3.5em;
 		color: var(--black);
-		
+		padding: 1em 0 1em 0;
 	}
 	.section-3-container{
 		display: flex;
@@ -385,16 +385,16 @@ a:hover {
 	{
 		position: relative;
 		width: 30em;
-		height: 30em;
-		padding: 30px;
+		height: 28.5em;
+		padding: 10px;
+		gap:10px;
+		font-size:1em;
 		border-radius: 10px;
 		display: flex;
-		gap:20px;
 		text-align: center;
 		flex-direction: column;
 		box-shadow: 0px 1px 3px 0px black;
 		background:linear-gradient(45deg, white,darkgrey);
-		color: white;
 	}
 .intersection-h2 {
 	font-size: 2.5em;
@@ -408,9 +408,11 @@ a:hover {
 		height: 60px;
 		display: flex;
 		justify-content: center;
-		position: relative;
-		bottom: 0%;
+		position: absolute;
+		bottom: 10px;
+		left: 18%;
 		gap:20px;
+		border: 1px solid red;
 	}
 	.tarjeta-link-1, .tarjeta-link-2 {
 		border: none;
@@ -422,7 +424,7 @@ a:hover {
 		font-weight: bold;
 	}
 	.tarjeta-link-1{
-		
+
 		color: white;
 		background-color: var(--lightblue);
 	}
@@ -471,7 +473,7 @@ a:hover {
 	
 	
 	.section-3-carrousel{
-		width: 30em;
+		width: 25em;
 		height: 35em;
 		position: relative;
 		max-width: 120em;
@@ -479,43 +481,7 @@ a:hover {
 		overflow-x: hidden;
 	}
 
-	.section-3-carrousel .grande {
-		width: 400%;
-		border-radius:15px;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
-		transition: all .5s ease;
-		transform: translateX(0%);
-	}
 
-	.section-3-carrousel .img{
-		width: calc(100% / 4);
-		min-height: 30em;
-		max-height: 35em;
-		border-radius:15px;
-		box-shadow: 1px 1px 4px 0px black;
-	}
-
-	.section-3-carrousel .puntos {
-		width: 100%;
-		padding: .2em;
-		display: flex;
-		flex-flow:row nowrap;
-		justify-content: center;
-	
-	}
-
-	.section-3-carrousel .punto {
-		width: 1em;
-		height: 1em;
-		margin: .5em;
-		background: rgb(240, 240, 240);;
-		box-shadow: 0px 2px 4px 0px black;
-		border-radius:15px;
-		list-style: none;
-	}
 
 	.section-3-carrousel .punto.activo {
 		background: var(--lightblue);
@@ -536,8 +502,8 @@ a:hover {
 
 	.section-3-carrousel .img{
 		width: calc(100% / 4);
-		min-height: 10vh;
-		max-height: 73vh;
+		min-height: 28.5em;
+		max-height: 40em;
 		border-radius:15px;
 		box-shadow: 1px 1px 4px 0px black;
 	}
@@ -567,7 +533,7 @@ a:hover {
 
 #section-4
 	{
-		height: 220vh;
+		height: 120vh;
 		background: #0a2133;
 		background-size: cover;
 	}
@@ -937,6 +903,9 @@ display: flex;
 	.section-3-carrousel{
 		height: fit-content;
 	}
+	.intersection{
+		height: 22em;
+	}
 	.intersection-h2 {
 		font-size: 2.5em;
 	}
@@ -952,13 +921,14 @@ display: flex;
 	}
 	.section-4-div {
 		width: 100%;
-		height:25em;
+		height:22em;
+		gap:1.8em;
 	}
 	.section-4-h3{
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	.section-4-p, .section-4-a{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 
