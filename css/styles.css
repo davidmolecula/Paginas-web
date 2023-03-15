@@ -365,9 +365,9 @@ a:hover {
 
 	.section-3-h2
 	{
-		font-size: 4em;
+		font-size: 3em;
 		color: var(--black);
-		padding: 20px;
+		
 	}
 	.section-3-container{
 		display: flex;
@@ -397,7 +397,7 @@ a:hover {
 		color: white;
 	}
 .intersection-h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 }
 	.intersection-h2, .intersection-h3{
 		color: var(--black);
@@ -475,7 +475,6 @@ a:hover {
 		height: 35em;
 		position: relative;
 		max-width: 120em;
-		
 		border-radius:15px;
 		overflow-x: hidden;
 	}
@@ -538,16 +537,6 @@ a:hover {
 		background: var(--darkblue);
 		color: rgb(240, 240, 240);
 		text-shadow: 2px 2px 4px black;
-	}
-
-.section-3-carrousel{
-		width: 500px;
-		height: 600px;
-		position: relative;
-		max-width: 120em;
-		
-		border-radius:15px;
-		overflow-x: hidden;
 	}
 
 	.section-3-carrousel .grande {
@@ -931,6 +920,13 @@ display: flex;
 	}
 	
 	/*SECTION 3*/
+
+	.section-3 {
+		height: fit-content;
+	}
+	.section-3-carrousel{
+		height: fit-content;
+	}
 	.intersection-h2 {
 		font-size: 2.5em;
 	}
