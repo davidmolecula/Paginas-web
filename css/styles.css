@@ -188,7 +188,7 @@ a:hover {
 	overflow-x: hidden;
 }
 
-.servicios-carrousel .grande {
+.servicios-carrousel .servicios-grande {
 	width: 400%;
 	border-radius:15px;
 	display: flex;
@@ -207,7 +207,7 @@ a:hover {
 	box-shadow: 1px 1px 4px 0px black;
 }
 
-.servicios-carrousel .puntos {
+.servicios-carrousel .servicios-puntos {
 	width: 100%;
 	padding: .2em;
 	display: flex;
@@ -216,7 +216,7 @@ a:hover {
 
 }
 
-.servicios-carrousel .punto {
+.servicios-carrousel .servicios-punto {
 	width: 1em;
 	height: 1em;
 	margin: .5em;
@@ -226,7 +226,7 @@ a:hover {
 	list-style: none;
 }
 
-.servicios-carrousel .punto.activo {
+.servicios-carrousel .servicios-punto.activo {
 	background: var(--lightblue);
 }
 /* Barra de navegacion principal*/
@@ -358,7 +358,7 @@ a:hover {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		height: 150vh;
+		height: fit-content;
 		width: 100%;
 		background:linear-gradient(45deg, white,darkgrey);
 	}
@@ -372,7 +372,7 @@ a:hover {
 	.section-3-container{
 		display: flex;
 		flex-wrap: wrap;
-		min-width: 80%;
+		width: 90%;
 		padding: 30px;
 		justify-content: space-around;
 		gap: 20px;
@@ -384,8 +384,8 @@ a:hover {
 	.intersection
 	{
 		position: relative;
-		width: 500px;
-		height: 500px;
+		width: 30em;
+		height: fit-content;
 		padding: 30px;
 		border-radius: 10px;
 		display: flex;
@@ -408,8 +408,7 @@ a:hover {
 		height: 60px;
 		display: flex;
 		justify-content: center;
-		position: absolute;
-		left: 30%;
+		position: relative;
 		bottom: 0%;
 		gap:20px;
 	}
@@ -469,32 +468,11 @@ a:hover {
 		font-weight: bold;
 	}
 
-	.section-4 div {
-		background: linear-gradient(45deg, var(--lightblue),var(--lightgreen));
-			--mask:
-			radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
-			radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px 100% repeat-x;
-			-webkit-mask: var(--mask);
-					mask: var(--mask);
-	}
-
-
-
-	::-webkit-scrollbar {
-		background: linear-gradient(to top, var(--lightblue), black)
-	}
 	
-
-	::-webkit-scrollbar-thumb {
-		background: var(--black);
-		border-radius: 10px;
-		border: 1px solid grey;
-
-	}
 	
 	.section-3-carrousel{
-		width: 500px;
-		height: 600px;
+		width: 30em;
+		height: 35em;
 		position: relative;
 		max-width: 120em;
 		
@@ -515,8 +493,8 @@ a:hover {
 
 	.section-3-carrousel .img{
 		width: calc(100% / 4);
-		min-height: 10vh;
-		max-height: 73vh;
+		min-height: 30em;
+		max-height: 35em;
 		border-radius:15px;
 		box-shadow: 1px 1px 4px 0px black;
 	}
@@ -632,13 +610,13 @@ a:hover {
 	.section-4-div {
 		position: relative;
 		height: 250px;
-		max-width: 300px;
-		min-width: 300px;
+		width: 15em;
 		border-radius:10px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
 		padding:5px;
 	}
+	
 
 	.section-4-div::before, .section-4-div::after{
 		content:'';
@@ -674,13 +652,12 @@ a:hover {
 	}
 
 	.section-4-h3 {
-		font-size:23px;
-		padding: 20px;
+		padding: 1em 0 .5em 0;
+		font-size:1.3em;
 		text-align: center;
 		background: var(--lightblue);
-
+		height: 3em;
 		text-shadow: none;
-		/*color: black;*/
 		color: white;
 		text-shadow: 1px 1px 2px black;
 		border-top-left-radius: 10px;
@@ -696,7 +673,7 @@ a:hover {
 	.section-4-a{
 		position: relative;
 		z-index: 6;
-		padding: 20px;
+		padding: 10px;
 		font-size: 16px;
 		margin: 0;
 		color: white;		
@@ -840,6 +817,24 @@ display: flex;
 	text-align: center;
 }
 
+
+
+
+
+
+
+::-webkit-scrollbar {
+	background: linear-gradient(to top, var(--lightblue), black)
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: var(--black);
+	border-radius: 10px;
+	border: 1px solid grey;
+
+}
+
 @media (max-width:768px) {
 	body {
 		height: 120vh;
@@ -935,10 +930,14 @@ display: flex;
 		align-self: center;
 	}
 	
+	/*SECTION 3*/
+	.intersection-h2 {
+		font-size: 2.5em;
+	}
 
-
-	#section-4{
-		display: none;
+	#section-4
+	{
+		height: fit-content;
 	}
 
 }
