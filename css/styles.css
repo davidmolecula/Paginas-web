@@ -47,7 +47,7 @@ nav {
 		justify-content: space-between;
 		text-align: center;
 		transition: all .5s ease;
-		z-index:5;
+		z-index:10;
 }
 #home {
 	width: 50px;
@@ -378,7 +378,7 @@ a:hover {
 		justify-content: space-around;
 		gap: 20px;
 		border-radius: 10px;
-		background: #16161a;
+		background: #16161a65;
 	}
 
 	
@@ -395,14 +395,14 @@ a:hover {
 		text-align: center;
 		flex-direction: column;
 		box-shadow: 0px 1px 3px 0px black;
-		background:linear-gradient(45deg, white,darkgrey);
+		background:linear-gradient(45deg, black,var(--lightblue));
 	}
 .intersection-h2 {
 	font-size: 2.5em;
 	padding-top: 30px;
 }
 	.intersection-h2, .intersection-h3{
-		color: var(--black);
+		color: var(--white);
 
 	}
 
@@ -441,7 +441,7 @@ a:hover {
 	#tarjeta-link-2
 	{
 		color: var(--lightblue);
-		border: 1px solid var(--darkblue);
+		border: 1px solid var(--white);
 	}
 
 	#tarjeta-link-2:hover {
@@ -461,12 +461,12 @@ a:hover {
 	.intersection-text {
 		margin: 0px 20px 0px 20px;
 		text-align: start;
-		color: black;
+		color: white;
 		font-weight: bold;
 	}
 
 	.resaltar {
-		color: rgb(167, 12, 12);
+		color: rgb(255, 15, 15);
 		text-shadow: none;
 		font-weight: bold;
 	}
@@ -896,6 +896,9 @@ display: flex;
 	.section-3 {
 		height: fit-content;
 	}
+	.section-3-h2 {
+		font-size: 3em;
+	}
 	.section-3-container {
 		width: 100%;
 		padding:0;
@@ -919,6 +922,9 @@ display: flex;
 	#section-4
 	{
 		height: fit-content;
+	}
+	.section-4-title{
+		font-size: 2.5em;
 	}
 	.section-4-container{
 		gap: 30px;
