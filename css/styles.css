@@ -201,8 +201,7 @@ a:hover {
 
 .servicios-carrousel .img{
 	width: calc(100% / 4);
-	min-height: 10vh;
-	max-height: 90vh;
+	height: 90vh;
 	border-radius:15px;
 	box-shadow: 1px 1px 4px 0px black;
 }
@@ -410,6 +409,7 @@ a:hover {
 		height: 60px;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		position: absolute;
 		bottom: 10px;
 		left: 27%;
@@ -503,8 +503,7 @@ a:hover {
 
 	.becas-carrousel .img{
 		width: calc(100% / 4);
-		min-height: 28.5em;
-		max-height: 40em;
+		height: 28em;
 		border-radius:15px;
 		box-shadow: 1px 1px 4px 0px black;
 	}
@@ -654,6 +653,11 @@ a:hover {
 
 	#section-5{
 		background: black;
+	}
+	.fill {
+		height: 20vh;
+		background: var(--lightblue);
+		backdrop-filter: blur(10px);
 	}
 
 	footer {
@@ -909,22 +913,45 @@ display: flex;
 	.becas-container {
 		width: 100%;
 		padding:0;
-		gap:0;
+		gap:10px;
 	}
 	.becas-carrousel{
 		width: 100%;
 		height: fit-content;
 	}
+	.becas-carrousel .grande {
+		height: 30em;
+	}
+	.becas-carrousel .img {
+		min-height: 15em;
+		max
+	}
+	.becas-carrousel .puntos {
+		display: none;
+	}
 	.intersection{
-		height: 22em;
+		width: 100%;
+		height: 18em;
 		gap:10px;
+		border: 1px solid grey;
 	}
 	.intersection-h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 		padding-top: 10px;
+	}
+	.intersection-h3 {
+		font-size: 1em;
+	}
+	.intersection-text {
+		font-size: .8em;
 	}
 	#becas-links{
 		left:20%;
+	}
+	.tarjeta-link-1, .tarjeta-link-2 {
+		font-size: .7em;
+		height: 35px;
+		padding: .8em .5em .8em .5em; 
 	}
 
 	/*SECTION 4*/
@@ -934,7 +961,7 @@ display: flex;
 	}
 	.informacion-title{
 		font-size: 2em;
-		padding:.8em;
+		padding:.1em;
 	}
 	.informacion-container{
 		gap: 30px;
@@ -946,6 +973,7 @@ display: flex;
 	}
 	.informacion-h3{
 		font-size: 1.5em;
+		padding:.5em;
 	}
 	.informacion-p, .informacion-a{
 		font-size: 1em;

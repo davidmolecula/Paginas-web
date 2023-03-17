@@ -59,3 +59,63 @@ let informationCards={
     ]
 };
 
+let datosCarreras={
+
+    "carreras":[
+        {
+            id:1,
+            "carrera": "electronica",
+            "imgUrl": ["Img/ING. ELECTRONICA/1.jpg","Img/ING. ELECTRONICA/2.jpgv","Img/ING. ELECTRONICA/3.jpg","Img/ING. ELECTRONICA/4.jpg","Img/ING. ELECTRONICA/5.jpg"],
+            "titulo":"Plan 2023 electronica",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        },
+        {
+            id:1,
+            "carrera": "industrial",
+            "imgUrl": ["Img/ING. INDUSTRIAL/1.jpg","Img/ING. INDUSTRIAL/2.jpgv","Img/ING. INDUSTRIAL/3.jpg","Img/ING. INDUSTRIAL/4.jpg","Img/ING. INDUSTRIAL/5.jpg","Img/ING. QUIMICA/6.jpg"],
+            "titulo":"Plan 2023 industrial",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        },
+        {
+            id:1,
+            "carrera": "civil",
+            "imgUrl": ["Img/ING. CIVIL/1.jpg","Img/ING. CIVIL/2.jpgv","Img/ING. CIVIL/3.jpg","Img/ING. CIVIL/4.jpg","Img/ING. CIVIL/5.jpg","Img/ING. CIVIL/6.jpg"],
+            "titulo":"Plan 2023 civil",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        },
+        {
+            id:1,
+            "carrera": "mecanica",
+            "imgUrl": ["Img/ING. MECANICA/1.jpg","Img/ING. MECANICA/2.jpgv","Img/ING. MECANICA/3.jpg","Img/ING. MECANICA/4.jpg","Img/ING. MECANICA/5.jpg"],
+            "titulo":"Plan 2023 mecanica",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        },
+        {
+            id:1,
+            "carrera": "electrica",
+            "imgUrl": ["Img/ING. ELECTRICA/1.jpg","Img/ING. ELECTRICA/2.jpgv","Img/ING. ELECTRICA/3.jpg","Img/ING. ELECTRICA/4.jpg","Img/ING. ELECTRICA/5.jpg"],
+            "titulo":"Plan 2023 electrica",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        },
+        {
+            id:1,
+            "carrera": "quimica",
+            "imgUrl": ["Img/ING. QUIMICA/1.jpg","Img/ING. QUIMICA/2.jpgv","Img/ING. QUIMICA/3.jpg","Img/ING. QUIMICA/4.jpg","Img/ING. QUIMICA/5.jpg"],
+            "titulo":"Plan 2023 quimica",
+            "subtitulo":"#",
+            "descripcion":"a"
+
+        }
+    ]
+};
+
