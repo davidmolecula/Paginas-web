@@ -11,7 +11,28 @@ body{
 	background: linear-gradient(to bottom, black, #0d2941,var(--lightblue));
 	height: 120vh;
 }
+.fill
+{
+	height: 20vh;
+	background-color: var(--lightblue);
+}
+.carreras{
+	width: 100vw;
+}
+.carreras-div {
+	display: flex;
+	flex-wrap: wrap;
+	gap:10px;
+	justify-content: center;
+}
 
+.carrera {
+	color: white;
+	text-shadow: 2px 2px 4px black;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
 :root {
     --black:#16161a;
 	--gris:rgba(65, 59, 59, 0.61);
@@ -166,10 +187,11 @@ a:hover {
 
 
 h1 {
+	text-align: center;
 	color: white;
 	font-size: 3em;
 	text-shadow: 2px 2px 4px black;
-	margin-top:100px;
+	padding:1em;
 }
 
 .electronica, .mecanica, .industrial, .civil, .quimica, .electrica{
@@ -193,7 +215,7 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	padding: 30px;
+	padding: 0px 10px 0px 10px;
 	justify-content: space-between;
 	gap: 20px;
 	border-radius: 10px;
@@ -310,4 +332,70 @@ font-size: 3em;
 
 .electronica-carrousel .electronica-punto.activo, .mecanica-carrousel .mecanica-punto.activo ,.industrial-carrousel .industrial-punto.activo ,.civil-carrousel .civil-punto.activo ,.quimica-carrousel .quimica-punto.activo ,.electrica-carrousel .electrica-punto.activo {
 	background: var(--lightblue);
+}
+
+
+@media (max-width:768px) {
+	body {
+		height: 120vh;
+	}
+	.section-1 {
+		height: 100vh;
+	}
+	#particles
+	{
+		height: 100vh;
+	}
+	nav {
+		position: relative;
+		background-color: var(--darkblue);
+	}
+	.hamburguesa {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top:50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+	#home {
+		display: none;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	.nav-links {
+
+		background-color: var(--lightblue);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path:circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		justify-content: flex-start;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -20%);
+		-webkit-clip-path:circle(1500px at 90% -20%);
+		
+	}
+
+	.link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--white);
+		height: 50px;
+		width: 100vw;
+		color:var(--black);
+		padding: 5px;
+		border-radius: 10px;
+		margin-bottom:30px
+	}
 }

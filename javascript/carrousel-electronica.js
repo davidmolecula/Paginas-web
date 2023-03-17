@@ -3,10 +3,10 @@ const electronicaPunto =document.querySelectorAll('.electronica-punto');
 const electronicaTitle=document.querySelector('.electronica-info-h2');
 const electronicaText=document.querySelector('.electronica-info-text');
 const carrerasContainer=document.getElementById('carreras');
-const electronicaTitles=["Beca Manuel Belgrano", "Beca Bienestar","Beca Ceit","Beca progresar"];
+const electronicaTitles=["Carrera", "Beca Bienestar","Beca Ceit","Beca progresar"];
 const electronicaTexts=[`Estas becas tienen como objetivo promover el ingreso, la continuidad y la graduación de estudiantes en estas disciplinas centrales para el desarrollo económico y social de nuestro país. Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero hasta el 22 de febrero</span>. Inscripción por primera vez: Desde el <span class="resaltar"> 22 de febrero hasta el 31 de marzo</span>.`, "Las becas de bienestar consisten en: Becas de servicio, Becas de ayuda economica y becas de ----", "Las becas del ceit son una ayuda que brinca el centro de estudiantes para comprar los apuntes que los estudiantes necesitan", "La beca random es la beca random"];
-
-
+const divCarrera=document.querySelectorAll('.carrera');
+const img=document.getElementsByTagName('img');
 electronicaPunto.forEach((cadaPunto, i)=> {
     electronicaPunto[i].addEventListener('click', ()=>{
         let posicion= i;
@@ -22,6 +22,16 @@ electronicaPunto.forEach((cadaPunto, i)=> {
         electronicaPunto[i].classList.add('activo');
     })
 })
+
+
+divCarrera.forEach((carrera,i)=>{carrera.addEventListener('click', ()=> {
+    for(j=0;j<img.length;j++)
+    {
+    img[j].src=datosCarreras.carreras[i].imgUrl[j];
+    }
+    
+})})
+/*
 let stringCarreras='';
 
 for(carrera of datosCarreras.carreras)
@@ -55,4 +65,4 @@ stringCarreras+=`<h1 class="titulo-planes">Planes de estudio y sus principales c
 </div>";`
 }
 console.log(stringCarreras);
-carrerasContainer.innerHTML=stringCarreras;
+carrerasContainer.innerHTML=stringCarreras; */
