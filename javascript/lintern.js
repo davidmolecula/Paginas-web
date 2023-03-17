@@ -1,8 +1,8 @@
-let s4Container=document.getElementById('section-4-container');
+let s4Container=document.getElementById('informacion-container');
 let informationCard="";
 
 s4Container.onmousemove=e=> {
-    for(const section4Div of document.getElementsByClassName('section-4-div'))
+    for(const section4Div of document.getElementsByClassName('informacion-div'))
     {
         const rect=section4Div.getBoundingClientRect(),
         x=e.clientX-rect.left,
@@ -15,12 +15,12 @@ s4Container.onmousemove=e=> {
 }
 for(let card of informationCards.cards)
 {
-informationCard+=`<div class="section-4-div" id="section-4-div">
+informationCard+=`<div class="informacion-div" id="informacion-div">
 				
-<h3 class="section-4-h3">${card.title}</h3>
-<p class="section-4-p">${card.description}
+<h3 class="informacion-h3">${card.title}</h3>
+<p class="informacion-p">${card.description}
 </p>
-<a href="${card.url}" class="section-4-a">${card.link}</a>
+<a href="${card.url}" class="informacion-a">${card.link}</a>
 
 </div>`;
 }
