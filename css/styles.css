@@ -39,6 +39,16 @@ header{
 	background-size: 30%;
 	background-repeat:no-repeat;
 }
+
+
+
+
+
+/* Todo lo referente a la barra de navegacion */
+
+
+
+
 nav {
 		display: flex;
 		height: 50px;
@@ -172,7 +182,40 @@ a:hover {
 	color:white;
 }
 
+
+
+
+
+/*Seccion de servicios*/
+
+
+
+
 .servicios {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	color: white;
+}
+.servicios-cards{
+	border-radius:10px;
+	width: 20em;
+	padding-top:20px;
+}
+.servicios-cards:nth-child(2)
+{
+	box-shadow:0px 10px 10px black ;
+}
+.servicios-cards-h2{
+	color:black;
+	text-align: center;
+}
+
+/* Aca comienza la seccion de deportes */
+
+
+
+.deportes {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--lightblue);
@@ -180,7 +223,7 @@ a:hover {
 	align-items: center;
 
 }
-.servicios-carrousel{
+.deportes-carrousel{
 	width: 100%;
 	position: relative;
 	max-width: 120em;
@@ -188,7 +231,7 @@ a:hover {
 	overflow-x: hidden;
 }
 
-.servicios-carrousel .servicios-grande {
+.deportes-carrousel .deportes-grande {
 	width: 400%;
 	border-radius:15px;
 	display: flex;
@@ -199,14 +242,14 @@ a:hover {
 	transform: translateX(0%);
 }
 
-.servicios-carrousel .img{
+.deportes-carrousel .img{
 	width: calc(100% / 4);
 	height: 90vh;
 	border-radius:15px;
 	box-shadow: 1px 1px 4px 0px black;
 }
 
-.servicios-carrousel .servicios-puntos {
+.deportes-carrousel .deportes-puntos {
 	width: 100%;
 	padding: .2em;
 	display: flex;
@@ -215,7 +258,7 @@ a:hover {
 
 }
 
-.servicios-carrousel .servicios-punto {
+.deportes-carrousel .deportes-punto {
 	width: 1em;
 	height: 1em;
 	margin: .5em;
@@ -225,132 +268,21 @@ a:hover {
 	list-style: none;
 }
 
-.servicios-carrousel .servicios-punto.activo {
+.deportes-carrousel .deportes-punto.activo {
 	background: var(--lightblue);
 }
-/* Barra de navegacion principal*/
-
-	/*Aca termina la barra de navegacion principal*/
-	
-
-	/*LA SECCION PRINCIPAL SON LOS CUATRO FLYERS CENTRALES*/
-	
-	.section-2 {
-		background:var(--lightblue);
-		display: flex;
-		flex-direction: column;
-	}
-
-	h1 {
-	color: white;
-	text-shadow: 3px 3px 6px black;
-	font-size: 3em;
-	padding:50px 0px 0px 0px;
-	text-align: center;	
-}
 
 
 
-.presentacion_tarjetas {
-	color: #fff;
-	font-size:1.6em;
-	padding: 1em 2.5em 1em 2.5em;
-	text-shadow: 1px 1px 2px black;
-	text-align: start;	
-}
 
 
 
-	.tarjetas {
-		display: flex;
-		height: 150vh;
-		width: 100%;
-		flex-wrap: wrap;
-		box-sizing: border-box;
-		justify-content: space-around;
-		align-items: flex-start;
-		margin:0;		
-	}
-	.tarjeta{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 0;
-		width: 25em;
-	}
-	.tarjetas .tarjeta .cara {
-		width: 20em;
-		height: 15em;
-		transition: .8s ease;
-		margin: 0;
-		
-	}
-	.tarjetas .tarjeta .cara.cara1 {
-		position: relative;
-		display: flex;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-		z-index: 1;
-		transform: translateY(5em);
-		border-radius:10px;
-		margin: 0;
-	}
-	.tarjetas .tarjeta:hover .cara.cara1 {
-		transform: translateY(0);	 
-	}
-	.tarjetas .tarjeta:hover  {
-		transform: translateY(0);	 
-	}
-	.tarjeta .contenido {
-		width: 100%;
-		
-	}
-	.tarjetas .tarjeta .cara.cara1 .contenido img {
-		display: flex;
-		position: relative;
-		width: 20em;
-		height: 20em;
-		transition: .4s;
-		border-radius:10px;
-		z-index: 6;
-		margin: 0;
-	}
-	.tarjetas .tarjeta:hover .cara.cara1 .contenido img {
-		
-		transition: 1s;
-		border-radius:0;
-	}
-	.tarjetas .tarjeta .cara.cara2 {
-		position: relative;
-		display: flex;
-		padding: 20px;
-		box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
-		color: var(--darkblue);
-		font-weight: bold;
-		transform: translateY(-10em);
-		border-bottom-right-radius: 10px;
-		border-bottom-left-radius:10px;
-		opacity: 0;
-	}
-	.tarjetas .tarjeta:hover .cara.cara2 {
-		transform: translateY(2em);
-		opacity: 1;
-	}
-	.tarjetas .tarjeta .cara.cara2 .contenido p {
-		color: white;
-		font-size: 15px;
-		text-shadow: 1px 1px 2px black;
-	}
-	.tarjeta-link-container {
-		position: absolute;
-		bottom:0;
-		height: 50px;
-	}
+
+
+/* Seccion de becas*/
 
 
 
-	
 
 	.becas{
 		display: flex;
@@ -364,7 +296,7 @@ a:hover {
 
 	.becas-h2
 	{
-		font-size: 3.5em;
+		font-size: 3em;
 		color: white;
 		text-shadow: 2px 2px 4px black;
 		padding: 1em 0 1em 0;
@@ -377,14 +309,15 @@ a:hover {
 		padding: 30px;
 		gap: 20px;
 		border-radius: 10px;
-		background: #16161a65;
+		border: 1px solid var(--darkblue);
+		
 	}
 
 	
 	.intersection
 	{
 		position: relative;
-		width: 30em;
+		width: 35em;
 		height: 28.5em;
 		padding: 10px;
 		gap:40px;
@@ -393,8 +326,8 @@ a:hover {
 		display: flex;
 		text-align: center;
 		flex-direction: column;
-		box-shadow: 0px 1px 3px 0px black;
-		background:linear-gradient(45deg, black,var(--lightblue));
+		
+		
 	}
 .intersection-h2 {
 	font-size: 2.5em;
@@ -462,7 +395,7 @@ a:hover {
 		margin: 0px 20px 0px 20px;
 		text-align: start;
 		color: white;
-		font-weight: bold;
+		
 	}
 
 	.resaltar {
@@ -474,8 +407,8 @@ a:hover {
 	
 	
 	.becas-carrousel{
-		width: 40em;
-		height: 45em;
+		width: 35em;
+		height: 30em;
 		position: relative;
 		max-width: 120em;
 		border-radius:15px;
@@ -498,7 +431,7 @@ a:hover {
 
 	.becas-carrousel .img{
 		width: calc(100% / 4);
-		height: 35em;
+		height: 30em;
 		border-radius:15px;
 		box-shadow: 1px 1px 4px 0px black;
 	}
@@ -506,7 +439,7 @@ a:hover {
 	.becas-carrousel .puntos {
 		width: 100%;
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		display: flex;
 		flex-flow:row nowrap;
 		justify-content: center;
@@ -527,14 +460,21 @@ a:hover {
 		background: var(--lightblue);
 	}
 
+
+
+
+	/*Seccion de informacion*/
+
+
+
 #informacion
 	{
 		height: fit-content;
-		background: #0a2133;
+		background: linear-gradient(to bottom, black,var(--darkblue));
 		background-size: cover;
 	}
 
-	.informacion-title, .servicios-h2 {
+	.informacion-title, .deportes-h2 {
 		text-align: center;
 		font-size: 3em;
 		padding: 1em;
@@ -545,10 +485,7 @@ a:hover {
 		text-shadow: 2px 2px 4px black;
 		border:1px solid var(--darkblue);
 	}
-	.servicios-h2 {
-		
-	}
-
+	
 	.informacion-container{
 		display: flex;
 		flex-wrap: wrap;
@@ -643,8 +580,6 @@ a:hover {
 			color: red;
 			text-decoration: underline;
 			border:0;
-			
-
 	}
 
 	#section-5{
@@ -656,6 +591,15 @@ a:hover {
 		backdrop-filter: blur(10px);
 	}
 
+
+
+
+	/*Seccion del footer*/
+
+
+
+
+
 	footer {
 		height: 50vh;
 		width: 100%;
@@ -663,8 +607,7 @@ a:hover {
 		} 
 		
 
-/*Imagen uno y dos lo que hacen es achicar los tamaños de los logos de facebook e instagram, lo comento porque 
-ya lo borre una vez sin querer*/
+
 #Informacion_footer {
 display: flex;
 justify-content: space-between;
@@ -800,6 +743,16 @@ display: flex;
 
 }
 
+
+
+
+
+/*AJUSTES PARA LA VERSION MOBILE*/
+
+
+
+
+
 @media (max-width:768px) {
 	body {
 		height: 120vh;
@@ -894,7 +847,7 @@ display: flex;
 	.tarjeta .cara.cara2 .contenido {
 		align-self: center;
 	}
-	.servicios-h2 {
+	.deportes-h2 {
 		font-size: 2em;
 	}
 	/*SECTION 3*/
@@ -973,6 +926,5 @@ display: flex;
 	.informacion-p, .informacion-a{
 		font-size: 1em;
 	}
-
 
 }
