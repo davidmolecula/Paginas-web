@@ -209,7 +209,7 @@ a:hover {
 	flex-direction: column;
 	border-radius:10px;
 	width: 20em;
-	background-image: url(../img/Dalle-gabinete.png);
+	background-image: url(../Img/dalle-gabinete.png);
 	background-size:cover;
 	box-shadow:0px 10px 10px black ;
 }
@@ -673,6 +673,7 @@ font-size: 15px;
 padding: 10px;
 }
 
+
 .footer-div.mapa p {
 	font-size: 12px;
 }
@@ -685,7 +686,6 @@ flex-direction: column;
 }
 .footer-div.redes ul {
 display: flex;
-flex-direction:row;
 gap: 20px;
 }
 .footer-div.redes li {
@@ -905,7 +905,7 @@ display: flex;
 		height: 30em;
 	}
 	.becas-carrousel .img {
-		max-height: 29em;
+		max-height: 25em;
 	
 	}
 	
@@ -957,6 +957,20 @@ display: flex;
 	}
 	.informacion-p, .informacion-a{
 		font-size: 1em;
+	}
+
+	/* Footer */
+	.footer-mapa {
+		display: none;
+	}
+
+	.footer-div.redes ul {
+		flex-direction: column;
+		}
+	
+	.footer-div.redes li:nth-child(3)
+	{
+		display: none;
 	}
 
 }
