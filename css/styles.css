@@ -209,7 +209,7 @@ a:hover {
 	flex-direction: column;
 	border-radius:10px;
 	width: 20em;
-	background-image: url(../Img/dalle-gabinete.png);
+	background-image: url(../Img/gabinete.png);
 	background-size:cover;
 	box-shadow:0px 10px 10px black ;
 }
