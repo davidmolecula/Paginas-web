@@ -251,11 +251,11 @@ h1{
 	padding-top: 2px;
 }
 
-/* Aca comienza la seccion de deportes */
+/* Aca comienza la seccion de noticias */
 
 
 
-.deportes {
+.noticias {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--lightblue);
@@ -263,7 +263,7 @@ h1{
 	align-items: center;
 
 }
-.deportes-carrousel{
+.noticias-carrousel{
 	width: 100%;
 	position: relative;
 	max-width: 120em;
@@ -273,7 +273,7 @@ h1{
 	overflow-x: hidden;
 }
 
-.deportes-carrousel .deportes-grande {
+.noticias-carrousel .noticias-grande {
 	width: 400%;
 	border-radius:15px;
 	display: flex;
@@ -284,14 +284,14 @@ h1{
 	transform: translateX(0%);
 }
 
-.deportes-carrousel .img{
+.noticias-carrousel .img{
 	width: calc(100% / 4);
 	height: 90vh;
 	border-radius:15px;
 	box-shadow: 1px 1px 4px 0px black;
 }
 
-.deportes-carrousel .deportes-puntos {
+.noticias-carrousel .noticias-puntos {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -302,7 +302,7 @@ h1{
 
 }
 
-.deportes-carrousel .deportes-punto {
+.noticias-carrousel .noticias-punto {
 	width: 1em;
 	height: 1em;
 	margin: .5em;
@@ -312,7 +312,7 @@ h1{
 	list-style: none;
 }
 
-.deportes-carrousel .deportes-punto.activo {
+.noticias-carrousel .noticias-punto.activo {
 	background: var(--lightblue);
 }
 
@@ -521,7 +521,7 @@ h1{
 		background-size: cover;
 	}
 
-	.informacion-title, .deportes-h2 {
+	.informacion-title, .noticias-h2 {
 		text-align: center;
 		font-size: 3em;
 		padding: 1em;
@@ -873,11 +873,11 @@ display: flex;
 	.tarjeta .cara.cara2 .contenido {
 		align-self: center;
 	}
-	.deportes-h2 {
+	.noticias-h2 {
 		font-size: 2em;
 		background-color: black;
 	}
-	.deportes-grande{
+	.noticias-grande{
 		height: 40%;
 	}
 	/*SECTION 3*/
