@@ -3,9 +3,9 @@ let informationCards={
         {
         id: 1,
         "title": "Horarios de materias",
-        "description":"Los horarios de todas las materias, divididos por carreras, para que puedasarmar tus horarios del 2023",
+        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2023",
         "url":"files/horarios_en_base_de_datos_2022_Departamentos.xls" ,
-        "link": "Descarga acá" 
+        "link": "Descarga acá"
         },
         {
         id: 2,
@@ -16,22 +16,22 @@ let informationCards={
         },
         {
         id: 3,
-        "title":"Tramites",
-        "description":"Para realizar tramites como cambios de especialidad, pedir constancias, etc. Les dejamos los requisitos y los links",
+        "title":"Trámites",
+        "description":"Para realizar trámites como cambios de especialidad, pedir constancias, etc. Les dejamos los requisitos y los links",
         "url":"https://sites.google.com/view/tramites-dptoestudiantes",
         "link":"Tramitá acá",
         },
         {
         id: 4,
         "title":"Planes beta",
-        "description":"Mas informacion sobre esta caracteristica en el link siguiente",
+        "description":"Más información sobre esta característica en el link siguiente",
         "url": "#",
         "link": "nada",
         },
         {
         id: 5,
-        "title":"Autogestion",
-        "description":"Para acceder al sistema acádemico (SYSACAD)",
+        "title":"Autogestión",
+        "description":"Para acceder al sistema académico (SYSACAD)",
         "url":"https://www.fra.utn.edu.ar/Sysacad/loginAlumno.asp",
         "link": "Sysacad"
         },
@@ -58,6 +58,7 @@ let informationCards={
         }
     ]
 };
+
 
 let datosCarreras={
 
@@ -99,8 +100,7 @@ let datosCarreras={
             "subtitulo":"#",
             "descripcion":"a"
 
-        },
-       
+        }, 
         {
             id:5,
             "carrera": "mecanica",
