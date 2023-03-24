@@ -1,7 +1,7 @@
 let startingX, startingY, endingX, endingY;
 let moving = false;
 let i=0;
-let operacion=0;
+
 function touchstart(evt) {
     startingX = evt.touches[0].clientX;
     startingY = evt.touches[0].clientY;
@@ -17,6 +17,8 @@ function touchend() {
     if ( Math.abs(endingX - startingX) > Math.abs(endingY - startingY) ) {
         if ( endingX > startingX ){
             touchDirection = "ArrowRight";
+            clearInterval(noEntiendo);
+            noEntiendo=null;
 
         if(operacion<0) 
     {

@@ -27,3 +27,47 @@ punto.forEach((cadaPunto, i)=> {
         punto[i].classList.add('activo');
     })
 })
+
+let j=0;
+let posicion=j;
+let operacion;
+let noEntiendo;
+function carrouselAuto()
+{
+        
+    punto.forEach((cadaPunto, i)=> {
+    punto[i].addEventListener('click', ()=>{
+        clearInterval(noEntiendo);
+        noEntiendo=null;
+    })
+})
+        if(!noEntiendo)
+        {
+            noEntiendo=setInterval(()=>{
+                if(posicion===3)
+                {
+                    posicion=0;
+                }else{
+        posicion++;
+        }
+        operacion=posicion*(-25);
+        grande.style.transform=`translateX(${operacion}%)`;
+        title.innerHTML=titles[posicion];
+        text.innerHTML=texts[posicion];
+        tarjetaLink1.setAttribute('href',tarjetaLinks1[posicion]);
+        tarjetaLink2.setAttribute('href', tarjetaLinks2[posicion]);
+        
+
+        punto.forEach((cadaPunto,j)=>{
+            punto[j].classList.remove('activo');
+        })
+        punto[posicion].classList.add('activo');
+
+            },3000)
+        }
+        
+    
+}
+
+
+carrouselAuto();

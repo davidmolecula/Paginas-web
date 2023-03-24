@@ -16,10 +16,12 @@ body{
 	background-repeat: no-repeat;
 }
 .fill {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 20vh;
 	width: 100%;
-	background-color: black;
+	background-color:black;
 }
 :root {
     --black:#16161a;
@@ -188,7 +190,14 @@ a:hover {
 }
 
 
+/*H1 FILL*/
 
+h1{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+	font-size: 2em;
+}
 
 
 /*Seccion de servicios*/
@@ -203,26 +212,27 @@ a:hover {
 	height: 100vh;
 	background:black;
 }
+
 .servicios-cards{
 	display: flex;
 	position: relative;
 	flex-direction: column;
 	border-radius:10px;
 	width: 20em;
-	background-image: url(../Img/gabinete2.png);
+	background-image: url(../Img/gabinete-photo.jpg);
 	background-size:cover;
 	box-shadow:0px 10px 10px black ;
 }
 .servicios-cards:nth-child(2)
 {
 	box-shadow:0px 10px 10px black ;
-	background-image: url(../Img/dalle-fotocopiadora\ \(1\).png);
+	background-image: url(../Img/fotocopiadora.jpeg);
 	background-size:cover;
 }
 .servicios-cards:nth-child(3)
 {
 	box-shadow:0px 10px 10px black ;
-	background-image: url(../Img/dalle-comedor.png);
+	background-image: url(../Img/comedor.jpeg);
 	background-size:cover;
 	background-repeat: no-repeat;
 }
@@ -855,24 +865,10 @@ display: flex;
 		height:400vh;
 	}
 	
-	.tarjeta{
-		width: 100%;
-	}
-
+	/* SERVICIOS */
 	
-	.tarjetas .tarjeta .cara {
-		width: 80%;
-		height: 500px;
-	}
-
-	.tarjetas .tarjeta .cara.cara1 .contenido img {
-		width: 100%;
-		height: 35em;
-	}
-	.tarjetas .tarjeta:hover .cara.cara2 {
-		transform: translateY(2em);
 		
-	}
+	
 	
 	.tarjeta .cara.cara2 .contenido {
 		align-self: center;
@@ -880,6 +876,9 @@ display: flex;
 	.deportes-h2 {
 		font-size: 2em;
 		background-color: black;
+	}
+	.deportes-grande{
+		height: 40%;
 	}
 	/*SECTION 3*/
 
@@ -967,10 +966,27 @@ display: flex;
 	.footer-div.redes ul {
 		flex-direction: column;
 		}
-	
-	.footer-div.redes li:nth-child(3)
-	{
-		display: none;
-	}
 
+	.footer-div.contacto{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer-div.contacto a {
+		padding: 0;
+		margin: 0;
+		font-size: 8px;
+	}
+}
+
+
+#servicios-h2 {
+	color: white;
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	padding: 0!important;
+	margin: 0!important;
+
+	position: relative;
+	top:-20%;
 }
