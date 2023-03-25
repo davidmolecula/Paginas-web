@@ -1,6 +1,6 @@
 let startingX, startingY, endingX, endingY;
 let moving = false;
-let i=0;
+let i=1;
 
 function touchstart(evt) {
     startingX = evt.touches[0].clientX;

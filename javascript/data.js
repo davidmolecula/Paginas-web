@@ -24,9 +24,9 @@ let informationCards={
         {
         id: 4,
         "title":"Planes beta",
-        "description":"Más información sobre esta característica en el link siguiente",
-        "url": "#",
-        "link": "nada",
+        "description":"La inscripción al Plan Beta, primer cuatrimestre 2023 estará habilitada del 27/3 al 30/3",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdoSeeaC2lVm0roYiIXoWbPTFKT3shA_77EBzHHNAdOEQ3BZQ/closedform",
+        "link": "Formulario",
         },
         {
         id: 5,
