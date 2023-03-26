@@ -4,6 +4,7 @@ const title=document.querySelector('.intersection-h2');
 const text=document.querySelector('.intersection-text');
 const tarjetaLink1=document.getElementById('tarjeta-link-1');
 const tarjetaLink2=document.getElementById('tarjeta-link-2');
+let screen=window.innerWidth;
 
 const titles=["Beca Manuel Belgrano", "Beca Bienestar","Beca Ceit","Beca progresar"];
 const texts=[`Inscripción para los inscriptos en 2022: Desde el <span class="resaltar">1 de febrero hasta el 22 de febrero</span>. Inscripción por primera vez: Desde el <span class="resaltar"> 22 de febrero hasta el 31 de marzo</span>.`, "Las becas de bienestar consisten en: Becas de servicio, Becas de ayuda economica y becas de investigacion, para mas informacion sobre como anotarse click en el link de abajo", "Las becas del ceit son una ayuda que brinda el centro de estudiantes para comprar los apuntes que los estudiantes necesitan", "Ya están abiertas las inscripciones para el Progresar. Les compartimos las fechas, requisitos y como hacer para inscribirse."];
@@ -32,6 +33,7 @@ let j=0;
 let posicion=j;
 let operacion;
 let noEntiendo;
+
 function carrouselAuto()
 {
         
@@ -65,9 +67,93 @@ function carrouselAuto()
 
             },3000)
         }
-        
-    
+}
+
+if(screen>768)
+{
+carrouselAuto();
 }
 
 
-carrouselAuto();
+let startingX, startingY, endingX, endingY;
+let k=0;
+operacion=0;
+function touchstart(evt) {
+    startingX = evt.touches[0].clientX;
+    startingY = evt.touches[0].clientY;
+}
+function touchmove(evt) {
+
+    endingX = evt.touches[0].clientX;
+    endingY = evt.touches[0].clientY;
+}
+function touchend() {
+
+    let touchDirection;
+    if ( Math.abs(endingX - startingX) > Math.abs(endingY - startingY) ) {
+        if ( endingX > startingX ){
+            touchDirection = "ArrowRight";
+            console.log(touchDirection);
+            console.log(operacion);
+        if(operacion<0) 
+    {
+        operacion+=25;
+        console.log(operacion);
+        k-=1;
+        grande.style.transform=`translateX(${operacion}%)`;
+        title.innerHTML=titles[k];
+        text.innerHTML=texts[k];
+        tarjetaLink1.setAttribute('href',tarjetaLinks1[k]);
+        tarjetaLink2.setAttribute('href', tarjetaLinks2[k]);
+            console.log(touchDirection);
+            punto.forEach((cadaPunto, j)=> {
+            punto.forEach((cadaPunto,j)=>{
+                punto[j].classList.remove('activo');
+            })
+            j=k;
+            console.log(j);
+            punto[j].classList.add('activo');
+        }
+    )
+}
+
+            }
+        else {
+            touchDirection = "ArrowLeft";
+            console.log(touchDirection);
+    if(operacion>-75) 
+    {
+        operacion-=25;
+        console.log(operacion);
+        k+=1;
+        grande.style.transform=`translateX(${operacion}%)`;
+        title.innerHTML=titles[k];
+        text.innerHTML=texts[k];
+        tarjetaLink1.setAttribute('href',tarjetaLinks1[k]);
+        tarjetaLink2.setAttribute('href', tarjetaLinks2[k]);
+            console.log(touchDirection);
+            punto.forEach((cadaPunto, j)=> {
+                punto.forEach((cadaPunto,j)=>{
+                    punto[j].classList.remove('activo');
+                })
+                j=k;
+                console.log(j);
+                punto[j].classList.add('activo');
+            }
+        )  
+        }
+        }
+
+    } else {
+        if ( endingY > startingY ) 
+        {
+            touchDirection = "ArrowDown";
+            console.log(touchDirection);
+        }
+        else 
+        {
+            touchDirection = "ArrowUp";
+            console.log(touchDirection);
+        }
+    }
+}
