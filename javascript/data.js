@@ -123,3 +123,55 @@ let datosCarreras={
     ]
 };
 
+
+let newsCardData={
+    "newsCards":[
+        {
+            id:0,
+            "title":"Buscando las aulas",
+            "subtitle":"Todos los nombres de las aulas cambiaron",
+            "urlImg":"Img/news-1.jpg",
+            "text":['<p class="news-text">⚠️A PARTIR DEL 20 DE MARZO, CAMBIA LA NUMERACIÓN DE LAS AULAS PARA LAS CURSADAS DE INGENIERÍA</p>'
+
+            ,'<p class="news-text">🔵Con el inicio del ciclo lectivo 2023, se modificará la numeración de las aulas del Campus Villa Domínico para una mejor organización y circulación de los y las estudiantes de las carreras de Ingeniería.</p>'
+            
+            ,'<p class="news-text">🔵Desde el lunes 20 de marzo, encontrarán el nombre de cada aula con el siguiente esquema: la letra representa al sector correspondiente, el primer número al piso donde se encuentra ubicada y los dos últimos dígitos corresponden al número de aula.</p>'
+            
+            ,'<p class="news-text">🔵Esta nueva disposición se encuentra también indicada en la señalética colocada en cada aula y en carteles ubicados en los accesos principales del Campus. Además, está disponible como PDF interactivo desde el siguiente link: tinyurl.com/5n8z724z, donde al hacer click sobre las imágenes se puede acceder a los videos que explican cómo llegar a cada sector.</p>'
+            
+            
+            ,'<p class="news-text">🔵A partir de este trabajo, realizado por el Programa de Comunicación Institucional de la UTN Avellaneda, se continúan llevando adelante las tareas para reorganizar y mejorar el tránsito de la comunidad universitaria.</p>'],
+        },
+        {
+            id:1,
+            "title": "Feria de apuntes",
+            "subtitle": "Podes dejar los apuntes que ya no usas o agarrar alguno que te sirva",
+            "urlImg":"Img/news-2.jpg",
+            "text":["texto","texto", "texto"],
+        },
+        {
+            id:2,
+            "title": "Torneo de ping-pong",
+            "subtitle": "Veni a jugar con nosotros",
+            "urlImg":"Img/dalle-gabinete.png",
+            "text":["texto","texto", "texto"],
+        },
+        {
+            id:3,
+            "title": "Renovamos el pasillo de la memoria",
+            "subtitle": "Mantenemos viva la memoria",
+            "urlImg":"Img/dalle-gabinete.png",
+            "text":["texto","texto", "texto"],
+        },
+        {
+            id:4,
+            "title": "Feliz comienzo de cursada",
+            "subtitle": "Comienzan las cursadas nuevamente",
+            "urlImg":"Img/dalle-gabinete.png",
+            "text":["texto","texto", "texto"],
+        }
+        
+
+    ]
+}
+
