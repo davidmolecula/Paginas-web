@@ -27,7 +27,7 @@ body{
 	background-color: black;
 }
 #fill-3{
-	height: 20em;
+	height: 10em;
 }
 :root {
     --black:#16161a;
@@ -749,7 +749,6 @@ h1{
 
 
 	footer {
-		height: 50vh;
 		width: 100%;
 		flex-direction: column;
 		} 
@@ -1112,11 +1111,7 @@ display: flex;
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.footer-div.contacto a {
-		padding: 0;
-		margin: 0;
-		font-size: 8px;
-	}
+	
 }
 
 
