@@ -55,7 +55,22 @@ let informationCards={
         "description":"Biblioteca central de la utn fra",
         "url":"https://www.instagram.com/biblio.utn.fra/",
         "link": "Insta: biblio.utn.fra",
-        }
+        },
+        {
+        id: 9,
+        "title":"Grupos de wsp",
+        "description":'<a href="https://chat.whatsapp.com/FLRelLWN9CT6dweLvyJOMZ" class="informacion-a-g">Algebra</a><a href="https://chat.whatsapp.com/DjQMLkJzGsIEu5l5OM229m" class="informacion-a-g">Fisica I</a><a href="https://chat.whatsapp.com/KEvoEkZqvDh0lec0K8SHwZ" class="informacion-a-g"><Fisica II/a><a href="https://chat.whatsapp.com/CBoHGMAKD3KDG7lSaFPOdA" class="informacion-a-g">Analisis I</a><a href="https://chat.whatsapp.com/Idm7cBSsplS56rylWREfo1" class="informacion-a-g">Consulta Ingreso</a>',
+        "url":"https://chat.whatsapp.com/F3oJwzLnwOr9neQ5OrxU1Z",
+        "link":"Qca general e inorganica"
+        },
+        {
+        id: 10,
+        "title":"Guias digitales",
+        "description":"Les dejamos los apuntes digitales de las materias basicas de primer año",
+        "url":"https://drive.google.com/drive/folders/1C-q4jLHNrPgyNzRqFcr_bF3OlbJgmKap",
+        "link":"link",
+        },
+        
     ]
 };
 

@@ -724,7 +724,7 @@ h1{
 		font-size: 15px;
 		border-radius:inherit;
 	}
-	.informacion-a{
+	.informacion-a,.informacion-a-g{
 		position: relative;
 		z-index: 6;
 		top:25%;
@@ -734,7 +734,12 @@ h1{
 		color: white;		
 		text-decoration: underline;
 	}
-	.informacion-a:hover {
+	.informacion-a-g{
+		padding:0;
+		display: block;
+		width: fit-content;
+	}
+	.informacion-a:hover, .informacion-a-g:hover {
 			color: red;
 			text-decoration: underline;
 			border:0;
@@ -768,6 +773,7 @@ height: 80%;
 width: 100%;
 background:black;
 }
+
 .footer-div {
 	display: flex;
 	font-size: 15px;
