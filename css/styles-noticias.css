@@ -1,18 +1,26 @@
 body{
 	height: fit-content;
+	background-color: black;
+}
+
+nav {
+	position: relative;
 }
 .section-news {
 	display: flex;
+	flex-wrap: wrap;
 	background: linear-gradient(to bottom, black,var(--darkblue));
-	flex-direction: column;
-	align-items: center;
+	gap: 20px;
+	align-items: start;
 	width: 100%;
+	height: fit-content;
 }
-.class-js-nav{
+
+nav{
 	background: white;
-	color: black;
-	border: 1px solid var(--lightblue);
 }
+
+
 .nav-links li a
 {
 	color: black;
@@ -21,12 +29,17 @@ body{
 article{
 	display: flex;
 	flex-direction: column;
-	width: 80%;
-	background: var(--black);
+	width: 70%;
+	margin-left: 1%;
+	margin-top:1%;
+}
+.news-date{
+	text-align: end;
+	color: white;
 }
 h1{
 	color: white;
-	font-size: 4em;
+	font-size: 3em;
 	padding: .5em 0 .5em 0;
 }
 
@@ -34,9 +47,9 @@ h1{
 {
 	background-size: cover;
 	width: 100%;
-	height: 30em;
+	height: 20em;
 	overflow: hidden;
-	border:1px solid white;
+	
 }
 .news-image>img{
 	width: 100%;
@@ -44,11 +57,75 @@ h1{
 }
 .news-subtitle{
 	color: white;
-	font-size: 2em;
+	font-size: 1.3em;
 	padding: 0 2em 1em 2em;
 }
 .news-text{
 	color: white;
-	padding: 0 2em 0 2em;
-	font-size:1.1em;
+	padding: 1em 2em 1em 2em;
+	font-size:1em;
+}
+
+#news-secondary{
+	align-self: flex-end;
+}
+.new-s-title{
+	color: white;
+}
+.new-s {
+	margin-bottom: 5%;
+	width: 100%;
+}
+
+
+@media (max-width:768px) {
+
+	.section-news{
+		width: 100%;
+	}
+	article
+	{
+		width: 100%;
+	}
+	nav{
+		background-color: var(--darkblue);
+	}
+	.clase-js-nav {
+		position: relative;
+		background-color: var(--darkblue);
+	}
+	.hamburguesa {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top:50%;
+		transform: translate(-5%,-50%);
+		z-index: 2;
+	}
+	#home {
+		display: none;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+	.nav-links {
+		background-color: var(--lightblue);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path:circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		justify-content: flex-start;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -20%);
+		-webkit-clip-path:circle(1500px at 90% -20%);
+		
+	}
 }

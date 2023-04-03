@@ -21,13 +21,18 @@ body{
 	justify-content: center;
 	height: 20vh;
 	width: 100%;
-	background-color:var(--lightblue);
+	background-color:black;
 }
 .fill-2, #fill-3{
+	height: 200px;
 	background-color: black;
 }
 #fill-3{
 	height: 10em;
+}
+.fill-4{
+	height: 200px;
+	background-color: var(--lightblue);
 }
 :root {
     --black:#16161a;
@@ -75,6 +80,7 @@ nav {
 #home {
 	width: 50px;
 	padding-top:10px;
+	margin-left:20px;
 }
 .nav-links
 {
@@ -216,7 +222,7 @@ h1{
 	flex-wrap: wrap;
 	justify-content: center;
 	height: fit-content;
-	background:linear-gradient(to bottom, var(--lightblue),black);
+	background:linear-gradient(to top, var(--lightblue),black);
 }
 .card.container{
 	position: relative;
@@ -247,7 +253,7 @@ h1{
 	gap: 20px;
 	width: 100%;
 	height: 100%;
-	background-color: var(--lightblue);
+	background-color: var(--darkblue);
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
 	color: white;
@@ -448,7 +454,7 @@ h1{
 		align-items: center;
 		height: fit-content;
 		width: 100%;
-		background: linear-gradient(to bottom, black,var(--darkblue));
+		background: linear-gradient(to top, black,var(--lightblue));
 	}
 
 	.becas-h2
@@ -623,7 +629,7 @@ h1{
 #informacion
 	{
 		height: fit-content;
-		background: linear-gradient(to bottom, black,var(--darkblue));
+		background: linear-gradient(to top, black,var(--lightblue));
 		background-size: cover;
 	}
 
@@ -633,7 +639,7 @@ h1{
 		padding: 1em;
 		height: 3em;
 		width: 100%;
-		background: black;
+		
 		color: rgb(240, 240, 240);
 		text-shadow: 2px 2px 4px black;
 	}
@@ -760,7 +766,7 @@ display: flex;
 justify-content: space-between;
 height: 80%;
 width: 100%;
-background: linear-gradient(45deg, var(--black), var(--lightblue));
+background:black;
 }
 .footer-div {
 	display: flex;
@@ -934,7 +940,6 @@ display: flex;
 		margin: 5px;
 	}
 	.nav-links {
-
 		background-color: var(--lightblue);
 		height: 100vh;
 		width: 100%;

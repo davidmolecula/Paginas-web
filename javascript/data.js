@@ -129,18 +129,9 @@ let newsCardData={
         {
             id:0,
             "title":"Buscando las aulas",
-            "subtitle":"Todos los nombres de las aulas cambiaron",
+            "subtitle":'<p class="news-text">⚠️A PARTIR DEL 20 DE MARZO, CAMBIA LA NUMERACIÓN DE LAS AULAS PARA LAS CURSADAS DE INGENIERÍA</p>',
             "urlImg":"Img/news-1.jpg",
-            "text":['<p class="news-text">⚠️A PARTIR DEL 20 DE MARZO, CAMBIA LA NUMERACIÓN DE LAS AULAS PARA LAS CURSADAS DE INGENIERÍA</p>'
-
-            ,'<p class="news-text">🔵Con el inicio del ciclo lectivo 2023, se modificará la numeración de las aulas del Campus Villa Domínico para una mejor organización y circulación de los y las estudiantes de las carreras de Ingeniería.</p>'
-            
-            ,'<p class="news-text">🔵Desde el lunes 20 de marzo, encontrarán el nombre de cada aula con el siguiente esquema: la letra representa al sector correspondiente, el primer número al piso donde se encuentra ubicada y los dos últimos dígitos corresponden al número de aula.</p>'
-            
-            ,'<p class="news-text">🔵Esta nueva disposición se encuentra también indicada en la señalética colocada en cada aula y en carteles ubicados en los accesos principales del Campus. Además, está disponible como PDF interactivo desde el siguiente link: tinyurl.com/5n8z724z, donde al hacer click sobre las imágenes se puede acceder a los videos que explican cómo llegar a cada sector.</p>'
-            
-            
-            ,'<p class="news-text">🔵A partir de este trabajo, realizado por el Programa de Comunicación Institucional de la UTN Avellaneda, se continúan llevando adelante las tareas para reorganizar y mejorar el tránsito de la comunidad universitaria.</p>'],
+            "text":['<p class="news-text">🔵Con el inicio del ciclo lectivo 2023, se modificará la numeración de las aulas del Campus Villa Domínico para una mejor organización y circulación de los y las estudiantes de las carreras de Ingeniería.</p>','<p class="news-text">🔵Desde el lunes 20 de marzo, encontrarán el nombre de cada aula con el siguiente esquema: la letra representa al sector correspondiente, el primer número al piso donde se encuentra ubicada y los dos últimos dígitos corresponden al número de aula.</p>','<p class="news-text">🔵Esta nueva disposición se encuentra también indicada en la señalética colocada en cada aula y en carteles ubicados en los accesos principales del Campus. Además, está disponible como PDF interactivo desde el siguiente <a href="https://drive.google.com/file/d/1Cx0haz575Nx-rlsCw_90Hi3fHHUDRYgX/view">link</a>, donde al hacer click sobre las imágenes se puede acceder a los videos que explican cómo llegar a cada sector.</p>','<p class="news-text">🔵A partir de este trabajo, realizado por el Programa de Comunicación Institucional de la UTN Avellaneda, se continúan llevando adelante las tareas para reorganizar y mejorar el tránsito de la comunidad universitaria.</p>'],
         },
         {
             id:1,
@@ -160,14 +151,14 @@ let newsCardData={
             id:3,
             "title": "Renovamos el pasillo de la memoria",
             "subtitle": "Mantenemos viva la memoria",
-            "urlImg":"Img/dalle-gabinete.png",
-            "text":["texto","texto", "texto"],
+            "urlImg":"Img/pasillo.jpg",
+            "text":['<p class="news-text">24 DE MARZO - DIA NACIONAL DE LA MEMORIA POR LA VERDAD Y LA JUSTICIA</p>','<p class="news-text">Hoy, 24 de marzo, se conmemora en Argentina el Día de la Memoria, la Verdad y la Justicia en memoria de las víctimas de la última dictadura cívico-militar que gobernó el país entre 1976 y 1983.</p>','<p class="news-text">Durante esos años, miles de personas fueron secuestradas, torturadas y desaparecidas por el Estado en un intento de aniquilar a la oposición política y social.</p>','<p class="news-text">Es importante recordar este día para honrar la memoria de las víctimas y para mantener viva la lucha por la verdad y la justicia. Aunque han pasado más de 40 años desde la dictadura, aún hay muchos crímenes impunes y muchas familias siguen buscando a sus seres queridos desaparecidos.</p>','<p class="news-text">La memoria es fundamental para no olvidar lo que sucedió y para no permitir que se vuelva a repetir. La verdad es necesaria para conocer lo que realmente pasó y para desmantelar las mentiras y el discurso oficial que se usaron para justificar los crímenes.</p>','<p class="news-text">La justicia es fundamental para castigar a los responsables y para garantizar que no haya impunidad.</p>','<p class="news-text">Es importante seguir luchando por la verdad y la justicia para las víctimas de la dictadura, pero también para todas las víctimas de violaciones a los derechos humanos en cualquier parte del mundo.</p>','<p class="news-text">La memoria, la verdad y la justicia son valores universales que deben ser defendidos por todos.</p>','<p class="news-text">🤍 NUNCA MAS 🤍</p>'],
         },
         {
             id:4,
             "title": "Feliz comienzo de cursada",
             "subtitle": "Comienzan las cursadas nuevamente",
-            "urlImg":"Img/dalle-gabinete.png",
+            "urlImg":"Img/happy.jpg",
             "text":["texto","texto", "texto"],
         }
         
