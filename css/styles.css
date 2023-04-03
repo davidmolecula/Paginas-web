@@ -45,6 +45,7 @@ body{
 /* HEADER */
 header{
 	width: 100%;
+	
 }
 .section-landing {
 	background-image: url(../Img/logobl.png);
@@ -71,6 +72,7 @@ nav {
 		text-align: center;
 		transition: all .5s ease;
 		z-index:10;
+		
 }
 #home {
 	width: 50px;
@@ -83,6 +85,7 @@ nav {
 	width: 60%;
 	height: 100%;
 	justify-content: space-around;
+
 }
 .nav-links>li {
 	display: flex;
@@ -91,6 +94,10 @@ nav {
 	text-align: center;
 	height: 100%;
 	border: 2px solid transparent;
+
+}
+.nav-links>li>a{
+	color: white;
 }
 
 .nav-links>li::after {
@@ -108,20 +115,8 @@ nav {
 	transition: all 1s ease;
 }
 
-a{
-	color: var(--white);
-	text-decoration: none;
-	width: 100%;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 2px 5px 2px 5px;
-	border-radius: 10px;
-	border:1px solid rgba(0, 0, 0, 0);	
-}
-a:hover {
-	transition: all .5s ease;
-	border:1px solid grey;	
-}
+
+
 .link {
 	color: var(--black);
 	text-decoration: none;
@@ -208,9 +203,6 @@ h1{
 
 /*Seccion de servicios*/
 
-
-
-
 .servicios {
 	display: flex;
 	flex-wrap: wrap;
@@ -221,7 +213,7 @@ h1{
 .card.container{
 	position: relative;
 	width: 20em;
-	height: 100vh;
+	height: 80vh;
 }
 .servicios-card{
 	display: flex;
@@ -271,7 +263,7 @@ h1{
 	padding: 10px;
 	height: 2em;
 	color:white;
-	box-shadow:1px 3px 5px  black ;
+	box-shadow:1px 3px 5px  black;
 	text-align: center;
 	border: 1px solid black;
 	background-color: var(--lightblue);
@@ -282,7 +274,7 @@ h1{
 	padding-top: 2px;
 }
 
-/* Aca comienza la seccion de news */
+/* news*/
 
 
 
@@ -623,7 +615,7 @@ h1{
 #informacion
 	{
 		height: fit-content;
-		background: linear-gradient(to bottom, black,var(--darkblue));
+		background: linear-gradient(to top, black,var(--lightblue));
 		background-size: cover;
 	}
 
@@ -996,7 +988,7 @@ display: flex;
 		bottom: 15%;
 	}
 	.titulo-array{
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 	.news-carrousel{
 		width: 100%;

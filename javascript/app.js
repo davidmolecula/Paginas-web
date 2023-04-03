@@ -76,14 +76,14 @@ s4Container.onmousemove=e=> {
 
 for(let card of informationCards.cards)
 {
-informationCard+=`<div class="informacion-div" id="informacion-div">
+informationCard+=`<a href="${card.url}" class="informacion-a"><div class="informacion-div" id="informacion-div">
 				
 <h3 class="informacion-h3">${card.title}</h3>
 <p class="informacion-p">${card.description}
 </p>
 <a href="${card.url}" class="informacion-a">${card.link}</a>
 
-</div>`;
+</div></a>`;
 }
 s4Container.innerHTML=informationCard;
 

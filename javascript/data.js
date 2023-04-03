@@ -2,7 +2,7 @@ let informationCards={
     "cards": [
         {
         id: 1,
-        "title": "Horarios de materias",
+        "title": "Horarios",
         "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2023",
         "url":"files/horarios_en_base_de_datos_2022_Departamentos.xls" ,
         "link": "Descarga acá"
@@ -23,7 +23,7 @@ let informationCards={
         },
         {
         id: 4,
-        "title":"Planes beta",
+        "title":"Plan beta",
         "description":"La inscripción al Plan Beta, primer cuatrimestre 2023 estará habilitada del 27/3 al 30/3",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSdoSeeaC2lVm0roYiIXoWbPTFKT3shA_77EBzHHNAdOEQ3BZQ/closedform",
         "link": "Formulario",
@@ -55,7 +55,8 @@ let informationCards={
         "description":"Biblioteca central de la utn fra",
         "url":"https://www.instagram.com/biblio.utn.fra/",
         "link": "Insta: biblio.utn.fra",
-        }
+        },
+        
     ]
 };
 
@@ -151,7 +152,7 @@ let newsCardData={
         },
         {
             id:2,
-            "title": "Torneo de ping-pong",
+            "title": "Becas",
             "subtitle": "Veni a jugar con nosotros",
             "urlImg":"Img/dalle-gabinete.png",
             "text":["texto","texto", "texto"],
@@ -166,7 +167,6 @@ let newsCardData={
         {
             id:4,
             "title": "Feliz comienzo de cursada",
-            "subtitle": "Comienzan las cursadas nuevamente",
             "urlImg":"Img/dalle-gabinete.png",
             "text":["texto","texto", "texto"],
         }
