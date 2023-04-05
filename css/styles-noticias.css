@@ -21,10 +21,7 @@ nav{
 }
 
 
-.nav-links li a
-{
-	color: black;
-}
+
 
 article{
 	display: flex;
@@ -127,5 +124,15 @@ h1{
 		clip-path: circle(1500px at 90% -20%);
 		-webkit-clip-path:circle(1500px at 90% -20%);
 		
+	}
+	.link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 100vw;
+		color:var(--white);
+		padding: 5px;
+		margin-bottom:30px
 	}
 }

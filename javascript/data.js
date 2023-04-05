@@ -153,7 +153,7 @@ let newsCardData={
             "title": "Feria de apuntes",
             "subtitle": "Podes dejar los apuntes que ya no usas o agarrar alguno que te sirva",
             "urlImg":"Img/news-2.jpg",
-            "text":["texto","texto", "texto"],
+            "text":['<p class="news-text">La feria de apuntes es un clasico del centro de estudiantes y la idea detras es muy simple: donar esos apuntes que ya no utilizas y tener la posibilidad de encontrar otro que si te sirva.</p>','<p class="news-text">Aceptamos apuntes de todas las materias, en especial las basicas y si quisieras donar tus libros tambien sos bienvenido/a.</p>','<La class="news-text">¡La vida universitaria es un poco mejor cuando nos ayudamos entre todos!</p>','<p class="news-text"></p>','<p class="news-text"></p>','<p class="news-text"></p>','<p class="news-text"></p>'],
         },
         {
             id:2,
@@ -172,9 +172,9 @@ let newsCardData={
         {
             id:4,
             "title": "Feliz comienzo de cursada",
-            "subtitle": "Comienzan las cursadas nuevamente",
+            "subtitle": "Como todos los años comienza la cursada y con ella los sueños de progreso de les estudiantes",
             "urlImg":"Img/happy.jpg",
-            "text":["texto","texto", "texto"],
+            "text":['<p class="news-text">Desde el centro de estudiantes estamos muy contentos de poder acompañarlos un año más en sus cursadas.</p>','<p class="news-text">El comienzo de las cursadas es un momento emocionante, tenemos una oportunidad de desarrollarnos como ingenieros y aprender sobre el mundo de la ingenieria.</p>','<p class="news-text">Desde el centro de estudiantes queremos acompañarlos en cada paso, resolver cada inquietud y hacer su paso por la facultad lo más fácil y placentero posible.</p>','<p class="news-text">Queremos hacerles saber que estamos acá para ayudarlos si nos necesitan, pero sobre todo en este momento queremos decirles: ¡FELIZ CURSADA PARA TODOS!</p>','<p class="news-text"></p>'],
         }
         
 

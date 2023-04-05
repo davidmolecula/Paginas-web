@@ -69,7 +69,7 @@ function carrouselAuto()
         }
 }
 
-if(screen>768)
+if(screen>1000)
 {
 carrouselAuto();
 }

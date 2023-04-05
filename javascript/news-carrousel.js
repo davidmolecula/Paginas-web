@@ -50,7 +50,7 @@ function carrouselAutoDep()
         })
         newsPunto[posicionDep].classList.add('activo');
 
-            },3000)
+            },4000)
         }
 }
 

@@ -126,14 +126,13 @@ a{
 }
 a:hover {
 	transition: all .5s ease;
-	border:1px solid grey;	
+
 }
 .link {
 	color: var(--black);
 	text-decoration: none;
 	font-size: 15px;
 	font-weight: bold;
-
 }
 .link:hover {
 	transition: all .5s ease-in-out;
@@ -394,6 +393,7 @@ h1{
 }
 .new-s-div{
 	display: flex;
+	width: 60%;
 	padding: 10px;
 	justify-content: space-around;
 	flex-direction: column;
@@ -511,7 +511,7 @@ h1{
 		align-items: center;
 		position: absolute;
 		bottom: 10px;
-		left: 27%;
+		left: 30%;
 		gap:20px;
 	}
 	.tarjeta-link-1, .tarjeta-link-2 {
@@ -768,7 +768,7 @@ h1{
 
 #Informacion_footer {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 height: 80%;
 width: 100%;
 background:black;
@@ -901,8 +901,21 @@ display: flex;
 	border: 1px solid grey;
 
 }
-
-
+.footer-div.contacto{
+	display: flex;
+	justify-content: start;
+	width: 30%;
+}
+.footer-div.contacto>a{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	text-align: start;
+	width: fit-content;
+}
+.footer-div.contacto h4{
+	width: fit-content;
+}
 
 
 
@@ -966,12 +979,10 @@ display: flex;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: var(--white);
 		height: 50px;
 		width: 100vw;
-		color:var(--black);
+		color:var(--white);
 		padding: 5px;
-		border-radius: 10px;
 		margin-bottom:30px
 	}
 	.active{
@@ -1121,8 +1132,11 @@ display: flex;
 	.footer-div.contacto{
 		display: flex;
 		flex-wrap: wrap;
+		overflow: hidden;
 	}
-	
+	.footer-div.contacto a{
+		font-size: 10px;
+	}
 }
 
 
