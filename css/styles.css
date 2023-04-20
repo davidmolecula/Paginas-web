@@ -1026,7 +1026,9 @@ display: flex;
 	.news-carrousel .news-grande {
 		height: 50vh;
 	}
-	
+	#news-secondary{
+		width: 100%!important;
+	}
 	
 	/*SECTION 3*/
 
