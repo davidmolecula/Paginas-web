@@ -17,7 +17,7 @@ nav {
 }
 
 nav{
-	background: white;
+	background: var(--lightblue);
 }
 
 
@@ -65,6 +65,7 @@ h1{
 
 #news-secondary{
 	align-self: flex-end;
+	width: 25%;
 }
 .new-s-title{
 	color: white;

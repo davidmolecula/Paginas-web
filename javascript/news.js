@@ -34,9 +34,11 @@ let newsCards='<h2 class="new-s-title">Ultimas noticias</h2>';
 const newsCard=document.getElementById("news-secondary");
 
 let newsCardBig='';
-
-for(let i=0;i<3;i++)
+let i=0;
+for(let news of newsCardData.newsCards)
 {
+  if(i!=id&&i<6)
+  {
   newsCards+=`<div class="new-s ${newsCardData.newsCards[i].letter}">
   <div class="new-s-img"><img src="${newsCardData.newsCards[i].urlImg}" alt=""></div>
   <div class="new-s-div">
@@ -44,6 +46,8 @@ for(let i=0;i<3;i++)
     <a href="noticias.html?id=${newsCardData.newsCards[i].id}" class="new-s-link">Leer más</a>
   </div>
 </div>`
+}
+i++;
 };
 
 newsCard.innerHTML=newsCards;

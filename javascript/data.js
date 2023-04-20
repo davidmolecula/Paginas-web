@@ -157,10 +157,20 @@ let newsCardData={
         },
         {
             id:2,
-            "title": "Torneo de ping-pong",
-            "subtitle": "Veni a jugar con nosotros",
-            "urlImg":"Img/dalle-gabinete.png",
-            "text":["texto","texto", "texto"],
+            "title": "Sorteo de lockers",
+            "subtitle": "Desde el CEIT ofrecemos los lockers como se viene haciendo anteriormente de forma gratuita, para así poder brindar la posibilidad de alivianar el transito por la Facultad.",
+            "urlImg":"Img/sorteo_lockers.jpg",
+            "text":['<p class="news-text">FECHAS A TOMAR EN CUENTA:  </p>',
+            '<p class="news-text">- 12/04 : Fecha límite para retirar las cosas (GANADORES 2022)<\p>',
+            '<p class="news-text">- Hasta el 14/04: Periodo para inscribirse al sorteo. <p class="news-text">-14/04 al 21/04: Periodo para que los ganadores reclamen el locker de caso contrario, se pasara al siguiente suplente de la lista, el mismo criterio aplica para dicho suplente. <\p>',
+            
+            '<p class="news-text">El sorteo se realizará el 14/04 </p>',
+            
+            '<p class="news-text">Para inscribirse al sorteo de lockers poder scanear el QR de publicación o inscribite por el link.<\p>',
+            
+            '<a href="https://docs.google.com/forms/d/e/1FAIpQLSc6AH22dpWN760YLyJWyq5vzjR6OpMBVL0HvL6UJwA6U3S7zg/viewform ">Form<\a>',
+            
+            '<p class="news-text">- Centro de Estudiantes de la UTN FRA</p>'],
         },
         {
             id:3,
@@ -175,6 +185,13 @@ let newsCardData={
             "subtitle": "Como todos los años comienza la cursada y con ella los sueños de progreso de les estudiantes",
             "urlImg":"Img/happy.jpg",
             "text":['<p class="news-text">Desde el centro de estudiantes estamos muy contentos de poder acompañarlos un año más en sus cursadas.</p>','<p class="news-text">El comienzo de las cursadas es un momento emocionante, tenemos una oportunidad de desarrollarnos como ingenieros y aprender sobre el mundo de la ingenieria.</p>','<p class="news-text">Desde el centro de estudiantes queremos acompañarlos en cada paso, resolver cada inquietud y hacer su paso por la facultad lo más fácil y placentero posible.</p>','<p class="news-text">Queremos hacerles saber que estamos acá para ayudarlos si nos necesitan, pero sobre todo en este momento queremos decirles: ¡FELIZ CURSADA PARA TODOS!</p>','<p class="news-text"></p>'],
+        },
+        {
+            id:5,
+            "title": "Arrancamos con las clases de consulta",
+            "subtitle": "Queridos compañeros, desde la comisión de enseñanza del centro vamos a estar brindando clases de apoyo de Física I y II, Análisis matemático I, Álgebra y Geometría Analítica y del Seminario Universitario de Ingreso",
+            "urlImg":"Img/happy.jpg",
+            "text":['<p class="news-text">Los días y horarios de estas mismas están indicadas en cada una y las aulas seran:</p>','<p class="news-text">-F002 (Industrial) para materias básicas.</p>','<p class="news-text">-E002 (Mecánica) para el seminario de ingreso.</p>','<p class="news-text">Cualquier duda, inquietud o sugerencia, o si te interesa participar o dar alguna clase, no dudes en escribirnos a cualquiera de nuestras redes o acercándote al local del CEIT.</p>','<p class="news-text">-Centro de Estudiantes de Ingeniería Tecnológica-</p>'],
         }
         
 

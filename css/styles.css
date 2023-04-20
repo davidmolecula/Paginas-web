@@ -129,7 +129,7 @@ a:hover {
 
 }
 .link {
-	color: var(--black);
+	color: white;
 	text-decoration: none;
 	font-size: 15px;
 	font-weight: bold;
@@ -139,18 +139,15 @@ a:hover {
 }
 
 .clase-js-nav {
-	background-color: var(--white);
+	background-color: var(--lightblue);
 	transition: all 1s ease;
-	border: 2px solid var(--lightblue);
+	color:white;
 }
 .clase-js-nav3 {
 	background-color:var(--lightblue);
 	border:none;
 }
-.clase-js-a{
-	color:black;
-	text-decoration: none;
-}
+
 
 .dropdown-planes {
 	display: none;
@@ -234,7 +231,7 @@ h1{
 	flex-direction: column;
 	border-radius:10px;
 	width: 20em;
-	height: 100%;
+	height: 80%;
 	box-shadow:0px 10px 10px black;
 	background-image: url(../Img/gabinete-photo.jpg);
 	background-size:cover;

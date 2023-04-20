@@ -37,7 +37,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
 
       link5.classList.add("link");
       link6.classList.add("link");
-      svg[0].setAttribute('fill','black');
+   
     }else {
       nav.classList.remove("clase-js-nav");
       link1.classList.remove("link");
