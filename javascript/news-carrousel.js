@@ -24,7 +24,7 @@ newsPunto.forEach((cadaPunto, i)=> {
 function carrouselAutoDep()
 {   
     newsLink.href=`noticias.html?id=${newsCardData.newsCards[posicionDep+3].id}`;  
-    console.log("a ver");
+    
     newsPunto.forEach((cadaPunto, i)=> {
     newsPunto[i].addEventListener('click', ()=>{
         clearInterval(noEntiendoDep);

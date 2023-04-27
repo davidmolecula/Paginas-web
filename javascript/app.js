@@ -105,7 +105,6 @@ for(let i=0;i<3;i++)
   </div>
 </div>`
 };
-console.log(newsCard);
 newsCard.innerHTML=newsCards;
 
 

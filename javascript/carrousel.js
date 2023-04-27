@@ -93,25 +93,24 @@ function touchend() {
     if ( Math.abs(endingX - startingX) > Math.abs(endingY - startingY) ) {
         if ( endingX > startingX ){
             touchDirection = "ArrowRight";
-            console.log(touchDirection);
-            console.log(operacion);
+            
         if(operacion<0) 
     {
         operacion+=25;
-        console.log(operacion);
+        
         k-=1;
         grande.style.transform=`translateX(${operacion}%)`;
         title.innerHTML=titles[k];
         text.innerHTML=texts[k];
         tarjetaLink1.setAttribute('href',tarjetaLinks1[k]);
         tarjetaLink2.setAttribute('href', tarjetaLinks2[k]);
-            console.log(touchDirection);
+        
             punto.forEach((cadaPunto, j)=> {
             punto.forEach((cadaPunto,j)=>{
                 punto[j].classList.remove('activo');
             })
             j=k;
-            console.log(j);
+      
             punto[j].classList.add('activo');
         }
     )
@@ -120,24 +119,24 @@ function touchend() {
             }
         else {
             touchDirection = "ArrowLeft";
-            console.log(touchDirection);
+        
     if(operacion>-75) 
     {
         operacion-=25;
-        console.log(operacion);
+        
         k+=1;
         grande.style.transform=`translateX(${operacion}%)`;
         title.innerHTML=titles[k];
         text.innerHTML=texts[k];
         tarjetaLink1.setAttribute('href',tarjetaLinks1[k]);
         tarjetaLink2.setAttribute('href', tarjetaLinks2[k]);
-            console.log(touchDirection);
+     
             punto.forEach((cadaPunto, j)=> {
                 punto.forEach((cadaPunto,j)=>{
                     punto[j].classList.remove('activo');
                 })
                 j=k;
-                console.log(j);
+          
                 punto[j].classList.add('activo');
             }
         )  
@@ -148,12 +147,12 @@ function touchend() {
         if ( endingY > startingY ) 
         {
             touchDirection = "ArrowDown";
-            console.log(touchDirection);
+          
         }
         else 
         {
             touchDirection = "ArrowUp";
-            console.log(touchDirection);
+           
         }
     }
 }

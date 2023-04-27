@@ -9,10 +9,10 @@ let informationCards={
         },
         {
         id: 2,
-        "title":"Fechas de final",
-        "description":"Todas las fechas de los llamados del 2023 y las mesas especiales",
-        "url":"https://fra.utn.edu.ar/index.php/alumnos/fechas-de-final",
-        "link":"Fechas de final",
+        "title":"Calendario academico",
+        "description":"Calendario academico con todas las fechas de los llamados del 2023 y las mesas especiales",
+        "url":"https://drive.google.com/drive/folders/1Xnefpp6UsegB-KTa6UPUPRcS8n6Wg1cF",
+        "link":"Calendario",
         },
         {
         id: 3,

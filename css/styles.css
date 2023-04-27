@@ -269,6 +269,13 @@ h1{
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+.servicios-card.d
+{
+	box-shadow:0px 10px 10px black ;
+	background-image: url(../Img/local.jpeg);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
 .servicios-card-h2{
 	padding: 10px;
 	height: 2em;

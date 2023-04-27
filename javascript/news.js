@@ -15,8 +15,7 @@ const params=new URLSearchParams(locationSearch);
 const id=params.get("id");
 
 const news=newsCardData.newsCards.find(news=>news.id==id);
-console.log(id);
-console.log(news);
+
 const newsContainer=document.getElementById('news-container');
 let newsText='';
 for(let text of news.text)

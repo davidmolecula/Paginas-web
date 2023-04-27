@@ -64,5 +64,5 @@ stringCarreras+=`<h1 class="titulo-planes">Planes de estudio y sus principales c
     </div>
 </div>";`
 }
-console.log(stringCarreras);
+
 carrerasContainer.innerHTML=stringCarreras; */
