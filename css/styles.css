@@ -233,7 +233,7 @@ h1{
 	width: 20em;
 	height: 80%;
 	box-shadow:0px 10px 10px black;
-	background-image: url(../Img/gabinete.jpeg);
+	background-image: url(../Img/comedor.jpeg);
 	background-size:cover;
 	transform-style: preserve-3d;
 	transition: all 1s ease-in-out;
@@ -258,21 +258,21 @@ h1{
 .servicios-card.b
 {
 	box-shadow:0px 10px 10px black ;
-	background-image: url(../Img/fotocopiadora.jpeg);
+	background-image: url(../Img/dalle-fotocopiadora\ \(3\).png);
 	background-size:cover;
 }
 
 .servicios-card.c
 {
 	box-shadow:0px 10px 10px black ;
-	background-image: url(../Img/merienda.jpeg);
+	background-image: url(../Img/dalle-fotocopiadora\ \(2\).png);
 	background-size:cover;
 	background-repeat: no-repeat;
 }
 .servicios-card.d
 {
 	box-shadow:0px 10px 10px black ;
-	background-image: url(../Img/local.jpeg);
+	background-image: url(../Img/dalle-fotocopiadora\ \(1\).png
 	background-size:cover;
 	background-repeat: no-repeat;
 }
