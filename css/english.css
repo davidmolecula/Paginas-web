@@ -1,0 +1,97 @@
+* {box-sizing:border-box}
+
+:root {
+  --black:#16161a;
+--gris:rgba(65, 59, 59, 0.61);
+  --darkblue: #0F314D;
+  --lightblue:#1C5787;
+--darkgreen:#155E16;
+--lightgreen:#22D827;
+--white:#ffffff;
+}
+
+/* barra lateral */
+
+::-webkit-scrollbar {
+	background: linear-gradient(to top, var(--lightblue), black);
+}
+
+body{
+	overflow-x: hidden;
+	width: 100%;
+	background: linear-gradient(to bottom, black,var(--lightblue));
+	height: 120vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.intro-memes{
+  color: white;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 25px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}

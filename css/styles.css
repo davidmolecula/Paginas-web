@@ -15,25 +15,12 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.fill {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 20vh;
-	width: 100%;
-	background-color:black;
-}
-.fill-2, #fill-3{
-	height: 200px;
-	background-color: black;
-}
+
 #fill-3{
-	height: 10em;
-}
-.fill-4{
 	height: 200px;
-	background-color: var(--lightblue);
+	background: linear-gradient(to bottom, var(--lightblue), black);
 }
+
 :root {
     --black:#16161a;
 	--gris:rgba(65, 59, 59, 0.61);
@@ -299,9 +286,10 @@ h1{
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	background-color: black;
-	height: fit-content;
+	background: linear-gradient(to bottom, var(--lightblue), black);
+	height:120vh;
 }
+
 .news-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -458,7 +446,7 @@ h1{
 		align-items: center;
 		height: fit-content;
 		width: 100%;
-		background: linear-gradient(to top, black,var(--lightblue));
+		background: linear-gradient(to bottom, black,var(--lightblue));
 	}
 
 	.becas-h2
@@ -479,7 +467,6 @@ h1{
 		padding: 30px;
 		gap: 20px;
 		border-radius: 10px;
-		border: 1px solid var(--darkblue);
 		
 	}
 
@@ -632,9 +619,10 @@ h1{
 
 #informacion
 	{
-		height: fit-content;
+		height:180vh;
 		background: linear-gradient(to top, black,var(--lightblue));
 		background-size: cover;
+		overflow: hidden;
 	}
 
 	.informacion-title, .news-h2 {
@@ -751,6 +739,31 @@ h1{
 
 	#section-5{
 		background: black;
+	}
+
+	#gremialcaja {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 80px;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	#logogremial {
+		display: flex;
+		width: 100px;
+		height: 100px;
+
+	}
+
+	#infogremial {
+		display: flex;
+		height: 500px;
+		width:600px;
+		overflow: hidden; 
+		text-align: justify;
+
 	}
 	
 
@@ -921,7 +934,44 @@ display: flex;
 	width: fit-content;
 }
 
+#gremial
+{
+	height: 90vh;
+	background: linear-gradient(to bottom, var(--lightblue),black);
+	background-size: cover;
+	color: white;
+}
 
+#carreras
+{
+	height: 120vh;
+background: linear-gradient(to bottom, black,var(--lightblue));
+display: flex;
+justify-content: center;
+}
+
+.cardsCarreras {
+	display: flex;
+	flex-wrap: wrap;
+	height: 120vh;
+	justify-content: space-between;
+	width: 1100px;
+	
+  }
+  
+.cardcolumn {
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+  }
+
+.cardcarrera {
+	box-shadow: 5px 15px 25px 15px #000912;
+	cursor: pointer;
+	position: relative;
+	width: 400px;
+  }
 
 /*AJUSTES PARA LA VERSION MOBILE*/
 
@@ -1093,6 +1143,11 @@ display: flex;
 		height: 35px;
 		padding: .8em .5em .8em .5em; 
 	}
+
+
+
+	
+
 
 	/*SECTION 4*/
 	#informacion

@@ -239,14 +239,6 @@ h1 {
 	background:linear-gradient(45deg, white,darkgrey);
 	color: white;
 }
-.electronica-info-h2,.mecanica-info-h2,.industrial-info-h2,.quimica-info-h2,.civil-info-h2,.electrica-info-h2{
-font-size: 3em;
-}
-.electronica-info-h3,.mecanica-info-h3,.industrial-info-h3,.quimica-info-h3,.civil-info-h3,.electrica-info-h3,.electronica-info-h2,.mecanica-info-h2,.industrial-info-h2,.quimica-info-h2,.civil-info-h2,.electrica-info-h2{
-	color: var(--black);
-
-}
-
 
 
 .electronica-info-text,.mecanica-info-text,.industrial-info-text,.quimica-info-text,.civil-info-text,.electrica-info-text {
