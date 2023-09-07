@@ -21,6 +21,42 @@ const link5=document.getElementById("link-5");
 const link6=document.getElementById("link-6");
 const svg=document.getElementsByTagName('svg');
 
+
+
+const carreraCol=document.getElementById("carreraColumna")
+const carreraCol2=document.getElementById("carreraColumna2")
+carreras.map((carrera)=>{
+  if(carrera._id<3)
+  {
+      carreraCol.innerHTML+=`
+    <div class="cardcarrera">
+    <a href="carrera.html?id=${carrera._id}">
+          <img src=${carrera.url} alt="..." width=100% class="card-img-top">
+    </a>
+  </div>`
+}
+})
+
+
+///*
+carreras.map((carrera)=>{
+  if (carrera._id>2)
+  { 
+  carreraCol2.innerHTML+=`
+  <div class="cardcarrera">
+  <a href="carrera.html?id=${carrera._id}">
+        <img src=${carrera.url} alt="..." width=100% class="card-img-top">
+  </a>
+</div>`
+}
+})
+
+
+
+
+
+
+
 const section1Options={};
 const section2Options={};
 const intersectionOptions={};
