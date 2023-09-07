@@ -1,0 +1,290 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Merriweather&display=swap"
+		rel="stylesheet";
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	background: linear-gradient(to bottom, black, #0d2941, var(--lightblue));
+	height: 120vh;
+    color: white;
+}
+
+.fill {
+	height: 20vh;
+	background-color: var(--lightblue);
+}
+
+
+.carreras {
+	width: 100%;
+	height: 100%;
+	padding: 100px;
+	color: white;
+	display: flex;
+	gap: 2px;
+	font-size: 15px;
+}
+
+.carrera {
+	width: 100%;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+:root {
+	--black: #16161a;
+	--gris: rgba(65, 59, 59, 0.61);
+	--darkblue: #0F314D;
+	--lightblue: #1C5787;
+	--darkgreen: #155E16;
+	--lightgreen: #22D827;
+	--white: #ffffff;
+}
+
+
+/* HEADER */
+header {
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+	text-align: center;
+	transition: all .5s ease;
+	z-index: 5;
+	color: white;
+	background-color: #1C5787;
+}
+
+#home {
+	width: 50px;
+	padding-top: 10px;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 60%;
+	height: 100%;
+	justify-content: space-around;
+}
+
+.nav-links>li {
+	display: flex;
+	position: relative;
+	align-items: center;
+	text-align: center;
+	width: 13%;
+	height: 100%;
+	border: 2px solid transparent;
+}
+
+.nav-links>li::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 5%;
+	background: whitesmoke;
+}
+
+.nav-links>li:hover::after {
+	width: 100%;
+	transition: all 1s ease;
+}
+
+
+.link {
+	color: var(--white);
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.link:hover {
+	transition: all .5s ease-in-out;
+}
+
+.clase-js-nav {
+	background-color: var(--white);
+	transition: all 1s ease;
+	border: 2px solid var(--lightblue);
+}
+
+.clase-js-nav3 {
+	background-color: var(--lightblue);
+	border: none;
+}
+
+.clase-js-a {
+	color: black;
+	text-decoration: none;
+}
+
+
+/* CASCADA */
+
+.cascada {
+	display: none;
+	transition: all .9s ease;
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+	width: 100vw;
+	font-size: 13px;
+}
+
+.nav-links>li:hover .cascada {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 40px;
+	transition: all .1s ease;
+	background-color: rgba(0, 0, 0, 0.411);
+	width: 100%;
+}
+
+a#new-s-link.new-s-link {
+	color: lightblue;
+	text-decoration: underline;
+}
+
+#faq {
+	color:#155E16;
+	text-decoration: none;
+}
+
+.cascada>li {
+	margin-bottom: 4px;
+	position: relative;
+	height: 27px;
+	padding-left: 5px;
+	padding-bottom: 25px;
+	width: 250vw;
+}
+
+.cascada>li::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 5%;
+	width: 0;
+	background-color: #155E16;
+	opacity: 50%;
+}
+
+.cascada>li:hover::after {
+	width: 100%;
+	transition: all 2s ease;
+}
+
+.cascada>li>a {
+	color: lightslategray;
+	text-decoration: none;
+	display: block;
+	margin-top: 17px;
+}
+
+.cascada>li>a:hover {
+	color: white;
+}
+
+
+
+::-webkit-scrollbar {
+	background: linear-gradient(to top, var(--lightblue), black);
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: var(--black);
+	border-radius: 100px;
+	border: 1px solid grey;
+
+}
+
+
+
+@media (max-width:768px) {
+	body {
+		height: 120vh;
+	}
+
+	.section-1 {
+		height: 100vh;
+	}
+
+	#particles {
+		height: 100vh;
+	}
+
+	nav {
+		position: relative;
+		background-color: var(--darkblue);
+	}
+
+	.hamburguesa {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+	}
+
+	#home {
+		display: none;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+
+	.nav-links {
+		background-color: var(--lightblue);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		justify-content: flex-start;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1500px at 90% -20%);
+		-webkit-clip-path: circle(1500px at 90% -20%);
+
+	}
+
+	.link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--white);
+		height: 50px;
+		width: 100vw;
+		color: var(--black);
+		padding: 5px;
+		border-radius: 10px;
+		margin-bottom: 30px
+	}
+}
