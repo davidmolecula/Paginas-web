@@ -112,7 +112,8 @@ s4Container.onmousemove=e=> {
 
 for(let card of informationCards.cards)
 {
-informationCard+=`<div class="informacion-div" id="informacion-div">
+informationCard+=`
+<div onclick="location.href='${card.url}';"  class="informacion-div" id="informacion-div">
 				
 <h3 class="informacion-h3">${card.title}</h3>
 <p class="informacion-p">${card.description}
