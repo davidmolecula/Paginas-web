@@ -9,9 +9,9 @@ const id = params.get("id")
 const carrer = carreras.find(titulo => titulo._id == id)
 
 
-const ingenieria = document.getElementById("CarrerasInfo")
+const ingenieria = document.getElementById("carreras")
 
-ingenieria.innerHTML = `<div class="CarrerasInfo" id="CarrerasInfo">
+ingenieria.innerHTML = `<div class="CarrerasInfo">
 TITULO: ${carrer.titulo} <BR>
 TITULO INTERMEDIO: ${carrer.tituloIntermedio}<BR>
 DURACION: ${carrer.duracion}<BR>
