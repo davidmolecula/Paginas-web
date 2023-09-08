@@ -35,7 +35,7 @@ let carreras = [{
     url: "Img/ING.ELECTRONICA/logoelectronica.jpeg",
     titulo: "Ingenieria Electrónica",
     duracion: 6,
-    tituloIntermedio: "Técnico Electrónico",
+    tituloIntermedio: "Técnico Superior en Electrónica",
     HorariosH: "./files/HorariosHomogeneas.pdf", Horarios: "./files/ELECTRONICA/HorariosElectronica.pdf",
     CORRELATIVIDADESYEQUIVALENCIAS: "./files/ELECTRONICA/Correlatividades%20y%20equivalencias.pdf",
     DISEÑOCURRICULAR: "./files/ELECTRONICA/dis.pdf",
