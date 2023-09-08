@@ -113,7 +113,7 @@ a{
 	font-weight: bold;
 	padding: 2px 5px 2px 5px;
 	border-radius: 10px;
-	border:1px solid rgba(0, 0, 0, 0);	
+
 }
 a:hover {
 	transition: all .5s ease;
@@ -335,9 +335,15 @@ h1{
 	height: fit-content;
 	background: linear-gradient(to bottom, black,var(--lightblue));
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	border: 1px solid black;
 
+	}
+	.carreras-h2{
+		color: white;
+		text-align: center;
+		font-size: 3em;
+		margin: 1em;
 	}
 	
 	.cardsCarreras {
@@ -345,7 +351,7 @@ h1{
 		height: 100%;
 		justify-content: center;
 		
-		gap: 30px;
+		gap: 50px;
 	}
 	
 	.cardcolumn {
@@ -359,7 +365,11 @@ h1{
 		box-shadow: 5px 15px 25px 15px #000912;
 		cursor: pointer;
 		position: relative;
-		width: 70%;
+
+	}
+
+	.cardcarrera img{
+		width: 20em;
 	}
 
 
@@ -392,7 +402,7 @@ h1{
 
 		width: 100px;
 		height: 100px;
-		border: 1px solid purple;
+
 	}
 
 	#infogremial {
@@ -481,7 +491,6 @@ h1{
 	color:white;
 	box-shadow:1px 3px 5px  black ;
 	text-align: center;
-	border: 1px solid black;
 	background-color: var(--lightblue);
 }
 .servicios-img {

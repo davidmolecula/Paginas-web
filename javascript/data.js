@@ -143,6 +143,7 @@ let newsCardData={
     "newsCards":[
         {
             id:0,
+            "date":"",
             "title":"Buscando las aulas",
             "subtitle":'<p class="news-text">⚠️A PARTIR DEL 20 DE MARZO, CAMBIA LA NUMERACIÓN DE LAS AULAS PARA LAS CURSADAS DE INGENIERÍA</p>',
             "urlImg":"Img/news-1.jpg",
@@ -150,6 +151,7 @@ let newsCardData={
         },
         {
             id:1,
+            "date":"",
             "title": "Feria de apuntes",
             "subtitle": "Podes dejar los apuntes que ya no usas o agarrar alguno que te sirva",
             "urlImg":"Img/news-2.jpg",
@@ -157,6 +159,7 @@ let newsCardData={
         },
         {
             id:2,
+            "date":"",
             "title": "Sorteo de lockers",
             "subtitle": "Desde el CEIT ofrecemos los lockers como se viene haciendo anteriormente de forma gratuita, para así poder brindar la posibilidad de alivianar el transito por la Facultad.",
             "urlImg":"Img/sorteo_lockers.jpg",
@@ -174,6 +177,7 @@ let newsCardData={
         },
         {
             id:3,
+            "date":"",
             "title": "Renovamos el pasillo de la memoria",
             "subtitle": "Mantenemos viva la memoria",
             "urlImg":"Img/pasillo.jpg",
@@ -181,13 +185,15 @@ let newsCardData={
         },
         {
             id:4,
-            "title": "Feliz comienzo de cursada",
-            "subtitle": "Como todos los años comienza la cursada y con ella los sueños de progreso de les estudiantes",
-            "urlImg":"Img/happy.jpg",
-            "text":['<p class="news-text">Desde el centro de estudiantes estamos muy contentos de poder acompañarlos un año más en sus cursadas.</p>','<p class="news-text">El comienzo de las cursadas es un momento emocionante, tenemos una oportunidad de desarrollarnos como ingenieros y aprender sobre el mundo de la ingenieria.</p>','<p class="news-text">Desde el centro de estudiantes queremos acompañarlos en cada paso, resolver cada inquietud y hacer su paso por la facultad lo más fácil y placentero posible.</p>','<p class="news-text">Queremos hacerles saber que estamos acá para ayudarlos si nos necesitan, pero sobre todo en este momento queremos decirles: ¡FELIZ CURSADA PARA TODOS!</p>','<p class="news-text"></p>'],
+            "date":"14 de agosto de 2023",
+            "title": "Explorando la industria nacional",
+            "subtitle": "Este en un proyecto en conjunto con la facultad el cual tiene como objetivo mostrar las pequeñas y grandes industrias argentinas. ",
+            "urlImg":"Img/Img/367620261_1507677776640819_2653622552295066388_n.jpeg",
+            "text":['<p class="news-text">El mismo comenzó con una visita a la Central Nuclear Atucha con los compañeros de Química y Eléctrica , también una visita al Astillero Río Santigo para Mecánica, siguió con una visita a ARSAT para Electrónica y por último una visita a Puerto La Plata para Industrial.</p>','<p class="news-text">En esta ocasión le toca a los compañeros de Ing. Civil, que visitarán Reactor Carem.</p>','<p class="news-text">Se pueden inscribir en el siguiente formulario:</p>','<p class="news-text"><a  href="https://docs.google.com/forms/d/e/1FAIpQLSfSxBv8hztDyIgwpJoh1G1NvkmWEapyAwyEcMwbxEpizJ9hyA/viewform">Link</a></p>'],
         },
         {
             id:5,
+            "date":"",
             "title": "Arrancamos con las clases de consulta",
             "subtitle": "Queridos compañeros, desde la comisión de enseñanza del centro vamos a estar brindando clases de apoyo de Física I y II, Análisis matemático I, Álgebra y Geometría Analítica y del Seminario Universitario de Ingreso",
             "urlImg":"Img/happy.jpg",

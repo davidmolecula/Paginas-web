@@ -23,7 +23,7 @@ for(let text of news.text)
     newsText+=text;
 }
 newsContainer.innerHTML=`
-<p class="news-date">3 de abril 2023</p>
+<p class="news-date">${news.date}</p>
 <h1 class="news-title">${news.title}</h1>
 <p class="news-subtitle">${news.subtitle}</p>
 <div class="news-image"><img src="${news.urlImg}"></div>

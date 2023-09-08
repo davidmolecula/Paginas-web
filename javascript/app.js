@@ -31,7 +31,7 @@ carreras.map((carrera)=>{
       carreraCol.innerHTML+=`
     <div class="cardcarrera">
     <a href="carrera.html?id=${carrera._id}">
-          <img src=${carrera.url} alt="..." width=100% class="card-img-top">
+          <img src=${carrera.url} alt="..." class="card-img-top">
     </a>
   </div>`
 }
@@ -45,7 +45,7 @@ carreras.map((carrera)=>{
   carreraCol2.innerHTML+=`
   <div class="cardcarrera">
   <a href="carrera.html?id=${carrera._id}">
-        <img src=${carrera.url} alt="..." width=100% class="card-img-top">
+        <img src=${carrera.url} alt="..." class="card-img-top">
   </a>
 </div>`
 }

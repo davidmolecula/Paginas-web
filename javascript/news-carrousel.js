@@ -3,7 +3,7 @@ const newsPunto =document.querySelectorAll('.news-punto');
 const tituloArray=document.querySelector('.titulo-array');
 const newsLink=document.getElementById('new-s-link');
 
-const ArrayDeTitulos=["Renovamos el pasillo de la memoria", "¡Feliz comienzo de cursada para todos!"];
+const ArrayDeTitulos=["Renovamos el pasillo de la memoria", "Explorando la industria nacional"];
 
 newsPunto.forEach((cadaPunto, i)=> {
     newsPunto[i].addEventListener('click', ()=>{

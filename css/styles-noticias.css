@@ -21,14 +21,15 @@ nav{
 }
 
 
-
-
 article{
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 	margin-left: 1%;
 	margin-top:1%;
+}
+.news-container{
+	height: fit-content;
 }
 .news-date{
 	text-align: end;
@@ -42,15 +43,13 @@ h1{
 
 .news-image
 {
-	background-size: cover;
 	width: 100%;
-	height: 20em;
+	height: 40em;
 	overflow: hidden;
-	
 }
 .news-image>img{
 	width: 100%;
-
+	height: 100%;
 }
 .news-subtitle{
 	color: white;
