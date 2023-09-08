@@ -7,7 +7,7 @@ const params = new URLSearchParams(locationSearch)
 const id = params.get("id")
 
 const carrer = carreras.find(titulo => titulo._id == id)
-console.log(id)
+
 
 const ingenieria = document.getElementById("CarrerasInfo")
 

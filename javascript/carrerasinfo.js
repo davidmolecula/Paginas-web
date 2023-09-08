@@ -1,7 +1,4 @@
-//<h1>$ {titulo}</h1>
 const carrerasInfo = document.getElementById('CarrerasInfo');
-
-let var2 = '';
 
 let carreras = [{
     _id: 0,
@@ -90,11 +87,5 @@ let carreras = [{
 }]
 
 
-
-carrerasInfo.innerHTML = var2;
-
-for (let CARRERAS of CARRERAS) {
-    var2 += `<h2>${CARRERAS}</h2>`;
-}
 
 

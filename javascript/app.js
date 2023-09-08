@@ -25,7 +25,7 @@ const svg=document.getElementsByTagName('svg');
 
 const carreraCol=document.getElementById("carreraColumna")
 const carreraCol2=document.getElementById("carreraColumna2")
-carreras.map((carrera)=>{
+Array.from(carreras).map((carrera)=>{
   if(carrera._id<3)
   {
       carreraCol.innerHTML+=`
@@ -39,7 +39,7 @@ carreras.map((carrera)=>{
 
 
 ///*
-carreras.map((carrera)=>{
+Array.from(carreras).map((carrera)=>{
   if (carrera._id>2)
   { 
   carreraCol2.innerHTML+=`
@@ -57,9 +57,9 @@ carreras.map((carrera)=>{
 
 
 
-const section1Options={};
-const section2Options={};
-const intersectionOptions={};
+
+
+
 
 const section1Observer=new IntersectionObserver(function(entries, section1Observer) 
 {
@@ -68,7 +68,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
     {
       nav.classList.add("clase-js-nav");
       link1.classList.add("link");
-      link2.classList.add("link");
+
       link3.classList.add("link");
 
       link5.classList.add("link");
@@ -77,7 +77,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
     }else {
       nav.classList.remove("clase-js-nav");
       link1.classList.remove("link");
-      link2.classList.remove("link");
+
       link3.classList.remove("link");
 
       link5.classList.remove("link");
@@ -85,7 +85,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
       svg[0].setAttribute('fill','white');
     }
   });
-}, section1Options);
+});
 
 section1Observer.observe(section1);
 
