@@ -1,5 +1,14 @@
 
 /* Esta parte le da el estilo al borde del titulo H1 */
+:root {
+    --black:#16161a;
+	--gris:rgba(65, 59, 59, 0.61);
+    --darkblue: #0F314D;
+    --lightblue:#1C5787;
+	--darkgreen:#155E16;
+	--lightgreen:#22D827;
+	--white:#ffffff;
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -23,15 +32,7 @@ section{
 	background: linear-gradient(to bottom, var(--lightblue), black);
 }
 
-:root {
-    --black:#16161a;
-	--gris:rgba(65, 59, 59, 0.61);
-    --darkblue: #0F314D;
-    --lightblue:#1C5787;
-	--darkgreen:#155E16;
-	--lightgreen:#22D827;
-	--white:#ffffff;
-}
+
 #particles {
 	height: 120vh;
 }

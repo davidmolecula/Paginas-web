@@ -12,7 +12,6 @@ body {
 	width: 100%;
 	background: linear-gradient(to bottom, black, #0d2941, var(--lightblue));
 	height: 120vh;
-    color: white;
 }
 
 .fill {
