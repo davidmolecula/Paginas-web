@@ -20,7 +20,7 @@ let carreras = [{
     url: "Img/ING.ELECTRICA/logoelectrica.jpeg",
     titulo: "Ingenieria Eléctrica",
     duracion: 5,
-    tituloIntermedio: "Técnico Eléctrico",
+    tituloIntermedio: "No tiene",
     HorariosH: "./files/HorariosHomogeneas.pdf", Horarios: "./files/ELECTRICA/HorariosElectrica.pdf",
     CORRELATIVIDADESYEQUIVALENCIAS: "./files/ELECTRICA/Correlatividades%20y%20equivalencias.pdf",
     DISEÑOCURRICULAR: "./files/ELECTRICA/dis.pdf",
