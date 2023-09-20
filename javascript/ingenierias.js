@@ -23,4 +23,3 @@ IMPLEMENTACION: <a href="${carrer.IMPLEMENTACION}" class="new-s-link" id="new-s-
 PLANES: <a href="${carrer.PLANESDEESTUDIO}" class="new-s-link" id="new-s-link">Planes.pdf </a><BR>
 APTITUDES PROFESIONALES: ${carrer.APTITUDESPROFESIONALES} <BR>
     </div> `
-    

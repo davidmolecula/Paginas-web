@@ -22,7 +22,7 @@ body {
 	color: white;
 	display: flex;
 	gap: 2px;
-	font-size: 15px;
+	font-size: 1em;
 }
 
 .carrera {
@@ -272,5 +272,8 @@ a#new-s-link.new-s-link {
 		padding: 5px;
 		border-radius: 10px;
 		margin-bottom: 30px
+	}
+	.carreras{
+		font-size: .5em;
 	}
 }
