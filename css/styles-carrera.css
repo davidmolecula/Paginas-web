@@ -7,10 +7,9 @@
 }
 
 body {
-	overflow-x: hidden;
-	width: 100%;
+	overflow:hidden;
 	background: linear-gradient(to bottom, black, #0d2941, var(--lightblue));
-	min-height:100vh;
+	height: fit-content;
 }
 
 
@@ -23,6 +22,7 @@ body {
 	display: flex;
 	gap: 2px;
 	font-size: 1em;
+	height: fit-content;
 }
 
 .carrera {
@@ -215,6 +215,10 @@ a#new-s-link.new-s-link {
 
 
 @media (max-width:768px) {
+	
+body {
+	height: 100vh;
+}
 	nav {
 		position: relative;
 		background-color: var(--darkblue);
@@ -275,5 +279,6 @@ a#new-s-link.new-s-link {
 	}
 	.carreras{
 		font-size: .5em;
+		height: fit-content;
 	}
 }
