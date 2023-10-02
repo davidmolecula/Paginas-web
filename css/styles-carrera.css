@@ -7,7 +7,7 @@
 }
 
 body {
-	overflow:hidden;
+	overflow-x:hidden;
 	background: linear-gradient(to bottom, black, #0d2941, var(--lightblue));
 	height: fit-content;
 }
