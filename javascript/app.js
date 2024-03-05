@@ -118,7 +118,7 @@ informationCard+=`
 <h3 class="informacion-h3">${card.title}</h3>
 <p class="informacion-p">${card.description}
 </p>
-<a href="${card.url}" class="informacion-a">${card.link}</a>
+<a href="${card.url}" class="informacion-a" target="_blank">${card.link}</a>
 
 </div>`;
 }
@@ -143,6 +143,19 @@ for(let i=0;i<3;i++)
 </div>`
 };
 newsCard.innerHTML=newsCards;
-
-
+let click=0;
+const handleInscription=()=>{
+  const inscripcion=document.getElementById('handleInscription');
+  const pHidden=document.getElementById('p-hidden')
+  if(click%2==0){
+    inscripcion.style.setProperty('height','auto')
+    pHidden.classList.remove('p-hidden')
+    click++;
+  }else{
+    inscripcion.style.setProperty('height','auto')
+    pHidden.classList.add('p-hidden')
+    click++;
+  }
+  
+}
 

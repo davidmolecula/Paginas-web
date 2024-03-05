@@ -3,15 +3,15 @@ let informationCards={
         {
         id: 1,
         "title": "Horarios de materias",
-        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2023",
-        "url":"files/horarios_en_base_de_datos_2022_Departamentos.xls" ,
+        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2024",
+        "url":"files/Horarios-2024.xlsx" ,
         "link": "Descarga acá"
         },
         {
         id: 2,
         "title":"Calendario academico",
-        "description":"Calendario academico con todas las fechas de los llamados del 2023 y las mesas especiales",
-        "url":"https://drive.google.com/drive/folders/1Xnefpp6UsegB-KTa6UPUPRcS8n6Wg1cF",
+        "description":"Calendario academico con todas las fechas de los llamados del 2024 y las mesas especiales",
+        "url":"https://fra.utn.edu.ar/wp-content/uploads/2024/02/calendario-2024-definitivo-1.pdf",
         "link":"Calendario",
         },
         {
@@ -24,15 +24,15 @@ let informationCards={
         {
         id: 4,
         "title":"Planes beta",
-        "description":"La inscripción al Plan Beta, primer cuatrimestre 2023 estará habilitada del 27/3 al 30/3",
+        "description":"Informacion no disponible",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSdoSeeaC2lVm0roYiIXoWbPTFKT3shA_77EBzHHNAdOEQ3BZQ/closedform",
-        "link": "Formulario",
+        "link": "No disponible",
         },
         {
         id: 5,
         "title":"Autogestión",
         "description":"Para acceder al sistema académico (SYSACAD)",
-        "url":"https://www.fra.utn.edu.ar/Sysacad/loginAlumno.asp",
+        "url":"https://servicios.fra.utn.edu.ar/Sysacad/loginAlumno.asp",
         "link": "Sysacad"
         },
         {
