@@ -33,7 +33,10 @@ body{
 	padding-top:0;
 }
 .inscripciones-interior-contenedor{
-	margin:100px;
+	margin:50px;
+	margin-top:100px;
+	margin-bottom:100px;
+
 
 	box-shadow: 0px 8px 32px 0px var(--lightblue);
 	border-radius: 5px;
@@ -1089,6 +1092,11 @@ display: flex;
 @media (max-width:768px) {
 	body {
 		height: 120vh;
+	}
+	.inscripciones-interior-contenedor{
+		margin:0px;
+		margin-top:50px;
+		margin-bottom:50px;
 	}
 	.section-landing {
 		height: 100vh;
