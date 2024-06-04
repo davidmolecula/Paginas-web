@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="esp">
 
 <head>
 	<meta charset="UTF-8">
@@ -47,22 +47,34 @@
 				<li><a class="link" id="link-1" href="index.html#servicios">SERVICIOS</a></li>
 				<li><a class="link" id="link-1" href="index.html#gremial">GREMIAL</a></li>
 				<li><a class="link" id="link-6" href="index.html#Informacion_footer">CONTACTO</a></li>
-
 			</ul>
-		
 		</nav>
 	</header>
+
+	<div id="correlativas">
+		<h2>Buscador de correlativas</h2>
+		<div class="correlativas-input-box">
+		<input id="input1" placeholder="Nombre completo de la materia" type="text">
+		<ul id="input1Sugerencias">
+		</ul>
+	</div>
+		<div id="correlativas-js">
+			<div id="regularizada"></div>
+			<div id="aprobada"></div>
+			<div id="correlativa"></div>
+		</div>
+		
+	</div>
 
 	<section class="carreras" id="carreras">
 		<div class="CarrerasInfo" id="CarrerasInfo">
 		</div>
 	</section>
-
-
+	
     <script src="javascript/data.js"></script>
     <script src="javascript/carrerasinfo.js"></script>
     <script src="javascript/ingenierias.js"></script>
-	<script src="javascript/app.js"></script>
+	<script src="./javascript/Correlativas/correlativas.js"></script>
 </body>
 
 </html>

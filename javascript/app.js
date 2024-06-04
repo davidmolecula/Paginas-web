@@ -73,7 +73,6 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
 
       link5.classList.add("link");
       link6.classList.add("link");
-   
     }else {
       nav.classList.remove("clase-js-nav");
       link1.classList.remove("link");

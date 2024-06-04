@@ -17,7 +17,7 @@ body {
 
 .carreras {
 	width: 100%;
-	padding:5em 2em 2em 2em;
+	padding:0em 2em 2em 2em;
 	color: white;
 	display: flex;
 	gap: 2px;
@@ -198,7 +198,54 @@ a#new-s-link.new-s-link {
 	color: white;
 }
 
+#correlativas{
+	display: flex;
+	flex-direction: column;
+	padding:5em 2em;
+	gap:20px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.correlativas-input-box{
+	width: 40%;
+}
 
+#input1Sugerencias{
+	opacity: 0;
+	display: none;
+}
+
+
+.correlativas-input-box.active #input1Sugerencias{
+	opacity: 1;
+	display: block;
+	pointer-events: auto;
+}
+
+.correlativas-input-box .active #input1Sugerencias li{
+	display: block;
+}
+
+.lista{
+	padding: 10px;	
+	background-color: var(--darkblue);
+	list-style: none;
+}
+
+#correlativas-js{
+	display: flex;
+	flex-direction: column;
+}
+
+#correlativas-js div{
+	padding-top: 10px;
+}
+
+
+#input1{
+	width: 100%;
+}
 
 ::-webkit-scrollbar {
 	background: linear-gradient(to top, var(--lightblue), black);

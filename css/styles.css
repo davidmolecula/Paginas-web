@@ -24,6 +24,8 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+
 .inscripciones{
 	background:black;
 	color: white;
@@ -1167,6 +1169,7 @@ display: flex;
 		flex-wrap: wrap;
 	}
 	
+
 	/* SERVICIOS */
 
 	.servicios{
