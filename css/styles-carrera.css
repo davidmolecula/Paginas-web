@@ -260,15 +260,16 @@ a#new-s-link.new-s-link {
 	outline: none;
 }
 
-#input1:active{
+#input1:focus{
 	border: none;
 	outline: none;
-}
-#input1:hover{
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius:0px;
-	border:none;
 	
+}
+#input1:hover{
+	
+	border:none;
 }
 .lupa{
 	position: absolute;
