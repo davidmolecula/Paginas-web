@@ -208,6 +208,7 @@ a#new-s-link.new-s-link {
 	color: white;
 }
 .correlativas-input-box{
+	position: relative;
 	width: 40%;
 }
 
@@ -231,6 +232,12 @@ a#new-s-link.new-s-link {
 	padding: 10px;	
 	background-color: var(--darkblue);
 	list-style: none;
+	transition: all .25s ease;
+	border:1px solid transparent;
+}
+.lista:hover{
+	transform: scale(1.01);
+	border: 1px solid white;
 }
 
 #correlativas-js{
@@ -245,8 +252,32 @@ a#new-s-link.new-s-link {
 
 #input1{
 	width: 100%;
+	height: 35px;
+	border-radius:15px;
+	padding: 5px;
+	font-size: 15px;
+	border:0;
+	outline: none;
 }
 
+#input1:active{
+	border: none;
+	outline: none;
+}
+#input1:hover{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius:0px;
+	border:none;
+	
+}
+.lupa{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	color:black;
+	right: 10px;
+	top:8px;
+}
 ::-webkit-scrollbar {
 	background: linear-gradient(to top, var(--lightblue), black);
 }

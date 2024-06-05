@@ -1,5 +1,5 @@
 let materias=[
-    ingenieriaCivil = [
+    ingenieriaCivil = [ 
         {
             nombre: 'Análisis Matemático I',
             numero: 1,
@@ -115,7 +115,7 @@ let materias=[
         {
             nombre: 'Tecnología del Hormigón',
             numero: 17,
-            cursadas: [12, 14],
+            cursadas: [12, 14,15],
             aprobadas: [1, 2, 6, 7],
             nivel: 3
         },
@@ -130,21 +130,21 @@ let materias=[
             nombre: 'Geotopografía',
             numero: 19,
             cursadas: [9, 11, 13, 14],
-            aprobadas: [1, 2, 5, 7, 8],
+            aprobadas: [1, 2, 5, 7],
             nivel: 3
         },
         {
             nombre: 'Hidráulica General y Aplicada',
             numero: 20,
-            cursadas: [9, 10, 12, 13, 14],
+            cursadas: [9, 10, 11, 13, 14],
             aprobadas: [1, 2, 5, 7, 8],
             nivel: 3
         },
         {
             nombre: 'Cálculo Avanzado',
             numero: 21,
-            cursadas: [9, 11, 12, 13],
-            aprobadas: [1, 2, 5, 6, 7],
+            cursadas: [9, 10, 12, 14],
+            aprobadas: [1, 2, 5, 7, 8],
             nivel: 3
         },
         {
@@ -157,7 +157,7 @@ let materias=[
         {
             nombre: 'Instalaciones Termomecánicas',
             numero: 23,
-            cursadas: [11, 13, 14],
+            cursadas: [11, 12, 13],
             aprobadas: [1, 2, 4, 5, 6, 7],
             nivel: 3
         },
@@ -165,7 +165,7 @@ let materias=[
             nombre: 'Economía',
             numero: 24,
             cursadas: [11, 14, 15],
-            aprobadas: [1, 2, 3, 4, 5, 6, 7, 8],
+            aprobadas: [1, 2, 3, 4, 8],
             nivel: 3
         },
         {
@@ -185,7 +185,7 @@ let materias=[
         {
             nombre: 'Instalaciones Sanitarias y de Gas',
             numero: 27,
-            cursadas: [18, 19, 20, 23],
+            cursadas: [18, 19, 20, 24],
             aprobadas: [5, 6, 7, 8, 12],
             nivel: 4
         },
@@ -193,27 +193,27 @@ let materias=[
             nombre: 'Diseño Arquitectónico, Planeamiento y Urbanismo (E.I.)',
             numero: 28,
             cursadas: [18, 19, 22, 23, 24, 25],
-            aprobadas: [1, 2, 3, 4, 8],
+            aprobadas: [10, 11, 12, 15],
             nivel: 4
         },
         {
             nombre: 'Análisis Estructural I',
             numero: 29,
-            cursadas: [16, 17, 18],
-            aprobadas: [9, 10, 11, 12, 13],
+            cursadas: [16, 17],
+            aprobadas: [9, 10, 11, 14],
             nivel: 4
         },
         {
             nombre: 'Estructuras de Hormigón',
             numero: 30,
-            cursadas: [16, 17, 19, 25],
+            cursadas: [16, 17,18, 19, 25],
             aprobadas: [9, 10, 11, 12, 13],
             nivel: 4
         },
         {
             nombre: 'Hidrología y Obras Hidráulicas',
             numero: 31,
-            cursadas: [16, 18, 19, 24, 25],
+            cursadas: [16, 18, 19,20, 24, 25],
             aprobadas: [9, 10, 11, 12, 13],
             nivel: 4
         },
@@ -246,6 +246,13 @@ let materias=[
             nivel: 5
         },
         {
+            nombre: 'Organizacion y Conduccion de obras',
+            numero: 35,
+            cursadas: [26,27,28,30,31],
+            aprobadas: [17,18,19,20,22,23,24,25],
+            nivel: 5
+        },
+        {
             nombre: 'Vias de comunicacion I',
             numero: 37,
             cursadas: [17,18,19],
@@ -253,7 +260,7 @@ let materias=[
             nivel: 5
         },
         {
-            nombre: 'Analisis estructural II',
+            nombre: 'Análisis Estructural II',
             numero: 38,
             cursadas: [21,26,29,30,31],
             aprobadas: [16,17,18,19,25],
@@ -1707,7 +1714,7 @@ let materias=[
         {
             "numero": 41,
             "nombre": "Proyecto Final",
-            "cursadas": [],
+            "cursadas": [27,28,29,31,32,34,17,21,22,25,30],
             "aprobadas": [],
             "nivel": 5
         }
