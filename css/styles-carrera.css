@@ -263,9 +263,10 @@ a#new-s-link.new-s-link {
 #input1:focus{
 	border: none;
 	outline: none;
+}
+.input-focus-radius:focus{
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius:0px;
-	
 }
 #input1:hover{
 	
@@ -296,7 +297,7 @@ a#new-s-link.new-s-link {
 @media (max-width:768px) {
 	
 body {
-	height: 100vh;
+	height: fit-content;
 }
 	nav {
 		position: relative;
@@ -360,4 +361,8 @@ body {
 		font-size: .5em;
 		height: fit-content;
 	}
+	.correlativas-input-box{
+		width: 90%;
+	}
+	
 }

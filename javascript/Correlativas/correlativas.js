@@ -1756,6 +1756,8 @@ function select(element){
     input1.value=selectFiltrado;
     inputContainer.classList.remove('active')
     busqueda()
+    input1.style.setProperty('border-bottom-left-radius','15px');
+    input1.style.setProperty('border-bottom-right-radius','15px');
 }
 function filtrado(){
             let name=(eliminarDiacriticosEs(input1.value)).toLowerCase().trim().split("\n").join("");
@@ -1778,7 +1780,21 @@ function filtrado(){
                     }
                     sugerencias.innerHTML=filtrados;
                     const lista=document.querySelectorAll('li.lista');
-                    console.log(lista)
+                    if(lista)
+                        {
+                            input1.style.setProperty('border-bottom-left-radius','0px');
+                            input1.style.setProperty('border-bottom-right-radius','0px');
+                        }else{
+                            input1.style.setProperty('border-bottom-left-radius','15px');
+                            input1.style.setProperty('border-bottom-right-radius','15px');
+                        }
+                    /*if(input1.value.length===null){  
+                        console.log('0')
+                    }else{
+                        console.log('cero')
+                        input1.style.setProperty('border-bottom-left-radius','15px');
+                        input1.style.setProperty('border-bottom-right-radius','15px');
+                    }*/
                     lista.forEach(li=>{
                     li.setAttribute('onclick','select(this)')
                 })    
