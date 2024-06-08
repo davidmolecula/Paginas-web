@@ -1824,7 +1824,7 @@ function busqueda(){
                         materias[id].forEach(electronica=>{
                             if(electronica.numero===aprobada){
                                 if(contador==0){
-                                    aprobada1.innerHTML+='<h2>Y tambien promocionada o con final:</h2>'; 
+                                    aprobada1.innerHTML+='<h2>Necesita promocionada o con final:</h2>'; 
                                     contador++;
                                 }
                                 aprobada1.innerHTML+=`<p>${electronica.nombre}</p>`;
