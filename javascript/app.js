@@ -1,34 +1,35 @@
-const hamburguesa=document.querySelector(".hamburguesa");
-const navLinks= document.querySelector(".nav-links");
-const links= document.querySelectorAll(".nav-links li");
+const $=el=>document.querySelector(el)
+const $hamburguesa=$(".hamburguesa");
+const $navLinks= $(".nav-links");
+const $links= document.querySelectorAll(".nav-links li");
 
 
-hamburguesa.addEventListener("click",() =>
+$hamburguesa.addEventListener("click",() =>
 {
-  navLinks.classList.toggle("open");
+  $navLinks.classList.toggle("open");
 });
 
 
-const nav=document.querySelector("nav");
-const section1=document.querySelector(".section-landing");
-const section2=document.querySelector(".section-2");
-const intersection=document.querySelector(".intersection");
-const link1=document.getElementById("link-1");
-const link2=document.getElementById("link-2");
-const link3=document.getElementById("link-3");
+const $nav=$("nav");
+const $section1=$(".section-landing");
+const $section2=$(".section-2");
+const $intersection=$(".intersection");
+const $link1=$("#link-1");
+const $link2=$("#link-2");
+const $link3=$("#link-3");
 
-const link5=document.getElementById("link-5");
-const link6=document.getElementById("link-6");
-const svg=document.getElementsByTagName('svg');
+const $link5=$("#link-5");
+const $link6=$("#link-6");
+const $svg=document.getElementsByTagName('svg');
 
 
 
-const carreraCol=document.getElementById("carreraColumna")
-const carreraCol2=document.getElementById("carreraColumna2")
+const $carreraCol=$("#carreraColumna")
+const $carreraCol2=$("#carreraColumna2")
 Array.from(carreras).map((carrera)=>{
   if(carrera._id<3)
   {
-      carreraCol.innerHTML+=`
+      $carreraCol.innerHTML+=`
     <div class="cardcarrera">
     <a href="carrera.html?id=${carrera._id}">
           <img src=${carrera.url} alt="..." class="card-img-top">
@@ -42,7 +43,7 @@ Array.from(carreras).map((carrera)=>{
 Array.from(carreras).map((carrera)=>{
   if (carrera._id>2)
   { 
-  carreraCol2.innerHTML+=`
+  $carreraCol2.innerHTML+=`
   <div class="cardcarrera">
   <a href="carrera.html?id=${carrera._id}">
         <img src=${carrera.url} alt="..." class="card-img-top">
@@ -66,37 +67,37 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
   entries.forEach(entry =>{
     if(!entry.isIntersecting)
     {
-      nav.classList.add("clase-js-nav");
-      link1.classList.add("link");
+      $nav.classList.add("clase-js-nav");
+      $link1.classList.add("link");
 
-      link3.classList.add("link");
+      $link3.classList.add("link");
 
-      link5.classList.add("link");
-      link6.classList.add("link");
+      $link5.classList.add("link");
+      $link6.classList.add("link");
     }else {
-      nav.classList.remove("clase-js-nav");
-      link1.classList.remove("link");
+      $nav.classList.remove("clase-js-nav");
+      $link1.classList.remove("link");
 
-      link3.classList.remove("link");
+      $link3.classList.remove("link");
 
-      link5.classList.remove("link");
-      link6.classList.remove("link");
-      svg[0].setAttribute('fill','white');
+      $link5.classList.remove("link");
+      $link6.classList.remove("link");
+      $svg[0].setAttribute('fill','white');
     }
   });
 });
 
-section1Observer.observe(section1);
+section1Observer.observe($section1);
 
 
 
 
 // "LINTERNA" de la seccion informacion general
 
-let s4Container=document.getElementById('informacion-container');
+let $s4Container=$('#informacion-container');
 let informationCard="";
 
-s4Container.onmousemove=e=> {
+$s4Container.onmousemove=e=> {
     for(const section4Div of document.getElementsByClassName('informacion-div'))
     {
         const rect=section4Div.getBoundingClientRect(),
@@ -121,13 +122,13 @@ informationCard+=`
 
 </div>`;
 }
-s4Container.innerHTML=informationCard;
+$s4Container.innerHTML=informationCard;
 
 
 // Creacion de las tarjetas de noticias
 
 let newsCards='';
-const newsCard=document.querySelector(".news-secundarias");
+const $newsCard=$(".news-secundarias");
 
 let newsCardBig='';
 
@@ -141,18 +142,18 @@ for(let i=0;i<3;i++)
   </div>
 </div>`
 };
-newsCard.innerHTML=newsCards;
+$newsCard.innerHTML=newsCards;
 let click=0;
 const handleInscription=()=>{
-  const inscripcion=document.getElementById('handleInscription');
-  const pHidden=document.getElementById('p-hidden')
+  const $inscripcion=$('#handleInscription');
+  const $pHidden=$('#p-hidden')
   if(click%2==0){
-    inscripcion.style.setProperty('height','auto')
-    pHidden.classList.remove('p-hidden')
+    $inscripcion.style.setProperty('height','auto')
+    $pHidden.classList.remove('p-hidden')
     click++;
   }else{
-    inscripcion.style.setProperty('height','auto')
-    pHidden.classList.add('p-hidden')
+    $inscripcion.style.setProperty('height','auto')
+    $pHidden.classList.add('p-hidden')
     click++;
   }
   

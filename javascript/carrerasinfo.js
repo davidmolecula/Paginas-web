@@ -17,7 +17,7 @@ let carreras = [{
 }, {
     _id: 1,
     url: "Img/ING.ELECTRICA/logoelectrica.jpeg",
-    titulo: "Ingenieria Eléctrica",
+    titulo: "Ingenieria en Energia Eléctrica",
     duracion: 5,
     tituloIntermedio: "No tiene",
     HorariosH: "./files/HorariosHomogeneas.pdf", Horarios: "./files/ELECTRICA/HorariosElectrica.pdf",
