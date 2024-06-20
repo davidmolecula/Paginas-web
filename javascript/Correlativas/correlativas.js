@@ -467,8 +467,8 @@ let materias=[
         {
             "numero": 26,
             "nombre": "Taller Interdisciplinario",
-            "cursadas": [],
-            "aprobadas": [],
+            "cursadas": [9,11,16,17 ],
+            "aprobadas": [1,5],
             "nivel": 3
         },
         {
