@@ -96,6 +96,8 @@ body{
 	padding-top:10px;
 }
 
+
+
 section{
 	padding:100px 0 100px 0 ;
 }
@@ -121,14 +123,7 @@ header{
 	padding: 0;
 }
 
-
-
-
-
 /* Todo lo referente a la barra de navegacion */
-
-
-
 
 nav {
 		display: flex;
@@ -259,9 +254,72 @@ a:hover {
 	color:white;
 }
 
+/* Ingresantes */
+
+#ingresantes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background:linear-gradient(to bottom, var(--lightblue),var(--darkblue), var(--lightblue));
+}
+
+#ingresantes h2{
+	padding-bottom:20px;
+}
+#ingresantes-fechas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	list-style: none;
+	
+}
+
+.ingresantes-fechas{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border:1px solid rgb(53, 28, 127);
+	border-radius:10px;
+	padding:10px;
+	box-shadow:0px 10px 10px rgba(0, 0, 0, 0.566);
+	transition: all .2s ease-in-out;
+}
 
 
+h2.fechas{
+	padding:20px;
+}
+.fechas{
+	font-weight: bold;
+}
+#ingresantes-masinfo{
+	color:black;
+	border:1px solid rgb(39, 39, 203);
+	width: fit-content; 
+	background-color:white; 
+	padding:10px;border-radius:20px;
+	box-shadow: 1px 1px black;
+	transition: transform .5s ease-in-out;
 
+}
+#ingresantes-masinfo:hover{
+	transform:scale(1.05);
+	background-color: var(--lightblue);
+	color: white;
+}
+.requisitos{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding:10px;
+}
+
+.requisitos ul li{
+	list-style-position:inside;
+	list-style-type:disc;
+}
 /*H1 FILL*/
 
 h1{

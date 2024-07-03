@@ -59,7 +59,7 @@ let informationCards={
         {
         id: 9,
         "title":"Grupos de wsp",
-        "description":'<a href="https://chat.whatsapp.com/FLRelLWN9CT6dweLvyJOMZ" class="informacion-a-g">Algebra</a><a href="https://chat.whatsapp.com/DjQMLkJzGsIEu5l5OM229m" class="informacion-a-g">Fisica I</a><a href="https://chat.whatsapp.com/KEvoEkZqvDh0lec0K8SHwZ" class="informacion-a-g"><Fisica II/a><a href="https://chat.whatsapp.com/CBoHGMAKD3KDG7lSaFPOdA" class="informacion-a-g">Analisis I</a><a href="https://chat.whatsapp.com/Idm7cBSsplS56rylWREfo1" class="informacion-a-g">Consulta Ingreso</a>',
+        "description":'<a target="_blank" href="https://chat.whatsapp.com/I4bLm6J1dz62UESjpBcPg2" class="informacion-a-g">Unite a nuestra comunidad</a>',
         "url":"https://chat.whatsapp.com/F3oJwzLnwOr9neQ5OrxU1Z",
         "link":"Qca general e inorganica"
         },

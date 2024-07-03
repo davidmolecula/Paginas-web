@@ -110,7 +110,6 @@ function touchend() {
                 punto[j].classList.remove('activo');
             })
             j=k;
-      
             punto[j].classList.add('activo');
         }
     )
