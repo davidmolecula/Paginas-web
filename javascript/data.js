@@ -59,9 +59,9 @@ let informationCards={
         {
         id: 9,
         "title":"Grupos de wsp",
-        "description":'<a target="_blank" href="https://chat.whatsapp.com/I4bLm6J1dz62UESjpBcPg2" class="informacion-a-g">Unite a nuestra comunidad</a>',
-        "url":"https://chat.whatsapp.com/F3oJwzLnwOr9neQ5OrxU1Z",
-        "link":"Qca general e inorganica"
+        "description":'<p class=""style="padding-left:20px">Unite a nuestra comunidad</p>',
+        "url":"https://chat.whatsapp.com/I4bLm6J1dz62UESjpBcPg2",
+        "link":"Comunidad de wsp"
         },
         {
         id: 10,
