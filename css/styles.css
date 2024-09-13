@@ -568,7 +568,7 @@ input[type=checkbox]
 }
 #zoom-img2[type=checkbox]:checked~ label > #comunidad-img2
 {
-	transform: scale(3.5) translate(-35%);
+	transform: scale(2.5) translate(-35%);
 	cursor: zoom-out;
 }
 
