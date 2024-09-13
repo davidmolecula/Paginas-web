@@ -17,7 +17,7 @@ const $intersection=$(".intersection");
 const $link1=$("#link-1");
 const $link2=$("#link-2");
 const $link3=$("#link-3");
-
+const $link4=$("#link-4");
 const $link5=$("#link-5");
 const $link6=$("#link-6");
 const $svg=document.getElementsByTagName('svg');
@@ -69,7 +69,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
     {
       $nav.classList.add("clase-js-nav");
       $link1.classList.add("link");
-
+      $link4.classList.add("link");
       $link3.classList.add("link");
 
       $link5.classList.add("link");
@@ -77,7 +77,7 @@ const section1Observer=new IntersectionObserver(function(entries, section1Observ
     }else {
       $nav.classList.remove("clase-js-nav");
       $link1.classList.remove("link");
-
+      $link4.classList.add("link");
       $link3.classList.remove("link");
 
       $link5.classList.remove("link");

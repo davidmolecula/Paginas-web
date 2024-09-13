@@ -13,8 +13,6 @@ body {
 }
 
 
-
-
 .carreras {
 	width: 100%;
 	padding:0em 2em 2em 2em;
@@ -81,7 +79,6 @@ nav {
 	position: relative;
 	align-items: center;
 	text-align: center;
-	width: 13%;
 	height: 100%;
 	border: 2px solid transparent;
 }
