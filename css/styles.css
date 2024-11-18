@@ -308,6 +308,9 @@ h2.fechas{
 	background-color: var(--lightblue);
 	color: white;
 }
+.ingresantes-requisitos{
+	padding: 10px;
+}
 .requisitos{
 	display: flex;
 	flex-direction: column;
@@ -1342,7 +1345,7 @@ display: flex;
 		padding: 0;
 	}
 	.informacion-div {
-		width: 22em;
+		width: 21em;
 		height:18em;		
 	}
 	.informacion-h3{
@@ -1494,7 +1497,7 @@ flex-direction: row;
 	justify-items: center;
 }
 .comunidad-img{
-	width: 22em;
+	width: 21em;
 }
 label{
 display: flex;
