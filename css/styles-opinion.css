@@ -1,15 +1,20 @@
 body{
 
     height: fit-content;
+    overflow-x: hidden;
 }
 section{
     display: flex;
     
 }
+footer{
+    overflow-x: hidden;
+}
 #opinion-inside-section{
     width: 80%;
     padding-left: 100px;
 }
+
 h1{
     padding:10px;
 }
@@ -47,4 +52,22 @@ p{
 
 article{
     overflow: hidden;
+}
+
+@media (max-width:768px) {
+    #opinion-banner{
+    width: 100%;
+    }
+    #opinion-inside-section{
+        width: 100%;
+        padding: 20px;
+    }
+    .opinion-autor{
+
+        padding: 0;
+    }
+    .texto{
+
+        padding-left:0;
+    }
 }
