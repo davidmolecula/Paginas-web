@@ -198,9 +198,7 @@ let newsCardData={
             "subtitle": "Queridos compañeros, desde la comisión de enseñanza del centro vamos a estar brindando clases de apoyo de Física I y II, Análisis matemático I, Álgebra y Geometría Analítica y del Seminario Universitario de Ingreso",
             "urlImg":"Img/happy.jpg",
             "text":['<p class="news-text">Los días y horarios de estas mismas están indicadas en cada una y las aulas seran:</p>','<p class="news-text">-F002 (Industrial) para materias básicas.</p>','<p class="news-text">-E002 (Mecánica) para el seminario de ingreso.</p>','<p class="news-text">Cualquier duda, inquietud o sugerencia, o si te interesa participar o dar alguna clase, no dudes en escribirnos a cualquiera de nuestras redes o acercándote al local del CEIT.</p>','<p class="news-text">-Centro de Estudiantes de Ingeniería Tecnológica-</p>'],
-        }
-        
-
+        },
     ]
 }
 

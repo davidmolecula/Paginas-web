@@ -1,0 +1,50 @@
+body{
+
+    height: fit-content;
+}
+section{
+    display: flex;
+    
+}
+#opinion-inside-section{
+    width: 80%;
+    padding-left: 100px;
+}
+h1{
+    padding:10px;
+}
+h2{
+    color:white; 
+
+}
+.opinion-autor{
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+.texto{
+    flex-direction: column;
+    height: 3em;
+    line-height: 1;
+    padding-left:10px;
+}
+.texto p{
+padding: 0;
+margin: 0;
+line-height: 1.5;
+}
+#ipolito{
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+}
+
+p{
+    color: white;
+    margin: 0;
+    line-height: 2;
+    padding-bottom:1px;
+}
+
+article{
+    overflow: hidden;
+}
