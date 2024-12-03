@@ -187,7 +187,7 @@ let newsCardData={
             id:4,
             "date":"14 de agosto de 2023",
             "title": "Explorando la industria nacional",
-            "subtitle": "Este en un proyecto en conjunto con la facultad el cual tiene como objetivo mostrar las pequeñas y grandes industrias argentinas. ",
+            "subtitle": "Este es un proyecto en conjunto con la facultad el cual tiene como objetivo mostrar las pequeñas y grandes industrias argentinas. ",
             "urlImg":"Img/Img/367620261_1507677776640819_2653622552295066388_n.jpeg",
             "text":['<p class="news-text">El mismo comenzó con una visita a la Central Nuclear Atucha con los compañeros de Química y Eléctrica , también una visita al Astillero Río Santigo para Mecánica, siguió con una visita a ARSAT para Electrónica y por último una visita a Puerto La Plata para Industrial.</p>','<p class="news-text">En esta ocasión le toca a los compañeros de Ing. Civil, que visitarán Reactor Carem.</p>','<p class="news-text">Se pueden inscribir en el siguiente formulario:</p>','<p class="news-text"><a  href="https://docs.google.com/forms/d/e/1FAIpQLSfSxBv8hztDyIgwpJoh1G1NvkmWEapyAwyEcMwbxEpizJ9hyA/viewform">Link</a></p>'],
         },
