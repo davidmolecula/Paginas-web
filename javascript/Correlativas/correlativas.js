@@ -1838,7 +1838,6 @@ function busqueda(){
                             contador1++;
                     }
                         materias[id].forEach(electronica=>{
-                            
                             if(electronica.numero===cursada){
                                 regularizada.innerHTML+=`<p>${electronica.nombre}</p>`;
                             }
