@@ -156,6 +156,19 @@ const handleInscription=()=>{
     $pHidden.classList.add('p-hidden')
     click++;
   }
-  
+}
+let click2=0;
+const handleInscription2=()=>{
+  const $inscripcion2=$('#handleInscription2');
+  const $pHidden2=$('#p-hidden2')
+  if(click%2==0){
+    $inscripcion2.style.setProperty('height','auto')
+    $pHidden2.classList.remove('p-hidden')
+    click++;
+  }else{
+    $inscripcion2.style.setProperty('height','auto')
+    $pHidden2.classList.add('p-hidden')
+    click++;
+  }
 }
 

@@ -12,8 +12,9 @@
 		<meta name="robots" content="index, all, follow">
 		<meta name="category" content="universidad, estudiantes, centro de estudiantes de avellaneda">
 		<title>CEIT FRA</title>
-
+		<link rel="shortcut icon" href="icons/logobl.png" type="image/png">
 		<link rel="icon" sizes="48x48" href="icons/logobl.png">
+
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" defer>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,7 @@
 					-->
 
 
-					<li><a class="link" id="link-2" href="#ingresantes">INGRESANTES</a></li>
+					<li><a class="link" id="link-2" href="#inscripciones">INSCRIPCIONES</a></li>
 					<li><a class="link" id="link-3" href="#informacion">INFO</a></li>
 					<li><a class="link" id="link-5" href="#carreras"> CARRERAS </a>
 					<li><a class="link" id="link-6" href="#comunidad">COMUNIDAD</a></li>
@@ -77,62 +78,73 @@
 			<section class="section-landing">
 				<div id="particles"></div>
 			</section>
-			<!-- COMENTADO HASTA LAS PROXIMAS INSCRIPCIONES
+			
 
 			<section id="inscripciones" class="inscripciones">
 				<div class="inscripciones-interior-contenedor">
-					<h1>Guia de inscripcion a materias 2024</h1>
-					<p class="inscripciones-fechas">Las <strong>reinscripciones</strong> son del <span>6/03/2024 al
-							17/03/2024</span>,
+					<h1>Guia de inscripcion a materias 2025</h1>
+					<p class="inscripciones-fechas">Las <strong>reinscripciones</strong> son del <span>12/03/2025 al
+							20/03/2025 inclusive a traves de sysacad <a style="font-size: 1em" href="https://servicios.fra.utn.edu.ar/Sysacad/loginAlumno.asp">(link)</a></span>,
 						las clases arrancan el 25 de marzo.
 					</p>
 					<p class="inscripciones-fechas">Todas las instrucciones están en el documento realizado por el
 						departamento de
-						alumnos: <span class="descargar-instructivo"><a class="inscripciones-instructivo"
-								href="https://drive.google.com/file/d/1Nm4W4lwW2URFC7glGLKYbZKb1zejF6t9/view"
+						estudiantes: <span class="descargar-instructivo"><a class="inscripciones-instructivo"
+								href="https://drive.google.com/file/d/1c9d5tSVgmPw-262lUGfsIDnUfOigv4Y_/view"
 								target="_blank">Descargar
 								Instructivo</a></span>
 					</p>
-
-
-
 					<div class="inscripciones-casos">
-						<a href="https://drive.google.com/file/d/1HNWHjtF1F-lpkdsMJa4YAGan8gU8DEaZ/view"
+						<a href="https://drive.google.com/file/d/1yVUs1NxiatmZ_qUuiQetT-Rv4T7h93oy/view"
 							target="_blank">
-							<h3>16/03 al 19/03 -Inscripcion ingresantes</h3>
+							<h3>12/03 al 14/03 -Inscripcion ingresantes</h3>
 						</a>
 					</div>
 					<div class="inscripciones-casos" id="handleInscription" onclick="handleInscription()">
-						<h3>6/03 al 17/03 -Cambios de especialidad-Simultaneidad-Equivalencias</h3>
+						<h3>12/03 al 20/03 -Cambios de especialidad-Simultaneidad-Equivalencias</h3>
 						<p id="p-hidden" class="p-hidden">Si iniciaron uno de los trámites mencionados recibirán por
 							correo
 							electrónico, al mail
 							que indicaron al solicitar el trámite, indicaciones de cómo inscribirse de acuerdo con
 							la situación personal de cada solicitud. El mail será enviado durante las fechas de
-							inscripción de Reinscriptos (6 al 17 de marzo). Revisar el correo no deseado o spam.</p>
+							inscripción de Reinscriptos (12 al 20 de marzo). Revisar el correo no deseado o spam.</p>
 					</div>
 					<div class="inscripciones-casos">
-						<a href="https://drive.google.com/file/d/1ZNcGA6PS1306crMbFa_AInglpKEPc2Nw/view"
+						<a href="https://drive.google.com/file/d/1VvAxiXFN963ccu7shs4ko_3RivoPDpJo/view"
 							target="_blank">
-							<h3>6/03 al 17/03 -Reinscriptos</h3>
+							<h3>12/03 al 20/03 -Reinscriptos</h3>
 						</a>
 					</div>
 					<div class="inscripciones-casos">
-						<a href="https://docs.google.com/document/d/1OPNpunyDgvF3bBtulSL6jO5thTDr0GDP/edit"
+						<a href="https://docs.google.com/document/d/1HZf1c1ZbOf5yHSf_K17EyoSzUeFWMxZm/edit?tab=t.0"
 							target="_blank">
-							<h3>6/03 al 17/03 -Cursar en la utn fra sin pase</h3>
+							<h3>12/03 al 19/03 -Cursar en la utn fra sin pase</h3>
 						</a>
 					</div>
-					<div class="inscripciones-casos">
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScGKN_oXxHFvmiwO3pGt-6RoFXXFvTRXdn923BKO9aIjQvicA/closedform"
+					<div class="inscripciones-casos" id="handleInscription2" onclick="handleInscription2()">
+						<h3 style="padding-top:10px;padding-bottom:10px;font-size:1.1em; display: inline-block;">12/03 al 20/03 -Cursar en la utn fra con pase</h3>
+						<a href="https://drive.google.com/file/d/1VvAxiXFN963ccu7shs4ko_3RivoPDpJo/view"
 							target="_blank">
-							<h3>6/03 al 17/03 -Cursar en la utn fra con pase</h3>
+							(Link)
 						</a>
+							<h3 > </h3>
+								<p id="p-hidden2" class="p-hidden">Además, enviar un mail a inscripcion.fra.2021@gmail.com con el asunto PASE DE
+									(APELLIDO Y NOMBRES). En el mail indicar las materias y cursos a inscribirse y adjuntar
+									la siguiente documentación (si ya fue entregada en Dpto. de Estudiantes de FRA
+									omitirla en este paso):
+									-Escaneo/foto (preferentemente en pdf) del Pase provisorio emitido por Facultad de
+									origen.
+									-Escaneo/Foto (preferentemente en pdf) del DNI anverso y reverso.
+									Es MUY IMPORTANTE realizar las dos acciones (completar el Formulario y enviar el
+									mail) de lo contrario la inscripción no se tomará como válida.
+									Los horarios y cursos de las materias se descargan de www.fra.utn.edu.ar sección
+									Estudiantes / Horarios de cursada</p>
 					</div>
 
 				</div>
 			</section>
-			-->
+			<!--COMENTADO HASTA PROXIMO INGRESO
+			
 			<section id="ingresantes">
 				<h2>Seminario universitario</h2>
 				<h2>Proximas fechas de inscripción</h2>
@@ -186,7 +198,8 @@
 				<a class="ingresantes-masinfo" target="_blank"
 					href="https://fra.utn.edu.ar/inscripcion-a-carreras-de-ingenieria-seminario-universitario-de-verano-2023/">Más
 					información</a>
-			</section>
+			</section>-->
+			
 
 			<section id="informacion">
 				<h1 class="informacion-title">Informacion general</h1>
