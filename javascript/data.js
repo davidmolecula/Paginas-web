@@ -3,15 +3,15 @@ let informationCards={
         {
         id: 1,
         "title": "Horarios de materias",
-        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2024",
-        "url":"files/Horarios-2024.xlsx" ,
+        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2025",
+        "url":"files/horarios-en-base-de-datos-2025-Departamentos.xlsx" ,
         "link": "Descarga acá"
         },
         {
         id: 2,
         "title":"Calendario academico",
-        "description":"Calendario academico con todas las fechas de los llamados del 2024 y las mesas especiales",
-        "url":"https://fra.utn.edu.ar/wp-content/uploads/2024/02/calendario-2024-definitivo-1.pdf",
+        "description":"Calendario academico con todas las fechas de los llamados del 2025 y las mesas especiales",
+        "url":"https://fra.utn.edu.ar/wp-content/uploads/2025/01/Res-1404-2025-Res-Calendario-Academico-Carreras-de-Grado.pdf",
         "link":"Calendario",
         },
         {
@@ -46,8 +46,8 @@ let informationCards={
         id: 7,
         "title":"Radio",
         "description":"Toda la info sobre LaTecno 88.3 y nuestro programa de radio se la dejamos acá: ",
-        "url":"http://www.latecno.com.ar/",
-        "link":"www.latecno.com.ar",
+        "url":"https://fra.utn.edu.ar/la-tecno-radio-de-utn/",
+        "link":"La Tecno",
         },
         {
         id: 8,
