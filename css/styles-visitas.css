@@ -40,14 +40,15 @@ h1{
 }
 .grid{
     display: grid;
+	border:1px solid red;
 	width: 90%;
 	height: fit-content;
     grid-template-areas:"cna cna cna"
     "estructura estructura texto"
     "charla  estestructura simulacion"
     "tanques tanques maqueta";
-    grid-auto-columns: minmax(300px, 500px);
-    grid-auto-rows: minmax(350px,auto);
+    grid-auto-columns: minmax(30px, 800px);
+    grid-auto-rows: minmax(33em,auto);
 }
 .news-image
 {
@@ -193,5 +194,14 @@ h1{
 		color:var(--white);
 		padding: 5px;
 		margin-bottom:30px
+	}
+	.grid {
+		display: flex;
+		height: fit-content;
+		flex-wrap: wrap;
+	}
+	.news-image  {
+		width: 250px;
+		height: 250px;
 	}
 }
