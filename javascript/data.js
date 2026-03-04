@@ -3,15 +3,15 @@ let informationCards={
         {
         id: 1,
         "title": "Horarios de materias",
-        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2025",
-        "url":"files/horarios-en-base-de-datos-2025-Departamentos.xlsx" ,
+        "description":"Los horarios de todas las materias, divididos por carreras, para que puedas armar tus horarios del 2026",
+        "url":"https://drive.google.com/drive/folders/1mcARRVbRRiOZRA6HGfOcZxMnbH3Eh0Dt" ,
         "link": "Descarga acá"
         },
         {
         id: 2,
         "title":"Calendario academico",
         "description":"Calendario academico con todas las fechas de los llamados del 2025 y las mesas especiales",
-        "url":"https://fra.utn.edu.ar/wp-content/uploads/2025/01/Res-1404-2025-Res-Calendario-Academico-Carreras-de-Grado.pdf",
+        "url":"https://drive.google.com/drive/folders/1Xnefpp6UsegB-KTa6UPUPRcS8n6Wg1cF",
         "link":"Calendario",
         },
         {
@@ -199,6 +199,13 @@ let newsCardData={
             "urlImg":"Img/happy.jpg",
             "text":['<p class="news-text">Los días y horarios de estas mismas están indicadas en cada una y las aulas seran:</p>','<p class="news-text">-F002 (Industrial) para materias básicas.</p>','<p class="news-text">-E002 (Mecánica) para el seminario de ingreso.</p>','<p class="news-text">Cualquier duda, inquietud o sugerencia, o si te interesa participar o dar alguna clase, no dudes en escribirnos a cualquiera de nuestras redes o acercándote al local del CEIT.</p>','<p class="news-text">-Centro de Estudiantes de Ingeniería Tecnológica-</p>'],
         },
+        {
+            id:6,
+            "date":"",
+            "title": "Arrancamos con las clases de consulta",
+            "subtitle": "Queridos compañeros, desde la comisión de enseñanza del centro vamos a estar brindando clases de apoyo de Física I y II, Análisis matemático I, Álgebra y Geometría Analítica y del Seminario Universitario de Ingreso",
+            "urlImg":"Img/happy.jpg",
+            "text":['<p class="news-text">Los días y horarios de estas mismas están indicadas en cada una y las aulas seran:</p>','<p class="news-text">-F002 (Industrial) para materias básicas.</p>','<p class="news-text">-E002 (Mecánica) para el seminario de ingreso.</p>','<p class="news-text">Cualquier duda, inquietud o sugerencia, o si te interesa participar o dar alguna clase, no dudes en escribirnos a cualquiera de nuestras redes o acercándote al local del CEIT.</p>','<p class="news-text">-Centro de Estudiantes de Ingeniería Tecnológica-</p>'],
+        },
     ]
 }
-

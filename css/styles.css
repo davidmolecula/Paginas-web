@@ -709,7 +709,6 @@ input[type=checkbox]
 
 .news-container{
 	display: flex;
-	
 	width: 100%;
 }
 .news-carrousel{
@@ -717,12 +716,12 @@ input[type=checkbox]
 	left:5%;
 	width: 70%;
 	max-width: 120em;
-	overflow: hidden;
 	border-radius:5px;
+	overflow-x: hidden;
 }
 
 .news-carrousel .news-grande {
-	width: 200%;
+	width: 600%;
 	height: 80vh;
 	border-radius:5px;
 	display: flex;
@@ -734,8 +733,8 @@ input[type=checkbox]
 }
 
 .news-carrousel .img{
-	width: calc(100% / 2);
 	height: 100%;
+	width: calc(100%/6);
 	border-radius:5px;
 	box-shadow: 1px 1px 4px 0px black;
 }
@@ -748,7 +747,8 @@ input[type=checkbox]
 	display: flex;
 	flex-flow:row nowrap;
 	justify-content: center;
-
+	cursor: pointer;
+	caret-color: transparent;
 }
 
 .news-carrousel .news-punto {

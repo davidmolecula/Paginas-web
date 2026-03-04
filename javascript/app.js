@@ -56,12 +56,6 @@ Array.from(carreras).map((carrera)=>{
 
 
 
-
-
-
-
-
-
 const section1Observer=new IntersectionObserver(function(entries, section1Observer) 
 {
   entries.forEach(entry =>{
@@ -171,4 +165,3 @@ const handleInscription2=()=>{
     click++;
   }
 }
-
