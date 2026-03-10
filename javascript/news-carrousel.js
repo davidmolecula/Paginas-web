@@ -1,66 +1,30 @@
-const newsGrande = document.querySelector(".news-grande");
-const newsPunto = document.querySelectorAll(".news-punto");
-const tituloArray = document.querySelector(".titulo-array");
-const newsLink = document.getElementById("new-s-link");
 
-const ArrayDeTitulos = [
-  "Renovamos el pasillo de la memoria",
-  "Explorando la industria nacional",
-  "pepito3",
-  "pepito4",
-  "pepito5",
-  "pepito6",
-];
-
-newsPunto.forEach((cadaPunto, i) => {
-  newsPunto[i].addEventListener("click", () => {
-    let posicion = i;
-    let operacion = posicion * (-100 / 6);
-    newsGrande.style.transform = `translateX(${operacion}%)`;
-    tituloArray.innerHTML = ArrayDeTitulos[i];
-    newsLink.href = `noticias.html?id=${newsCardData.newsCards[posicion].id}`;
-    newsPunto.forEach((cadaPunto, j) => {
-      newsPunto[j].classList.remove("activo");
-    });
-    newsPunto[i].classList.add("activo");
-  });
-});
+const newsPuntos=document.querySelector('.news-puntos')
+const newsGrande=document.querySelector('.news-grande')
+const newsCarrousel=document.querySelector('.news-carrousel')
+const newsTitulo=document.querySelector('.news-titulo')
 
 
+const newsCardsReversed=newsCardData.newsCards.reverse()
+newsGrande.innerHTML = newsCardData.newsCards.map(noticia => 
+    `<img src="${noticia.urlImg}" alt="${noticia.title}" class="img1">`
+).join('');
+newsGrande.style.width=`${newsCardData.newsCards.length*100}%`
 
-
-let indice = 0;
-let posicionDeImagen;
-let intervalo;
-
-function carrouselAutomatico() {
-  newsLink.href = `noticias.html?id=${newsCardData.newsCards[indice + 6].id}`;
-  newsPunto.forEach((cadaPunto, i) => {
-    newsPunto[i].addEventListener("click", () => {
-      clearInterval(intervalo);
-      intervalo = null;
-    });
-  });
-
-  if (!intervalo) {
-    intervalo = setInterval(() => {
-      console.log(indice);
-      if (indice === 5) {
-        newsLink.href = `noticias.html?id=${newsCardData.newsCards[indice - 5].id}`;
-        indice = 0;
-      } else {
-        newsLink.href = `noticias.html?id=${newsCardData.newsCards[indice + 1].id}`;
-        indice++;
-      }
-      posicionDeImagen = indice * (-100 / 6);
-      newsGrande.style.transform = `translateX(${posicionDeImagen}%)`;
-      tituloArray.innerHTML = ArrayDeTitulos[indice];
-      newsPunto.forEach((cadaPunto, j) => {
-        newsPunto[j].classList.remove("activo");
-      });
-      newsPunto[indice].classList.add("activo");
-    }, 4000);
+newsPuntos.innerHTML= newsCardData.newsCards.map((noticia,index) => {
+  if(index==0){
+    return(`<li class="news-punto activo"></li>`)
+  }else if(index<=9){
+    return(`<li class="news-punto"></li>`)
   }
 }
+).join('');
 
-carrouselAutomatico();
+newsTitulo.innerHTML=`<h3 class="news-titulo-array">${newsCardData.newsCards[0].title}</h3>
+								<a href="noticias.html?id=0" class="new-s-link" id="new-s-link">Leer más</a>`
+
+const eventoNoticiasListas = new CustomEvent('noticiasRenderizadas', {
+    detail: { totalNoticias: newsCardData.newsCards.length }
+});
+
+window.dispatchEvent(eventoNoticiasListas);
