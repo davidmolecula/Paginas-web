@@ -104,20 +104,21 @@ for (let card of informationCards.cards) {
 $s4Container.innerHTML = informationCard;
 
 // Creacion de las tarjetas de noticias
-
+const news=newsCardData.newsCards // Para no andar repitiendo tanto este choclo de newsCards...
+const newsL=news.length
 let newsCards = "";
 const $newsCard = $(".news-secundarias");
 
 let newsCardBig = "";
 
 for (let i = 0; i < 5; i++) {
-  let randomIndex=Math.floor(Math.random()*newsCardData.newsCards.length)
+  let randomIndex=Math.floor(Math.random()*newsL)
   let ran=Math.floor(randomIndex*Math.random())
-  newsCards += `<div class="new-s ${newsCardData.newsCards[ran].letter}">
-  <div class="new-s-img"><img src="${newsCardData.newsCards[ran].urlImg}" alt=""></div>
+  newsCards += `<div class="new-s ${news[ran].letter}">
+  <div class="new-s-img"><img src="${news[ran].urlImg}" alt=""></div>
   <div class="new-s-div">
-    <h3>${newsCardData.newsCards[ran].title}</h3>
-    <a href="noticias.html?id=${newsCardData.newsCards[ran].id}" class="new-s-link">Leer más</a>
+    <h3>${news[ran].title}</h3>
+    <a href="noticias.html?id=${news[ran].id}" class="new-s-link">Leer más</a>
   </div>
 </div>`;
 }
@@ -162,7 +163,7 @@ newsImg.forEach(img => {
   const newsTituloArray = document.querySelector(".news-titulo-array");
   const newsLink = document.getElementById("new-s-link");
   const total = e.detail.totalNoticias;
-  const ArrayDeTitulos = newsCardData.newsCards.map((n) => n.title);
+  const ArrayDeTitulos = news.map((n) => n.title);
 
   let indice = 0;
   let posicionDeImagen;
@@ -173,10 +174,10 @@ newsImg.forEach(img => {
     cadaPunto.addEventListener("click", () => {
       indice = i;
       let posicion = i;
-      let operacion = posicion * (-100 / newsCardData.newsCards.length);
+      let operacion = posicion * (-100 / newsL);
       newsGrande.style.transform = `translateX(${operacion}%)`;
       newsTituloArray.innerHTML = ArrayDeTitulos[i];
-      newsLink.href = `noticias.html?id=${newsCardData.newsCards[posicion].id}`;
+      newsLink.href = `noticias.html?id=${news[posicion].id}`;
       newsPunto.forEach((cadaPunto) => {
         cadaPunto.classList.remove("activo");
       });
@@ -196,14 +197,14 @@ newsImg.forEach(img => {
 
     if (!intervalo) {
       intervalo = setInterval(() => {
-        if (indice === newsCardData.newsCards.length - 1 || indice>=9) {
-          newsLink.href = `noticias.html?id=${newsCardData.newsCards[0].id}`;
+        if (indice === newsL - 1 || indice>=9) {
+          newsLink.href = `noticias.html?id=${news[0].id}`;
           indice = 0;
         } else {
-          newsLink.href = `noticias.html?id=${newsCardData.newsCards[indice +1].id}`;
+          newsLink.href = `noticias.html?id=${news[indice +1].id}`;
           indice++;
         }
-        posicionDeImagen = indice * (-100 / newsCardData.newsCards.length);
+        posicionDeImagen = indice * (-100 / newsL);
         newsGrande.style.transform = `translateX(${posicionDeImagen}%)`;
         newsTituloArray.innerHTML = ArrayDeTitulos[indice];
         newsPunto.forEach((cadaPunto) => {
