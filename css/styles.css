@@ -340,7 +340,7 @@ h1{
 
 #informacion
 	{
-		height: 110vh;
+		height: fit-content;
 		background: linear-gradient(to top, black,var(--lightblue));
 		background-size: cover;
 		overflow: hidden;
