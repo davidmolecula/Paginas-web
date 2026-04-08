@@ -1205,8 +1205,18 @@ display: flex;
 	width: fit-content;
 }
 
-
-
+.financiamiento-universitario{
+	background-color: black;
+	color: white;
+}
+#h1-financiamiento{
+	font-size: 5em;
+	
+}
+.contador-de-la-ley{
+		text-align: center;
+		font-size: 5em;
+	}
 
 
 /*AJUSTES PARA LA VERSION MOBILE*/
@@ -1218,19 +1228,19 @@ display: flex;
 @media (max-width:768px) {
 
 	/* BODY Y LANDING */
-	body {
+	body/*MEDIA*/ {
 		height: 120vh;
 		overflow:visible;
 	}
-	.inscripciones-interior-contenedor{
+	.inscripciones-interior-contenedor/*MEDIA*/{
 		margin:0px;
 		margin-top:50px;
 		margin-bottom:50px;
 	}
-	.section-landing {
+	.section-landing/*MEDIA*/ {
 		height: 100vh;
 	}
-	#particles
+	#particles/*MEDIA*/
 	{
 		height: 100vh;
 	}
@@ -1303,23 +1313,23 @@ display: flex;
 
 /*MEDIA*/
 
-	.ingresantes-fechas{
+	.ingresantes-fechas/*MEDIA*/{
 		width: 90%;
 	}
-	#ingresantes>h2{
+	#ingresantes>h2/*MEDIA*/{
 		padding: 20px 10px 20px 20px;
 	}
-	#ingresantes>h2:first-child{
+	#ingresantes>h2:first-child/*MEDIA*/{
 		padding: 20px 10px 20px 20px;
 		text-align: center;
 	}
 
 	/* CARRERAS */
 
-	.cardsCarreras{
+	.cardsCarreras/*MEDIA*/{
 		flex-wrap: wrap;
 	}
-	.cardcarrera img{
+	.cardcarrera img/*MEDIA*/{
 		width: 20em;
 	}
 
@@ -1334,21 +1344,21 @@ display: flex;
 	{
 		height: fit-content;
 	}
-	.informacion-title{
+	.informacion-title/*MEDIA*/{
 		font-size: 2em;
 		padding:2em;
 		padding-bottom: 5em;
 	}
-	.informacion-container{
+	.informacion-container/*MEDIA*/{
 		gap: 30px;
 		width: 100%;
 		padding: 0;
 	}
-	.informacion-div {
+	.informacion-div/*MEDIA*/ {
 		width: 21em;
 		height:18em;		
 	}
-	.informacion-h3{
+	.informacion-h3/*MEDIA*/{
 		display: flex;
 		font-size: 1.5em;
 		justify-content: center;
@@ -1356,7 +1366,7 @@ display: flex;
 		padding: 0;
 	}
 	
-	.informacion-p, .informacion-a{
+	.informacion-p, .informacion-a/*MEDIA*/{
 		font-size: 1em;
 	}
 	
@@ -1368,14 +1378,14 @@ display: flex;
 
 
 
-	.servicios{
+	.servicios/*MEDIA*/{
 		height: fit-content;
 	}
-	.card.container{
+	.card.container/*MEDIA*/{
 		height: 80vh;
 	}
 	
-	.servicios-card{
+	.servicios-card/*MEDIA*/{
 		height: 80%;
 		width: 20em;
 	}
@@ -1484,16 +1494,16 @@ display: flex;
 
 
 /*COMUNIDAD*/
-#comunidad{
+#comunidad/*MEDIA*/{
 	height: fit-content;
 	justify-content: center;
 	overflow: visible;
 }
 
-#mi-utn{
+#mi-utn/*MEDIA*/{
 	height: fit-content;
 }
-#comunidad-img-container{
+#comunidad-img-container/*MEDIA*/{
 flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
@@ -1501,10 +1511,10 @@ flex-direction: row;
 	justify-content: center;
 	justify-items: center;
 }
-.comunidad-img{
+.comunidad-img/*MEDIA*/{
 	width: 21em;
 }
-label{
+label/*MEDIA*/{
 display: flex;
 justify-content: center;
 }
@@ -1516,21 +1526,25 @@ justify-content: center;
 			padding: 0;
 		}
 	/* Footer */
-	#Informacion_footer{
+	#Informacion_footer/*MEDIA*/{
 		height: 70%;
 	}
-	.footer-mapa {
+	.footer-mapa /*MEDIA*/{
 		display: none;
 	}
-	.footer-div.redes{
+	.footer-div.redes/*MEDIA*/{
 		width: 100%;
 	}
 
-	.footer-div.redes ul {
+	.footer-div.redes ul /*MEDIA*/{
 		width: 100%;
 		}
 
-	
+	/*SECCION FINANCIAMIENTO UNIVERSITARIO*/
+	.contador-de-la-ley{
+		text-align: center;
+		font-size: 3em;
+	}
 }
 
 
