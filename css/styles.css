@@ -1217,6 +1217,10 @@ display: flex;
 		text-align: center;
 		font-size: 5em;
 	}
+.financiamiento-texto{
+	padding:50px;
+	font-size:2em;
+}
 
 
 /*AJUSTES PARA LA VERSION MOBILE*/
@@ -1545,6 +1549,13 @@ justify-content: center;
 		text-align: center;
 		font-size: 3em;
 	}
+	.financiamiento-texto{
+	padding:50px;
+	font-size:2em;
+}
+#h1-financiamiento{
+font-size: 2em;
+}
 }
 
 
