@@ -226,15 +226,9 @@ const fecha=new Date()
 const fechaDeLaLey= new Date('October 21, 2025 00:00:00 GMT-03:00')
 const milisegundosDelDia=60*60*24*1000
 const offsetMilisegundos=fecha.getTimezoneOffset()*60*1000
-const cantidadDeDias=Math.trunc((fecha.getTime()- offsetMilisegundos - fechaDeLaLey.getTime())/milisegundosDelDia)
+const cantidadDeDias=Math.trunc((fecha.getTime() - fechaDeLaLey.getTime())/milisegundosDelDia)
 
 contadorDeLaLey.innerHTML=`${cantidadDeDias} DÍAS`
-
 contadorDeLaLey2.innerHTML=`${cantidadDeDias} DÍAS`
 
-const date1 = new Date("October 21, 2025 23:15:30 GMT+03:00");
-const hoy=new Date()
-
-
-
-
+console.log(fecha)
